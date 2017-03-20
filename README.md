@@ -7,9 +7,11 @@
  - Implementação de casos de usos do aplicativo E-proinfo 
   - Diário de classe
  - Sistema desktop para cadastro de clientes
+ - Aplicativo Sunshine (Nanodegree da Udacity)
  
  # Projetos open source
- 
+ - Software utilitário para fazer merge entre um PDF e anotações salvas pelo Kindle
+ - Aplicativo SweetHistory
  
  # Projetos pessoais
  - Aplicativo Vestlist
