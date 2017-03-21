@@ -8,12 +8,11 @@ body{
 }
 #title{
 	padding: 10px 24px;
-	width: 100%;
 	background-color: #2eb82e;
 	opacity: 0.9;
 }
 #title p{
-	display: inline;
+	display: block;
 }
 #title .name{
 	font-size: 44px;
@@ -41,18 +40,19 @@ body{
 	text-align: right;
 }
 #menu li {
-	width: 140px;
-	height: 21px;
+	width: 100px;
+	height: 20px;
 	background-color: #99e699;
 	list-style-type: none;
 	/*background-color: #947efa;*/
 	padding: 10px 10px;
 	margin: 0px 16px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #145214;
 	display: inline-block;
+	border-radius: 6px;
 }
 #menu li a{
 	color: #145214;
