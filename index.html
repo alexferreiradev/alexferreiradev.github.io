@@ -22,11 +22,22 @@
 			font-size: 44px;
 			font-family: fantasy;
 			font-weight: bolder;
-			color: #145214;
+			color: #99e699;
 			margin: 24px 24px;
+		}
+		#title .job{
+			font-size: 22px;
+			font-family: sans-serif;
+			font-weight: bold;
+			color: #99e699;
+			margin: 10px 24px;
+			margin-left: 48px;
 		}
 		#menu{
 			margin: 10px 24px;
+			position: relative;
+			top: -100px;
+			float: right;
 		}
 		#menu ul{
 			margin-right: 24px;
@@ -55,13 +66,38 @@
 			background-color: #99e699;
 			font-weight: 100;
 		}
-		#body{
+		#bodyshadow {
 			background: #c2f0c2;
-			border-radius: 30px;
+			border-radius: 10px;
 			opacity: .3;
+			padding: 24px;
 			margin: 10px 24px;
-			height: 1200px;
+			height: 500px;
 			
+		}
+		#body{
+			height: 300px;
+			width: 500px;
+			margin-left: 72px;
+			background-color: #ffffff;
+			border-radius: 30px;
+			opacity: 1;
+			display: inline;
+			position: relative;
+			top: 0px;
+			float: left;
+			z-index: 1;
+		}
+		#body .msg{
+			background-color: #ffffff;
+			opacity: 1;
+			margin: 24px 24px;
+			display: inline-block;
+			padding: 10px;
+			color: black;
+			text-align: left;
+			font-size: 48px;
+			font-weight: bold;
 		}
 		#footer{
 			float: right;
@@ -83,55 +119,42 @@
 			background-color: #cccccc;
 			margin-right: 20px;
 		}
-
-		.secao_miolo {
-			width: 428px;
-			height: 150px;
-			text-align: center;
-			background-color: #cccccc;
-			margin: 2px 5px 4px 5px;
-		}
-
-		.secao_direita {
-			width: 140px;
-			height: 100px;
-			text-align: center;
-			background-color: #cccccc;
-			margin: 4px 5px 4px 5px;
-		}
 		#rodape_direita a{color: #cc6600; text-decoration: none;}
 		#rodape_direita a:hover{color: #cc6600; text-decoration: underline;}
 	</style>
 </head>
 <body>
-  <div id="title">
-  	<p class="name">Alex Rabelo Ferreira</p>
-
-  	<div id="menu">
-  	<ul id="ul-menu">
-  		<li>
-  			<a href="index.html">HOME</a>
-  		</li>
-  		<li>
-  			<a href="index.html">CURRICULUM</a>
-  		</li>
-  		<li>
-  			<a href="index.html">PROJETOS</a>
-  		</li>	
-  		<li>
-			<a href="index.html">CONTATO</a>
-  		</li>
-  	</ul>
-  </div>
-  </div>	
-  <div id="body">
+  	<div id="title">
+	  	<p class="name">Alex Rabelo Ferreira</p>
+	  	<p class="job">Desenvolvedor Android</p>
 
 
-  </div>
-  <div id="footer">
-  		<p class="footername">Alex Rabelo Ferreira @Copyrights 2017<p><br/>
+		<nav id="menu">
+			<ul id="ul-menu">
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="index.html">CURRICULUM</a>
+				</li>
+				<li>
+					<a href="index.html">PROJETOS</a>
+				</li>	
+				<li>
+				<a href="index.html">CONTATO</a>
+				</li>
+			</ul>
+	  	</nav>
+  	</div>
+  	<div id="body">
+		<p class="msg">Conteúdo em construção...</p>
+	</div>
+	<div id="bodyshadow" ></div>
+	
+	<div id="footer">
+			<p class="footername">Alex Rabelo Ferreira @Copyrights 2017<p><br/>
 		Goiânia - Goiás<br/><br/>
 		Email: <a href="mailto:arf92@live.com">arf92@live.com</a>
-  </div>
+	</div>
 </body>
 </html>
