@@ -1,0 +1,117 @@
+body{
+	margin:0px;
+    background: #ffffff url("img/android_1920x1200.jpg") no-repeat fixed center;
+   	font-family:"Trebuchet MS", Tahoma, Arial, Verdana;
+    font-size:12px;
+    color:#000;
+
+}
+#title{
+	padding: 10px 24px;
+	width: 100%;
+	background-color: #2eb82e;
+	opacity: 0.9;
+}
+#title .name{
+	font-size: 44px;
+	font-family: fantasy;
+	font-weight: bolder;
+	color: #99e699;
+	margin: 24px 24px;
+}
+#title .job{
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #99e699;
+	margin: 10px 24px;
+	margin-left: 48px;
+}
+#menu{
+	margin: 10px 24px;
+	position: relative;
+	top: -100px;
+	float: right;
+}
+#menu ul{
+	margin-right: 24px;
+	text-align: right;
+}
+#menu li {
+	width: 140px;
+	height: 21px;
+	background-color: #99e699;
+	list-style-type: none;
+	/*background-color: #947efa;*/
+	padding: 10px 10px;
+	margin: 0px 16px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #145214;
+	display: inline-block;
+}
+#menu li a{
+	color: #145214;
+	font-style: normal;
+	text-decoration: none;
+}
+#menu li:hover{
+	background-color: #99e699;
+	font-weight: 100;
+}
+#bodyshadow {
+	background: #c2f0c2;
+	border-radius: 10px;
+	opacity: .3;
+	padding: 24px;
+	margin: 10px 24px;
+	height: 500px;
+	
+}
+#body{
+	height: 300px;
+	width: 500px;
+	margin-left: 72px;
+	background-color: #ffffff;
+	border-radius: 30px;
+	opacity: 1;
+	display: inline;
+	position: relative;
+	top: 0px;
+	float: left;
+	z-index: 1;
+}
+#body .msg{
+	background-color: #ffffff;
+	opacity: 1;
+	margin: 24px 24px;
+	display: inline-block;
+	padding: 10px;
+	color: black;
+	text-align: left;
+	font-size: 48px;
+	font-weight: bold;
+}
+#footer{
+	float: right;
+	background-color: #2eb82e;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+	padding: 24px;
+}
+.footername{
+	text-transform: capitalize;
+	font-weight: bold;
+}
+#logo {
+	float: left;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	background-color: #cccccc;
+	margin-right: 20px;
+}
+#rodape_direita a{color: #cc6600; text-decoration: none;}
+#rodape_direita a:hover{color: #cc6600; text-decoration: underline;}
