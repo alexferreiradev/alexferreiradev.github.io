@@ -1,0 +1,265 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff url("../img/android_1920x1200.jpg") no-repeat fixed center;
+	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+	width: auto;
+	height: auto;
+	display: block;
+	align-content: flex-start;
+}
+
+img {
+	margin: 16px;
+	padding: 4px;
+}
+
+aside {
+	width: 33%;
+	display: inline-block;
+}
+
+label {
+	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
+	font-size: 1em;
+	font-style: oblique;
+	color: #cccccc;
+}
+
+span {
+	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: bold;
+	color: #9d9d9d;
+}
+
+/*           Comuns                    _+++++++++++++++++++++++++++++++++ */
+
+.card {
+	border: #000000 solid 1px;;
+	display: block;
+	margin: 16px;
+	padding: 8px;
+}
+
+.table {
+	border: #000000 solid 1px;
+	display: flex;
+}
+
+.row-table {
+	display: flex;
+	flex-flow: row;
+}
+
+.col-table {
+	display: flex;
+	flex-flow: column;
+}
+
+.small-image {
+	width: 600px;
+	height: 650px;
+}
+.medium-img {
+	width: 300px;
+	height: 350px;
+	display: flex;
+	flex-direction: row;
+}
+.small-image {
+	width: 150px;
+	height: 125px;
+}
+.large-icon {
+	width: 100px;
+	height: 100px;
+}
+.medium-icon {
+	width: 50px;
+	height: 50px;
+}
+.smaill-icon {
+	width: 25px;
+	height: 25px;
+}
+.label-info {
+
+}
+
+.value-info {
+
+}
+
+.divider {
+	height: 3px;
+	width: auto;
+	background: #8c8c8c;
+	opacity: 100;
+	margin: 16px;
+}
+
+.wrap-img {
+	border: #145214;
+	margin: 8px;
+	padding: 4px;
+}
+
+.wrap-text {
+	border: #145214;
+	margin: 0;
+	padding: 4px;
+}
+
+/*                     _+++++++++++++++++++++++++++++++++ */
+
+#title {
+	padding: 10px 24px;
+	background-color: #2eb82e;
+	opacity: 0.9;
+}
+
+#title p {
+	display: block;
+}
+
+#title .name {
+	font-size: 44px;
+	font-family: fantasy;
+	font-weight: bolder;
+	color: #99e699;
+	margin: 24px 24px;
+}
+
+#title .job {
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #99e699;
+	margin: 10px 24px;
+	margin-left: 48px;
+}
+
+#menu {
+	margin: 10px 24px;
+	position: relative;
+	top: -100px;
+	float: right;
+}
+
+#menu ul {
+	margin-right: 24px;
+	text-align: right;
+}
+
+#menu li {
+	width: 100px;
+	height: 20px;
+	background-color: #99e699;
+	list-style-type: none;
+	/*background-color: #947efa;*/
+	padding: 10px 10px;
+	margin: 0px 16px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #145214;
+	display: inline-block;
+	border-radius: 6px;
+}
+
+#menu li a {
+	color: #145214;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#menu li:hover {
+	background-color: #99e699;
+	font-weight: 100;
+}
+
+/*                     _+++++++++++++++++++++++++++++++++ */
+
+#body {
+	height: 1024px;
+	width: auto;
+	margin: 16px;
+	background-color: #ffffff;
+	border-radius: 30px;
+	opacity: 1;
+	display: inline-block;
+}
+
+#person-info {
+	border: #2eb82e solid 1px;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+}
+#profile-img {
+	display: flex;
+	flex-grow: 1;
+}
+
+#professional-abstract {
+	border: #cc6600 solid 1px;
+	margin: 16px;
+}
+
+#person-info #info {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 2;
+	flex-wrap: nowrap;
+}
+
+#bodyshadow {
+	background: #c2f0c2;
+	border-radius: 10px;
+	opacity: .3;
+	padding: 24px;
+	margin: 10px 24px;
+	height: 780px;
+
+}
+
+/*                     _+++++++++++++++++++++++++++++++++ */
+
+#footer {
+	float: right;
+	background-color: #2eb82e;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+	padding: 24px;
+}
+
+.footername {
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+#logo {
+	float: left;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	background-color: #cccccc;
+	margin-right: 20px;
+}
+
+#rodape_direita a {
+	color: #cc6600;
+	text-decoration: none;
+}
+
+#rodape_direita a:hover {
+	color: #cc6600;
+	text-decoration: underline;
+}

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF8" />
+	<title>Alex R. Ferreira</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+		    background: #ffffff url("img/android_1920x1200.jpg") no-repeat fixed center;
+		   	font-family:"Trebuchet MS", Tahoma, Arial, Verdana;
+		    font-size:12px;
+		    color:#000;
+
+		}
+		#title{
+			padding: 10px 24px;
+			width: 100%;
+			background-color: #2eb82e;
+			opacity: 0.9;
+		}
+		#title .name{
+			font-size: 44px;
+			font-family: fantasy;
+			font-weight: bolder;
+			color: #145214;
+			margin: 24px 24px;
+		}
+		#menu{
+			margin: 10px 24px;
+		}
+		#menu ul{
+			margin-right: 24px;
+			text-align: right;
+		}
+		#menu li{
+			width: 140px;
+			height: 21px;
+			background-color: #99e699;
+			list-style-type: none;
+			/*background-color: #947efa;*/
+			padding: 10px 10px;
+			margin: 0px 16px;
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+			color: #145214;
+			display: inline-block;
+		}
+		#menu li:hover{
+			background-color: #99e699;
+			font-weight: 100;
+		}
+		#body{
+			background: #c2f0c2;
+			border-radius: 30px;
+			opacity: .3;
+			margin: 10px 24px;
+			height: 1200px;
+			
+		}
+		#footer{
+			float: right;
+			background-color: #2eb82e;
+			width: 100%;
+			text-align: center;
+			margin: 10px 0px 0px 0px;
+			padding: 24px;
+		}
+		.footername{
+			text-transform: capitalize;
+			font-weight: bold;
+		}
+		#logo {
+			float: left;
+			width: 200px;
+			height: 100px;
+			text-align: center;
+			background-color: #cccccc;
+			margin-right: 20px;
+		}
+
+		.secao_miolo {
+			width: 428px;
+			height: 150px;
+			text-align: center;
+			background-color: #cccccc;
+			margin: 2px 5px 4px 5px;
+		}
+
+		.secao_direita {
+			width: 140px;
+			height: 100px;
+			text-align: center;
+			background-color: #cccccc;
+			margin: 4px 5px 4px 5px;
+		}
+		#rodape_direita a{color: #cc6600; text-decoration: none;}
+		#rodape_direita a:hover{color: #cc6600; text-decoration: underline;}
+	</style>
+</head>
+<body>
+  <div id="title">
+  	<p class="name">Alex Rabelo Ferreira</p>
+
+  	<div id="menu">
+  	<ul id="ul-menu">
+  		<li>
+  			<a href="index.html">HOME</a>
+  		</li>
+  		<li>
+  			<a href="pages/curriculum.html">CURRICULUM</a>
+  		</li>
+  		<li>
+  			PROJETOS
+  		</li>	
+  		<li>
+			CONTATO
+  		</li>
+  	</ul>
+  </div>
+  </div>	
+  <div id="body">
+  	<%= markdown(render file: "curriculum.md") %>
+
+  </div>
+  <div id="footer">
+  		<p class="footername">Alex Rabelo Ferreira @Copyrights 2017<p><br/>
+		Goiânia - Goiás<br/><br/>
+		Email: <a href="mailto:arf92@live.com">arf92@live.com</a>
+  </div>
+</body>
+</html>
