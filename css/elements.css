@@ -27,7 +27,7 @@ label {
 	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
 	font-size: 1em;
 	font-style: oblique;
-	color: #cccccc;
+	color: #99e699;
 }
 
 span {
@@ -35,7 +35,7 @@ span {
 	font-size: 1.4em;
 	font-style: normal;
 	font-weight: bold;
-	color: #9d9d9d;
+	color: #99e699;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
 	font-size: 2em;
 	font-style: normal;
 	font-weight: bold;
-	color: #9d9d9d;
+	color: #99e699;
 }
 
 h2 {
@@ -51,14 +51,14 @@ h2 {
 	font-size: 1.5em;
 	font-style: normal;
 	font-weight: bold;
-	color: #9d9d9d;
+	color: #99e699;
 }
 title {
 	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
 	font-size: 1.5em;
 	font-style: normal;
 	font-weight: bolder;
-	color: #ffffff;
+	color: #99e699;
 }
 footer {
 	display: block;

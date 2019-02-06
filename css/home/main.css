@@ -2,40 +2,58 @@
 	height: auto;
 	width: auto;
 	margin: 16px;
-	background-color: #ffffff;
+	background-color: #ffffffe6;
 	border-radius: 30px;
 	opacity: 1;
 	display: inline-block;
+	border: none;
 }
 
 #person-info {
-	border: #2eb82e solid 1px;
-	height: 500px;
-	display: flex;
-	flex-direction: row;
-}
-#profile-img {
-	display: flex;
-	flex-grow: 1;
+	/*border: #2eb82e solid 1px;*/
+	border: none;
+	height: auto;
+	display: block;
+	background: transparent;
 }
 
-#professional-abstract {
-	border: #cc6600 solid 1px;
-	margin: 16px;
+#person-info .wrap-img {
+	width: 100px;
+	height: auto; /* ratio */
+}
+
+#person-info h1 {
+	color: #145214;
+	text-align: center;
+	font-size: medium;
+}
+
+#person-info img {
+	width: 7%;
+	height: auto; /* preservar ratio */
+	margin-left: 15%;
+	display: inline-block;
 }
 
 #person-info #info {
-	display: flex;
-	flex-direction: row;
-	flex-grow: 2;
-	flex-wrap: nowrap;
+	display: inline-block;
+	width: 60%;
+	height: auto;
+	margin: auto;
 }
 
-#bodyshadow {
-	background: #c2f0c2;
-	border-radius: 10px;
-	opacity: .3;
-	padding: 24px;
-	margin: 10px 24px;
-	height: 780px;
+#professional-abstract {
+	/*border: #cc6600 solid 1px;*/
+	border: none;
+	margin: 16px;
+}
+
+#professional-history {
+	border: none;
+	margin: 16px;
+}
+
+#apps {
+	border: none;
+	margin: 16px;
 }

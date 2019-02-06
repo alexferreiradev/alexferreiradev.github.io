@@ -3,9 +3,19 @@
 	text-align: center;
 	margin: 10px 0px 0px 0px;
 	padding: 24px;
+	color: #ffffff;
 }
 
-.footername {
+#footer .footername {
 	text-transform: capitalize;
 	font-weight: bold;
+}
+
+#footer .text {
+	color: #ffffff;
+}
+
+#footer a {
+	color: inherit;
+	list-style: none;
 }
