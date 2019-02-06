@@ -47,11 +47,12 @@
 	height: 25px;
 }
 .label-info {
-
+	font-weight: normal;
+	font-size: medium;
 }
 
 .value-info {
-
+	font-weight: bold;
 }
 
 .divider {
@@ -72,4 +73,18 @@
 	border: #145214;
 	margin: 0;
 	padding: 4px;
+}
+.reset-body {
+	margin: 0;
+	padding: 0;
+	background: unset;
+	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+	width: auto;
+	height: auto;
+	display: block;
+	align-content: flex-start;
 }

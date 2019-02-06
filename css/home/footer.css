@@ -1,32 +1,21 @@
 #footer {
-	float: right;
 	background-color: #2eb82e;
-	width: 100%;
 	text-align: center;
 	margin: 10px 0px 0px 0px;
 	padding: 24px;
+	color: #ffffff;
 }
 
-.footername {
+#footer .footername {
 	text-transform: capitalize;
 	font-weight: bold;
 }
 
-#logo {
-	float: left;
-	width: 200px;
-	height: 100px;
-	text-align: center;
-	background-color: #cccccc;
-	margin-right: 20px;
+#footer .text {
+	color: #ffffff;
 }
 
-#rodape_direita a {
-	color: #cc6600;
-	text-decoration: none;
-}
-
-#rodape_direita a:hover {
-	color: #cc6600;
-	text-decoration: underline;
+#footer a {
+	color: inherit;
+	list-style: none;
 }
