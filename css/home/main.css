@@ -1,0 +1,59 @@
+#main-content {
+	height: auto;
+	width: auto;
+	margin: 16px;
+	background-color: #ffffffe6;
+	border-radius: 30px;
+	opacity: 1;
+	display: inline-block;
+	border: none;
+}
+
+#person-info {
+	/*border: #2eb82e solid 1px;*/
+	border: none;
+	height: auto;
+	display: block;
+	background: transparent;
+}
+
+#person-info .wrap-img {
+	width: 100px;
+	height: auto; /* ratio */
+}
+
+#person-info h1 {
+	color: #145214;
+	text-align: center;
+	font-size: medium;
+}
+
+#person-info img {
+	width: 7%;
+	height: auto; /* preservar ratio */
+	margin-left: 15%;
+	display: inline-block;
+}
+
+#person-info #info {
+	display: inline-block;
+	width: 60%;
+	height: auto;
+	margin: auto;
+}
+
+#professional-abstract {
+	/*border: #cc6600 solid 1px;*/
+	border: none;
+	margin: 16px;
+}
+
+#professional-history {
+	border: none;
+	margin: 16px;
+}
+
+#apps {
+	border: none;
+	margin: 16px;
+}

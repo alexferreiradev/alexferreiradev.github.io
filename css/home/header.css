@@ -1,0 +1,65 @@
+#title {
+	padding: 10px 24px;
+	background-color: #2eb82e;
+	opacity: 0.9;
+}
+
+#title p {
+	display: block;
+}
+
+#title .name {
+	font-size: 44px;
+	font-family: fantasy;
+	font-weight: bolder;
+	color: #99e699;
+	margin: 24px 24px;
+}
+
+#title .job {
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #99e699;
+	margin: 10px 24px;
+	margin-left: 48px;
+}
+
+#menu {
+	margin: 10px 24px;
+	position: relative;
+	top: -100px;
+	float: right;
+}
+
+#menu ul {
+	margin-right: 24px;
+	text-align: right;
+}
+
+#menu li {
+	width: 100px;
+	height: 20px;
+	background-color: #99e699;
+	list-style-type: none;
+	/*background-color: #947efa;*/
+	padding: 10px 10px;
+	margin: 0px 16px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #145214;
+	display: inline-block;
+	border-radius: 6px;
+}
+
+#menu li a {
+	color: #145214;
+	font-style: normal;
+	text-decoration: none;
+}
+
+#menu li:hover {
+	background-color: #99e699;
+	font-weight: 100;
+}
