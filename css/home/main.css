@@ -57,3 +57,14 @@
 	border: none;
 	margin: 16px;
 }
+
+#apps-movie {
+	text-align: center;
+	border: none;
+	height: auto;
+}
+.video-player {
+	text-align: center;
+	width: 500px;
+	height: auto;
+}
