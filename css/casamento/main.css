@@ -1,0 +1,80 @@
+* {
+	background-color: white;
+	border: none;
+}
+#home {
+	border: none;
+	display: block;
+}
+#home img {
+	width: 33%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+#home li {
+	list-style: none;
+}
+
+#home a {
+	text-align: left;
+	color: brown;
+	background-color: transparent;
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0;
+	width: 50%;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 72px;
+}
+
+#home li:hover {
+	background-color: #cc660030;
+}
+
+.nav-ul {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	height: auto;
+	width: 66%;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+}
+
+.nav-icon-casamento {
+	background-image: url(../../img/casamento/aneis.png);
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-position: left;
+	background-size: contain;
+	vertical-align: middle;
+	background-color: transparent;
+	margin: 0 32px 0 0;
+}
+
+.nav-icon-confra {
+	background-image: url(../../img/casamento/icone-comida-simples.png);
+	width: 92px;
+	height: 92px;
+	display: inline-block;
+	background-position: left;
+	background-size: contain;
+	background-color: transparent;
+	vertical-align: middle;
+	margin: 0 82px 0 57px;
+}
+
+#casamento {
+	height: 768px;
+}
+
+#confra {
+	height: 768px;
+}
