@@ -2,6 +2,10 @@
 	background-color: white;
 	border: none;
 }
+body {
+	background: #54000014;
+	border: none;
+}
 #home {
 	border: none;
 	display: block;
@@ -29,7 +33,7 @@
 	display: inline-block;
 	text-decoration: none;
 	vertical-align: middle;
-	padding: 72px;
+	padding: 72px 0;
 }
 
 #home li:hover {
@@ -68,13 +72,79 @@
 	background-size: contain;
 	background-color: transparent;
 	vertical-align: middle;
-	margin: 0 82px 0 57px;
+	margin: 0 32px 0 56px;
+	padding: 0 23px;
+	background-repeat: no-repeat;
 }
 
 #casamento {
 	height: 768px;
+	border: none;
 }
 
 #confra {
 	height: 768px;
+	border: none;
+}
+
+.info {
+	border: none;
+	padding: 16px;
+	margin: 16px 101px;
+}
+
+.text-label {
+	text-align: left;
+	color: brown;
+	font-size: 1.5rem;
+	margin: 0 16px 0 24px;
+	padding: 0;
+}
+
+.text-value {
+	text-align: left;
+	font-weight: bold;
+	color: brown;
+	font-size: 1rem;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+.section-header {
+	display: block;
+	width: 100%;
+	height: 216px;
+	background-color: white;
+}
+
+.confra-header {
+	background-clip: unset;
+	background: url("../../img/casamento/icone-comida-simples.png") no-repeat 115px 50px;
+	background-size: 105px 105px;
+	height: 216px;
+}
+
+.casamento-header {
+	background-clip: unset;
+	background: url(../../img/casamento/aneis.png) no-repeat 90px 32px;
+	background-size: 164px 164px;
+	height: 216px;
+}
+
+.section-title {
+	text-align: left;
+	vertical-align: middle;
+	color: brown;
+	font-size: 3rem;
+	font-weight: bold;
+	position: relative;
+	left: 261px;
+	top: 84px;
+	background-color: transparent;
+}
+
+.maps-incoporated {
+	display: block;
+	width: 100%;
+	text-align: center;
 }
