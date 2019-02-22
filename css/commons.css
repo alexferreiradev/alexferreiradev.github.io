@@ -6,8 +6,12 @@
 }
 
 .table {
-	border: #000000 solid 1px;
+	/*border: #000000 solid 1px;*/
+	border: none;
 	display: flex;
+	flex-flow: column;
+	flex-direction: column;
+	flex: 1;
 }
 
 .row-table {
@@ -18,6 +22,8 @@
 .col-table {
 	display: flex;
 	flex-flow: column;
+	justify-content: center;
+	flex: 1;
 }
 
 .small-image {
