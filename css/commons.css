@@ -94,3 +94,31 @@
 	display: block;
 	align-content: flex-start;
 }
+
+.fab-up-div {
+	position: fixed;
+	right: 80px;
+	bottom: 30px;
+	width: 50px;
+	height: auto;
+	background-color: transparent;
+}
+
+.fab-bt {
+	background-color: rgb(181, 74, 74);
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	padding: 16px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	height: auto;
+	width: 18px;
+	font-weight: bolder;
+	font-size: 1.4rem;
+}
