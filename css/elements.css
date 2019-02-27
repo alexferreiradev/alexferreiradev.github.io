@@ -71,3 +71,7 @@ section {
 	height: auto;
 	border: #145214 solid 2px;
 }
+
+a {
+	color: inherit;
+}
