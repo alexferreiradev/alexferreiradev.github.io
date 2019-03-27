@@ -77,6 +77,20 @@ body {
 	background-repeat: no-repeat;
 }
 
+.nav-icon-gift {
+	background-image: url(../../img/casamento/gift.png);
+	width: 92px;
+	height: 92px;
+	display: inline-block;
+	background-position: left;
+	background-size: contain;
+	background-color: transparent;
+	vertical-align: middle;
+	margin: 0 32px 0 56px;
+	padding: 0 23px;
+	background-repeat: no-repeat;
+}
+
 #casamento {
 	height: 428px;
 	border: none;
@@ -130,6 +144,35 @@ body {
 	background: url(../../img/casamento/aneis.png) no-repeat 90px 32px;
 	background-size: 164px 164px;
 	height: 216px;
+}
+
+.gift-header {
+	background-clip: unset;
+	background: url(../../img/casamento/gift.png) no-repeat 123px 76px;
+	background-size: 100px 80px;
+	height: 216px;
+}
+
+.gift-text {
+	text-transform: uppercase;
+}
+.gift-close {
+	text-decoration: line-through;
+	color: black;
+}
+
+.gift-ol {
+	margin-left: 280px;
+}
+
+ol li .who-gave {
+	text-decoration: none;
+	color: transparent;
+	visibility: hidden;
+}
+
+.gift-margin {
+	margin-left: 200px;
 }
 
 .section-title {
