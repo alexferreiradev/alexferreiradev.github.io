@@ -4,12 +4,15 @@
 	<meta http-equiv="Content-type" content="text/html;charset=UTF8"/>
 	<title>Alex R. Ferreira</title>
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="../../css/elements.css">
 	<link rel="stylesheet" type="text/css" href="../../css/commons.css">
 	<link rel="stylesheet" type="text/css" href="../../css/home/header.css">
 	<link rel="stylesheet" type="text/css" href="../../css/home/footer.css">
 	<link rel="stylesheet" type="text/css" href="../../css/casamento/main.css">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56218300-2"></script>
 	<script>
@@ -27,23 +30,35 @@
 </head>
 <body>
 
-<section id="home">
-	<img src="../../img/casamento/quadro_com_nomes.jpeg">
-	<ul class="nav-ul">
-		<li>
-			<span class="nav-icon-casamento"></span>
-			<a href="index.html#casamento" class="nav-item">Casamento</a>
-		</li>
-		<li>
-			<span class="nav-icon-confra"></span>
-			<a href="index.html#confra" class="nav-item">Recepção</a>
-		</li>
-		<li>
-			<span class="nav-icon-gift"></span>
-			<a href="index.html#gift-list" class="nav-item">Presentes</a>
-		</li>
-	</ul>
-</section>
+<header id="home">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<img src="../../img/casamento/quadro_com_nomes.jpeg">
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="nav-icon-casamento"></span>
+						</div>
+						<div class="col-md-8 align-items-center">
+							<a href="index.html#casamento" class="nav-link">Casamento</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<span class="nav-icon-confra"></span>
+					<a href="index.html#confra" class="nav-link">Recepção</a>
+				</li>
+				<li>
+					<span class="nav-icon-gift"></span>
+					<a href="index.html#gift-list" class="nav-link">Presentes</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
 
 <section id="casamento">
 	<div class="section-header casamento-header">
@@ -145,6 +160,12 @@
 <div class="fab-up-div">
 	<a class="fab-bt" href="index.html#home">^</a>
 </div>
+
+<footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer>
 
 </body>
 </html>
