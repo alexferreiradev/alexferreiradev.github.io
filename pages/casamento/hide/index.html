@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hide-Somente-noivos</title>
+	<link rel="stylesheet" type="text/css" href="../../css/elements.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commons.css">
+	<link rel="stylesheet" type="text/css" href="../../css/home/header.css">
+	<link rel="stylesheet" type="text/css" href="../../css/home/footer.css">
+	<link rel="stylesheet" type="text/css" href="../../css/casamento/hide/main.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56218300-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+
+		gtag('config', 'UA-56218300-2');
+	</script>
+	<script>
+		function loadSite(){
+			let siteFrame = document.getElementById('site-frame');
+			Array.from(siteFrame.contentDocument.getElementsByClassName('who-gave')).forEach(function (item, index) {
+				item.style.visibility = 'visible';
+				item.style.color = 'black';
+				item.style.fontStyle = 'normal';
+				item.style.fontSize = '12pt';
+				// item.style.fontWeight = 'normal';
+			});
+			Array.from(siteFrame.contentDocument.getElementsByClassName('gift-close')).forEach(function (element, id) {
+				element.style.textDecoration = 'underline';
+				element.style.fontStyle = 'normal';
+				element.style.fontSize = '12pt';
+				// element.style.fontWeight = 'normal';
+			});
+			siteFrame.update()
+		}
+	</script>
+</head>
+<body>
+	<iframe id="site-frame" src="../index.html" style="width: 100%; height: 500px" onload="loadSite()">
+	</iframe>
+</body>
+</html>

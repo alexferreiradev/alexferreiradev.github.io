@@ -157,7 +157,7 @@ body {
 	text-transform: uppercase;
 }
 .gift-close {
-	text-decoration: line-through;
+	text-decoration: underline;
 	color: black;
 }
 
@@ -167,8 +167,8 @@ body {
 
 ol li .who-gave {
 	text-decoration: none;
-	color: transparent;
-	visibility: hidden;
+	color: black;
+	visibility: visible;
 }
 
 .gift-margin {
