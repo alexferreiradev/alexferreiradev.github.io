@@ -1,6 +1,12 @@
-* {
-	background-color: white;
-	border: none;
+@media screen and (min-width: 300px) {
+	body {
+		font-size: 5pt;
+	}
+}
+@media screen and (min-width: 700px){
+	body {
+		font-size: 16pt;
+	}
 }
 body {
 	background: #54000014;
@@ -8,14 +14,11 @@ body {
 }
 #home {
 	border: none;
-	display: block;
 }
 #home img {
 	width: 100%;
-	height: auto;
 	margin: 0;
 	padding: 0;
-	display: inline-block;
 }
 
 #home li {
@@ -26,11 +29,10 @@ body {
 	text-align: left;
 	color: brown;
 	background-color: transparent;
-	font-size: 3rem;
+	font-size: 2em;
 	font-weight: bold;
 	margin: 0;
 	width: auto;
-	display: inline-block;
 	text-decoration: none;
 	vertical-align: middle;
 	padding: 72px 0;
@@ -41,10 +43,8 @@ body {
 }
 
 .nav-ul {
-	display: inline-block;
 	text-align: left;
 	vertical-align: top;
-	height: auto;
 	width: 66%;
 	padding: 0;
 	margin: 0;
@@ -52,14 +52,12 @@ body {
 }
 
 .nav-icon {
-	display: inline-block;
 	vertical-align: middle;
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
 	/* margin: 0 32px 0 0; */
 	width: 100%;
-	height: 100%;
 }
 
 .nav-icon-casamento {
@@ -78,12 +76,10 @@ body {
 }
 
 #casamento {
-	height: 428px;
 	border: none;
 }
 
 #confra {
-	height: 768px;
 	border: none;
 }
 
@@ -96,7 +92,7 @@ body {
 .text-label {
 	text-align: left;
 	color: brown;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	margin: 0 16px 0 24px;
 	padding: 0;
 }
@@ -105,32 +101,47 @@ body {
 	text-align: left;
 	font-weight: bold;
 	color: brown;
-	font-size: 1rem;
+	font-size: 1em;
 	margin: 0 0 0 0;
 	padding: 0;
 }
 
 .section-header {
 	width: 100%;
-	min-height: 200px;
+	min-height: 3em;
+}
+
+.section-header .icon{
+	background: no-repeat center;
+	background-clip: unset;
+	margin: 0;
+	padding: 0;
 }
 
 .section-header .casamento-icon {
-	background-clip: unset;
-	background: url(../../img/casamento/aneis.png) no-repeat center;
-	background-size: 124px 124px;
+	background-image: url(../../img/casamento/aneis.png);
+	background-size: 3em 3em;
 }
 
-.confra-header {
-	background-clip: unset;
-	background: url("../../img/casamento/icone-comida-simples.png") no-repeat 115px 50px;
-	background-size: 105px 105px;
+.section-header .confra-icon {
+	background-image: url("../../img/casamento/icone-comida-simples.png");
+	background-size: 3em 3em;
 }
 
-.gift-header {
-	background-clip: unset;
-	background: url(../../img/casamento/gift.png) no-repeat 123px 76px;
-	background-size: 100px 80px;
+.section-header .gift-icon {
+	background-image: url(../../img/casamento/gift.png);
+	background-size: 3em 3em;
+}
+
+.section-title {
+	text-align: left;
+	vertical-align: middle;
+	color: brown;
+	font-size: 1.75em;
+	font-weight: bold;
+	margin: auto 0;
+	padding: 0;
+	background-color: transparent;
 }
 
 .gift-text {
@@ -155,21 +166,18 @@ ol li .who-gave {
 	margin-left: 200px;
 }
 
-.section-title {
-	text-align: left;
-	vertical-align: middle;
-	color: brown;
-	font-size: 2rem;
-	font-weight: bold;
-	background-color: transparent;
-}
-
 .maps-incoporated {
-	display: block;
 	width: 100%;
 	text-align: center;
 }
 
 .clear-background-div {
 	background-color: transparent;
+}
+
+.board-img {
+	min-width: 100px;
+	min-height: auto;
+	max-width: 25%;
+	max-height: 75%;
 }
