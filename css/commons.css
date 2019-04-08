@@ -30,28 +30,34 @@
 	width: 600px;
 	height: 650px;
 }
+
 .medium-img {
 	width: 300px;
 	height: 350px;
 	display: flex;
 	flex-direction: row;
 }
+
 .small-image {
 	width: 150px;
 	height: 125px;
 }
+
 .large-icon {
 	width: 100px;
 	height: 100px;
 }
+
 .medium-icon {
 	width: 50px;
 	height: 50px;
 }
+
 .smaill-icon {
 	width: 25px;
 	height: 25px;
 }
+
 .label-info {
 	font-weight: normal;
 	font-size: medium;
@@ -80,6 +86,7 @@
 	margin: 0;
 	padding: 4px;
 }
+
 .reset-body {
 	margin: 0;
 	padding: 0;
@@ -97,10 +104,8 @@
 
 .fab-up-div {
 	position: fixed;
-	right: 80px;
-	bottom: 30px;
-	width: 50px;
-	height: auto;
+	right: 10em;
+	bottom: 5em;
 	background-color: transparent;
 }
 
@@ -112,13 +117,10 @@
 	display: block;
 	text-align: center;
 	vertical-align: middle;
-	padding: 16px;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	height: auto;
-	width: 18px;
+	border-radius: 50%;
 	font-weight: bolder;
-	font-size: 1.4rem;
+	font-size: 0.7em;
+	padding: 0 0.4em;
+	-moz-box-shadow: -0.12em 0.17em 0.4em 1px #6d2a2a96;
+	-webkit-box-shadow: -0.12em 0.17em 0.4em 1px #6d2a2a96;
 }
