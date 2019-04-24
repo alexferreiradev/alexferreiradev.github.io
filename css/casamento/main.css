@@ -119,6 +119,10 @@ footer {
 	padding: 0.2em;
 }
 
+.text-link {
+	text-decoration: underline;
+}
+
 .section-header {
 	min-height: 4em;
 	margin-left: 1em;
