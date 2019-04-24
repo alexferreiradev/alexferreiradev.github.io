@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>Teste map</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<style>
+		/* Set the size of the div element that contains the map */
+		#map {
+			height: 400px; /* The height is 400 pixels */
+			width: 100%; /* The width is the width of the web page */
+		}
+	</style>
+</head>
+<body>
+<script>
+	function loadMap() {
+		var countMov = 0;
+		var interval = 1000;
+		let latIdx = 1;
+		let longIdx = 0;
+		var busLinePositions = [
+				["-49.349127", "-16.765748", "0"], ["-49.348688", "-16.76521", "0"], ["-49.348688", "-16.76521", "0"], ["-49.34863963699999", "-16.76510916", "0"], ["-49.348633581", "-16.765073035", "0"], ["-49.34864361799999", "-16.765031774", "0"], ["-49.34869856100001", "-16.76498007", "0"], ["-49.34891976", "-16.764762376", "0"], ["-49.34895794", "-16.764699757", "0"], ["-49.348968983", "-16.764632493", "0"], ["-49.348947682", "-16.764565474", "0"], ["-49.348891434", "-16.764501146", "0"], ["-49.34877081300001", "-16.764393159", "0"], ["-49.347980225", "-16.763619488", "0"], ["-49.34791346100001", "-16.763572509", "0"], ["-49.347841333", "-16.76354094", "0"], ["-49.34777255700001", "-16.763522212", "0"], ["-49.347703782", "-16.763518893", "0"], ["-49.347653469", "-16.763517073", "0"], ["-49.34760047300001", "-16.763513969", "0"], ["-49.347544796", "-16.763497381", "0"], ["-49.347495823", "-16.763469237", "0"], ["-49.347464297", "-16.76344441", "0"], ["-49.347440816", "-16.763417015", "0"], ["-49.34742404200001", "-16.7633832", "0"], ["-49.347413973", "-16.763349385", "0"], ["-49.347406575", "-16.763281112", "0"], ["-49.347405882", "-16.763216691", "0"], ["-49.347381991", "-16.763142316", "0"], ["-49.347352735", "-16.763071794", "0"], ["-49.347315432", "-16.763016038", "0"], ["-49.347266059", "-16.762966704", "0"], ["-49.34692373000001", "-16.762666635", "0"],
+			["-49.332401", "-16.749311", "0"],
+			["-49.319644", "-16.750349", "0"],
+			["-49.311877", "-16.750636", "0"],
+			["-49.302564", "-16.746814", "0"],
+		];
+
+		var firstPassagerStart = 4;//  -49.349127,-16.765748
+		var firstPassagerEnd = Math.floor(busLinePositions.length / 2);
+		// var secondPassager = busLinePositions.length/2;
+		// var firstPassager = busLinePositions.length - 4;
+		let latToStart = busLinePositions[firstPassagerStart][latIdx];
+		let longToStart = busLinePositions[firstPassagerStart][longIdx];
+		let latToRemove = busLinePositions[firstPassagerEnd][latIdx];
+		let longToRemove = busLinePositions[firstPassagerEnd][longIdx];
+		console.log("1 pass: " + latToStart + "," + longToStart);
+		console.log("1 pass exit: " + latToRemove + "," + longToRemove);
+
+		// criacao de map
+		let googleMap = initMap();
+		let passagerInsideBus = false;
+		let userMaker = null;
+		let busMaker = null;
+
+		var threadId = window.setInterval(movementThread, interval);
+
+		function isToPassagerEnter(latitude, longitude) {
+			let latToStart = busLinePositions[firstPassagerStart][latIdx];
+			let longToStart = busLinePositions[firstPassagerStart][longIdx];
+
+			return latToStart === latitude && longToStart === longitude;
+		}
+
+		function isToPassagerExit(latitude, longitude) {
+			let latToRemove = busLinePositions[firstPassagerEnd][latIdx];
+			let longToRemove = busLinePositions[firstPassagerEnd][longIdx];
+
+			return latToRemove === latitude && longToRemove === longitude;
+		}
+
+		function updateMakerPos(latitude, longitude, marker) {
+			let newPosition = new google.maps.LatLng(latitude, longitude);
+			marker.setPosition(newPosition);
+			googleMap.setCenter(newPosition);
+			marker.setVisible(true);
+		}
+
+		function updateBusPos(latitude, longitude, busMaker) {
+			console.log("Atualizando bus em: " + latitude + "," + longitude);
+			updateMakerPos(latitude, longitude, busMaker)
+		}
+
+		function updatePassagerPos(latitude, longitude, userMaker) {
+			console.log("Atualizando passager em: " + latitude + "," + longitude);
+			updateMakerPos(latitude, longitude, userMaker)
+		}
+
+		function movementThread() {
+			console.log("Thread de movimento executando: " + countMov);
+			let latitude = busLinePositions[countMov][latIdx];
+			let longitude = busLinePositions[countMov][longIdx];
+			console.log("Validando movimento de: " + latitude + "," + longitude);
+			if (countMov === 0) {
+				busMaker = insertBus(latitude, longitude);
+			} else if (isToPassagerEnter(latitude, longitude)) {
+				userMaker = insertPassager(latitude, longitude);
+				passagerInsideBus = true;
+			} else if (isToPassagerExit(latitude, longitude) && passagerInsideBus) {
+				passagerInsideBus = false;
+				removePassager(userMaker);
+			} else if (countMov === busLinePositions.length - 1) {
+				stopThread();
+			}
+
+			// update positions
+			if (busMaker != null) {
+				updateBusPos(latitude, longitude, busMaker);
+			}
+			if (passagerInsideBus) {
+				if (userMaker != null) {
+					updatePassagerPos(latitude, longitude, userMaker);
+				}
+			}
+
+			countMov ++;
+		}
+
+		// start onibus
+		function insertBus(lat, long) {
+			console.log("Inserindo bus em: " + lat + "," + long);
+			return new google.maps.Marker({
+				position: new google.maps.LatLng(lat, long),
+				map     : googleMap,
+				icon    : "https://i.ibb.co/DMMLdkd/unnamed.png"
+			});
+		}
+
+		// set passager
+		function insertPassager(lat, long) {
+			console.log("Inserindo passager em: " + lat + "," + long);
+			return new google.maps.Marker({
+				position: new google.maps.LatLng(lat, long),
+				map     : googleMap,
+			});
+		}
+
+		// remove passager
+		function removePassager(user) {
+			console.log("Removendo passageiro");
+			if (user !== null) {
+				user.setMap(null);
+			} else {
+				console.log("Removendo passageiro = null");
+			}
+		}
+
+		function stopThread() {
+			console.log("Parando simulacao");
+			clearInterval(threadId);
+		}
+
+		function initMap() {
+			var goiania = {lat: -16.765748, lng: -49.349127};
+			return new google.maps.Map(
+					document.getElementById('map'), {zoom: 15, center: goiania});
+		}
+	}
+</script>
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxjtBBdN2U18ezN3TWMqU0riHL4OWMv3Q&callback=loadMap">
+</script>
+
+<div id="map"></div>
+</body>
+</html>
