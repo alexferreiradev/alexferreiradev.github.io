@@ -1,8 +1,7 @@
-.card {
+.card-test {
 	border: #000000 solid 1px;;
 	display: block;
-	margin: 16px;
-	padding: 8px;
+	padding: 2em;
 }
 
 .table {
@@ -38,6 +37,11 @@
 	flex-direction: row;
 }
 
+.flex-center {
+	display: flex;
+	margin: auto;
+}
+
 .small-image {
 	width: 150px;
 	height: 125px;
@@ -53,7 +57,7 @@
 	height: 50px;
 }
 
-.smaill-icon {
+.small-icon {
 	width: 25px;
 	height: 25px;
 }
