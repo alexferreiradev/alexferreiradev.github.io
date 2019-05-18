@@ -5,7 +5,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #ffffff url("../img/android_1920x1200.jpg") no-repeat fixed center;
+	background: #ffffff;
 	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
 	font-size: 1em;
 	font-weight: normal;
@@ -31,7 +31,6 @@ label {
 	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
 	font-size: 1em;
 	font-style: oblique;
-	color: #99e699;
 }
 
 span {
@@ -39,7 +38,6 @@ span {
 	font-size: 1.4em;
 	font-style: normal;
 	font-weight: bold;
-	color: #99e699;
 }
 
 h1 {
@@ -47,7 +45,6 @@ h1 {
 	font-size: 2em;
 	font-style: normal;
 	font-weight: bold;
-	color: #99e699;
 }
 
 h2 {
@@ -55,14 +52,12 @@ h2 {
 	font-size: 1.5em;
 	font-style: normal;
 	font-weight: bold;
-	color: #99e699;
 }
 title {
 	font-family: "Trebuchet MS", Tahoma, Arial, Verdana;
 	font-size: 1.5em;
 	font-style: normal;
 	font-weight: bolder;
-	color: #99e699;
 }
 footer {
 	min-height: 130px;
@@ -71,7 +66,6 @@ section {
 	display: block;
 	width: auto;
 	height: auto;
-	border: #145214 solid 2px;
 }
 
 a {
