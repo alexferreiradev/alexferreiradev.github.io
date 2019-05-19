@@ -87,9 +87,8 @@
 }
 
 .wrap-img {
-	border: #145214;
-	margin: 8px;
-	padding: 4px;
+	min-height: 100px;
+	max-height: 600px;
 }
 
 .wrap-text {
