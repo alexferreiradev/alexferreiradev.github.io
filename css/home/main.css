@@ -26,6 +26,7 @@ body {
 	margin: auto;
 	margin-top: 2em;
 	border-radius: 3.3% !important;
+	min-width: 230px;
 }
 
 .profile-text {
