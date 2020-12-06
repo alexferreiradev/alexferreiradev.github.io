@@ -19,3 +19,9 @@
 	color: inherit;
 	list-style: none;
 }
+
+#footer .version {
+	font-size: 0.6em;
+	color: white;
+	text-align: right;
+}
