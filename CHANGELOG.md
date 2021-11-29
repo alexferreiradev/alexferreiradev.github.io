@@ -7,11 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unrelease] - 2020-xx-xx
 
 ### Added
+- Diretorio com posts para blogs como Markdown.
 
 ### Changed
-
 ### Removed
-
 ### Fixed
 
 ## [1.1.0] - 2020-11-06
