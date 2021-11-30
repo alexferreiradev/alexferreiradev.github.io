@@ -5,12 +5,11 @@ There are two Java libraries that help to do that:
 * Junit
 * EasyMock
 
-The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that
-help you to isolate the test creating mocks to you.
+The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that help you to isolate the test creating mocks for you.
 
 ## Mock
 
-In a unit test, the main goal is to test some behavior from one unit (a class in Java).
+In a unit test, the main goal is to test some behavior from one unit (a class in Java). A mock is a way to create a object that the unit that you are testing depends on. So, If you are testing a Class called ExportToJsonService and this class depends on a another class called FileService, you can test the ExportToJsonService without instantiate the real FileService implementation, you can use some library to create a Mock of FileService. The mock will be a object of FileService, but without any implementation of the behaviors from the real implementation.
 
 ## Project Example
 
@@ -25,4 +24,6 @@ type `ExportService` witch is an interface that has two implementations: `JsonEx
 
 ## Junit
 
+
+## EasyMock
 
