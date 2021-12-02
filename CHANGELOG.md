@@ -5,7 +5,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unrelease] - 2020-xx-xx
-
 ### Added
 - Diretorio com posts para blogs como Markdown.
 
@@ -17,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Informações de projeto openSource OpenCertificate
 - Tópico de cursos
 - Aplicativos que trabalhei até o SESI
 
@@ -35,4 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Página inicial com vários tópicos na minha vida profissional
 
 [Unreleased]: https://github.com/alexferreiradev/alexferreiradev.github.io/compare/DEVELOP...MASTER
-[1.1.0]: https://github.com/alexferreiradev/alexferreiradev.github.io/compare/v1.1.0...MASTER
+
+[1.1.0]: https://github.com/alexferreiradev/alexferreiradev.github.io/compare/v1.1.0...v1.0.0
+
+[1.0.0]: https://github.com/alexferreiradev/alexferreiradev.github.io/compare/v1.0.0...MASTER
