@@ -18,12 +18,15 @@ project to need to test a class called `GenerateCertificate` that has a construc
 type `ExportService` witch is an interface that has two implementations: `JsonExportService` and `PDFExportService`.
 
 ### Features
+- Generate a certificate in PDF format 
+- Generate a certificate metada in JSON format
 
 ### Architeture
-- 
+- Resource 
+- Service
 
 ## Junit
-
+Library created to help Java developers to create owner tests, a addition to quality team tests. This library can be donwload or used with dependency managment tools (gradle, maven).
 
 ## EasyMock
 
