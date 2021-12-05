@@ -29,7 +29,7 @@ Therefore, we have a project that can have a class called `GenerateCertificateSe
 arguments of type `ExportService` which is an interface that has two implementations: `JsonExportService`
 and `PDFExportService`.
 
-### Architeture
+### Architecture
 
 - Main class
 - Services: generateCertificate, exports
@@ -114,6 +114,7 @@ public class GenerateCertificateTest {
 * Add a code example in the github tecnologias_java
 * Explain how to run the test and debug
 * Explain how the mock work and can be used (only mainly features)
+* Review the writing
 * Create a post of Junit 4 and 5
 * Create a post of EasyMock (Explain all features and limitations)
 * Add TODO to new posts with a task to put link to the new posts 
