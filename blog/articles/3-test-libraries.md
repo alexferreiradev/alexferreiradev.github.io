@@ -102,11 +102,34 @@ public class GenerateCertificateTest {
 } 
 ```
 
+After we need to create a instance of our unit that we will test: `GenerateCertificate`. After, we need to call the method to test our scenerio inside the method of the test:
+```java
+import org.junit.Test;
+
+
+public class GenerateCertificateTest {
+   
+   private GenerateCertificate generateCertificate;
+   
+   @Test
+   public void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
+      CertificateData certificateDataValid = new CertificateData();
+      
+      generateCertificate.generate(certificateDataValid);
+   }
+} 
+```
+
+So, at this point, if we run the test: 
+
+
 # TODO
 
 * ~~Add project example~~
 * ~~Add test example~~
-* Complete the fist test
+* ~~Complete the fist test~~
+* Describe the test and how to run with maven
+* Add some link to build gradle test
 * Add Section describing the version used in the example
 * Add second test
 * Explain how to create the next tests
