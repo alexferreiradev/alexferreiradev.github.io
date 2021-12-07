@@ -120,7 +120,25 @@ public class GenerateCertificateTest {
 } 
 ```
 
-So, at this point, if we run the test: 
+After create the test, we need to create the scenario that we will be validated. For this propose we need to create mocks and asserts:
+```java
+import org.junit.Test;
+
+
+public class GenerateCertificateTest {
+   
+   private GenerateCertificate generateCertificate;
+   
+   @Test
+   public void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
+      CertificateData certificateDataValid = new CertificateData();
+      
+      generateCertificate.generate(certificateDataValid);
+   }
+} 
+```
+
+So, at this point, if we run the test with maven: `mvn test`, the test will fail, because we didnot implement the mocks to create a scenario
 
 
 # TODO
@@ -128,6 +146,8 @@ So, at this point, if we run the test:
 * ~~Add project example~~
 * ~~Add test example~~
 * ~~Complete the fist test~~
+* Study EasyMock to create the example of init, mock, verify and captureargs
+* Add mock and add verify to test
 * Describe the test and how to run with maven
 * Add some link to build gradle test
 * Add Section describing the version used in the example
