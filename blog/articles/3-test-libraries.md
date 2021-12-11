@@ -108,7 +108,11 @@ import org.junit.Test;
 
 
 public class GenerateCertificateTest {
+
+   @Rule
+   public EasyMockRule rule = new EasyMockRule(this);
    
+   @TestSubject
    private GenerateCertificate generateCertificate;
    
    @Test
