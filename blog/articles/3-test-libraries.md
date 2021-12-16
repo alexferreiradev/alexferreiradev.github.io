@@ -150,10 +150,12 @@ So, at this point, if we run the test with maven: `mvn test`, the test will fail
 * ~~Add project example~~
 * ~~Add test example~~
 * ~~Complete the fist test~~
-* Study EasyMock to create the example of init, mock, verify and captureargs
-* Add mock and add verify to test
+* ~~Study EasyMock to create the example of init, mock, verify and captureargs~~
+* Create branch test in technologias
+* add code in the post
 * Describe the test and how to run with maven
 * Add some link to build gradle test
+* Add some link to easyMock test description
 * Add Section describing the version used in the example
 * Add second test
 * Explain how to create the next tests
