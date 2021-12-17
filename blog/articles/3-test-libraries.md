@@ -151,7 +151,7 @@ So, at this point, if we run the test with maven: `mvn test`, the test will fail
 * ~~Add test example~~
 * ~~Complete the fist test~~
 * ~~Study EasyMock to create the example of init, mock, verify and captureargs~~
-* Create branch test in technologias
+* ~~Create branch test in technologias (rebase commits)~~
 * add code in the post
 * Describe the test and how to run with maven
 * Add some link to build gradle test
