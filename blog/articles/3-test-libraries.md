@@ -90,7 +90,7 @@ had `@Test` above a method. So, the method annotated is the first scenario.
 **GenerateCertificateTest**
 
 ```java
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 public class GenerateCertificateTest {
@@ -103,47 +103,65 @@ public class GenerateCertificateTest {
 ```
 
 After we need to create a instance of our unit that we will test: `GenerateCertificate`. After, we need to call the method to test our scenerio inside the method of the test:
+
 ```java
-import org.junit.Test;
+import dev.alexferreira.testtechniques.example.certificate.model.Certificate;
+import dev.alexferreira.testtechniques.example.certificate.model.CertificateData;
+import dev.alexferreira.testtechniques.example.certificate.service.ExportService;
+import org.easymock.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
+class GenerateCertificateTest {
 
-public class GenerateCertificateTest {
+    private final GenerateCertificate generateCertificate;
 
-   @Rule
-   public EasyMockRule rule = new EasyMockRule(this);
-   
-   @TestSubject
-   private GenerateCertificate generateCertificate;
-   
-   @Test
-   public void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
-      CertificateData certificateDataValid = new CertificateData();
-      
-      generateCertificate.generate(certificateDataValid);
-   }
-} 
+    @Test
+    void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
+        CertificateData certificateData = new CertificateData();
+        generateCertificate.generateCertificate(certificateData);
+    }
+}
 ```
 
-After create the test, we need to create the scenario that we will be validated. For this propose we need to create mocks and asserts:
+After, we need to create the scenario that will be validated. For this propose we need to create mocks and asserts. We
+use the EasyMock library in this example:
+
 ```java
-import org.junit.Test;
+import dev.alexferreira.testtechniques.example.certificate.model.Certificate;
+import dev.alexferreira.testtechniques.example.certificate.model.CertificateData;
+import dev.alexferreira.testtechniques.example.certificate.service.ExportService;
+import org.easymock.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
+@ExtendWith(EasyMockExtension.class)
+class GenerateCertificateTest extends EasyMockSupport {
 
-public class GenerateCertificateTest {
-   
-   private GenerateCertificate generateCertificate;
-   
-   @Test
-   public void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
-      CertificateData certificateDataValid = new CertificateData();
-      
-      generateCertificate.generate(certificateDataValid);
-   }
-} 
+    @Mock
+    private ExportService exportService;
+
+    @TestSubject
+    private final GenerateCertificate generateCertificate = new GenerateCertificate(null);
+
+    @Test
+    void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
+        exportService.exportPDFFile(EasyMock.anyObject(Certificate.class));
+        replayAll();
+
+        CertificateData certificateData = new CertificateData();
+        generateCertificate.generateCertificate(certificateData);
+
+        verifyAll();
+    }
+}
 ```
 
-So, at this point, if we run the test with maven: `mvn test`, the test will fail, because we didnot implement the mocks to create a scenario
+So, at this point, if we run the test with maven: `mvn test`, the test will fail, because we did not implement the
+method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it.
+Let's analyse the test:
 
+* line x - y define that the mock ex
 
 # TODO
 
@@ -152,18 +170,27 @@ So, at this point, if we run the test with maven: `mvn test`, the test will fail
 * ~~Complete the fist test~~
 * ~~Study EasyMock to create the example of init, mock, verify and captureargs~~
 * ~~Create branch test in technologias (rebase commits)~~
-* add code in the post
-* Describe the test and how to run with maven
-* Add some link to build gradle test
-* Add some link to easyMock test description
-* Add Section describing the version used in the example
-* Add second test
-* Explain how to create the next tests
+* ~~add code in the post~~
+* ~~Describe the test and how to run with maven~~
+* Study or try to put lines in the markdown
+* Add lines in the code to explain all the parts (Mock, replay, verify)
+* Add gradle cmd test with `or`
+* Show the code to implementation to test pass
+* Add some link to EasyMock official docs
+* Add second test section
+* Explain that this test is according to bussiness rules
+* List the business rules and validations
+* Explain how to create the next tests or find the test that are missing
 * Add a section of line coverage
-* Add a code example in the github tecnologias_java
-* Explain how to run the test and debug
-* Explain how the mock work and can be used (only mainly features)
+* ~~Add a code example in the github tecnologias_java~~
+* Add Section describing the version used in the example
+* Add a link to github example
 * Review the writing
+* ask to someone review
+
+  next
+* Explain how to debug a test and how can be usefull
+* Explain how the mock work and can be used (only mainly features)
 * Create a post of Junit 4 and 5
 * Create a post of EasyMock (Explain all features and limitations)
 * Add TODO to new posts with a task to put link to the new posts 
