@@ -138,21 +138,21 @@ import org.junit.jupiter.api.extension.ExtendWith;
 @ExtendWith(EasyMockExtension.class)
 class GenerateCertificateTest extends EasyMockSupport {
 
-    @Mock
-    private ExportService exportService;
-
-    @TestSubject
-    private final GenerateCertificate generateCertificate = new GenerateCertificate(null);
-
-    @Test
-    void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
-        exportService.exportPDFFile(EasyMock.anyObject(Certificate.class));
-        replayAll();
-
-        CertificateData certificateData = new CertificateData();
-        generateCertificate.generateCertificate(certificateData);
-
-        verifyAll();
+/*1**/    @Mock
+/*2**/    private ExportService exportService;
+/*3**/
+/*4**/    @TestSubject
+/*5**/    private final GenerateCertificate generateCertificate = new GenerateCertificate(null);
+/*6**/
+/*7**/    @Test
+/*8**/    void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
+/*9**/        exportService.exportPDFFile(EasyMock.anyObject(Certificate.class));
+/*10**/        replayAll();
+/*11**/
+/*12**/        CertificateData certificateData = new CertificateData();
+/*13**/        generateCertificate.generateCertificate(certificateData);
+/*14**/
+/*15**/        verifyAll();
     }
 }
 ```
@@ -161,7 +161,8 @@ So, at this point, if we run the test with maven: `mvn test`, the test will fail
 method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it.
 Let's analyse the test:
 
-* line x - y define that the mock ex
+* line 1 - 2: define a mock exportService to be used to construct 
+* line 1 - 2: define that the mock exportService
 
 # TODO
 
@@ -172,7 +173,7 @@ Let's analyse the test:
 * ~~Create branch test in technologias (rebase commits)~~
 * ~~add code in the post~~
 * ~~Describe the test and how to run with maven~~
-* Study or try to put lines in the markdown
+* ~~Study or try to put lines in the markdown~~
 * Add lines in the code to explain all the parts (Mock, replay, verify)
 * Add gradle cmd test with `or`
 * Show the code to implementation to test pass
