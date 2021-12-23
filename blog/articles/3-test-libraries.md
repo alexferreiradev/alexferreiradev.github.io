@@ -166,6 +166,12 @@ Let's analyse the test:
 * line 5: define the object that will be tested and injected the mocks
 * line 7-16: define the block to test, what will be executed by Junit
 * line 10: call replayAll to expecify to EasyMock that the mocks will be used after that point.
+* line 15: call verifyAll to expecify to EasyMock that need to verify all calls in all mocks created and throw an error when some call are not expected.
+
+The test will verify if when we call the generateCertificate(), will be called the exportPDFFile() method from exportService mock. If it was not called, the test will fail.
+
+Therefore, the EasyMock will help you to validate that the logic to use the dependencies from your unit in the expected way. You can see more freatures from EasyMock at the [official documentation](https://easymock.org/user-guide.html#verification).
+
 
 # TODO
 
@@ -177,7 +183,7 @@ Let's analyse the test:
 * ~~add code in the post~~
 * ~~Describe the test and how to run with maven~~
 * ~~Study or try to put lines in the markdown~~
-* Add lines in the code to explain all the parts (Mock, replay, verify)
+* ~~Add lines in the code to explain all the parts (Mock, replay, verify)~~
 * Add gradle cmd test with `or`
 * Show the code to implementation to test pass
 * Add some link to EasyMock official docs
