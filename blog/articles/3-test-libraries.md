@@ -184,17 +184,13 @@ Therefore, the EasyMock will help you to validate that the logic to use the depe
 * ~~Describe the test and how to run with maven~~
 * ~~Study or try to put lines in the markdown~~
 * ~~Add lines in the code to explain all the parts (Mock, replay, verify)~~
+* ~~Add some link to EasyMock official docs~~
+* ~~Add a code example in the github tecnologias_java~~
 * Add gradle cmd test with `or`
 * Show the code to implementation to test pass
-* Add some link to EasyMock official docs
-* Add second test section
-* Explain that this test is according to bussiness rules
-* List the business rules and validations
-* Explain how to create the next tests or find the test that are missing
-* Add a section of line coverage
-* ~~Add a code example in the github tecnologias_java~~
 * Add Section describing the version used in the example
 * Add a link to github example
+* Add conclusion section
 * Review the writing
 * ask to someone review
 
@@ -203,4 +199,10 @@ Therefore, the EasyMock will help you to validate that the logic to use the depe
 * Explain how the mock work and can be used (only mainly features)
 * Create a post of Junit 4 and 5
 * Create a post of EasyMock (Explain all features and limitations)
-* Add TODO to new posts with a task to put link to the new posts 
+* Add TODO to new posts with a task to put link to the new posts
+* 
+* Add second test section
+* Explain that this test is according to bussiness rules
+* List the business rules and validations
+* Explain how to create the next tests or find the test that are missing
+* Add a section of line coverage
