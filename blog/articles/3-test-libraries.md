@@ -157,7 +157,7 @@ class GenerateCertificateTest extends EasyMockSupport {
 }
 ```
 
-So, at this point, if we run the test with maven: `mvn test`, the test will fail, because we did not implement the
+So, at this point, if we run the test with maven: `mvn test` or with gradle: `gradlew test`, the test will fail, because we did not implement the
 method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it.
 Let's analyse the test:
 
@@ -172,6 +172,9 @@ The test will verify if when we call the generateCertificate(), will be called t
 
 Therefore, the EasyMock will help you to validate that the logic to use the dependencies from your unit in the expected way. You can see more freatures from EasyMock at the [official documentation](https://easymock.org/user-guide.html#verification).
 
+# TDD - Test Driven Development
+After creating the test, we should implement the unit, do in a cycle step: run test, implement/fix, run test. So, the implementation is incomplete until the test had passed. 
+In these example, the implementation to the test can be [that](code in github). 
 
 # TODO
 
@@ -186,7 +189,7 @@ Therefore, the EasyMock will help you to validate that the logic to use the depe
 * ~~Add lines in the code to explain all the parts (Mock, replay, verify)~~
 * ~~Add some link to EasyMock official docs~~
 * ~~Add a code example in the github tecnologias_java~~
-* Add gradle cmd test with `or`
+* ~~Add gradle cmd test with `or`~~
 * Show the code to implementation to test pass
 * Add Section describing the version used in the example
 * Add a link to github example
