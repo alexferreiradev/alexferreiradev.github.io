@@ -174,7 +174,16 @@ Therefore, the EasyMock will help you to validate that the logic to use the depe
 
 # TDD - Test Driven Development
 After creating the test, we should implement the unit, do in a cycle step: run test, implement/fix, run test. So, the implementation is incomplete until the test had passed. 
-In these example, the implementation to the test can be [that](code in github). 
+In these example, the implementation to the project can be [that](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques). 
+
+# Versions used to example
+The example used in theses tutorial is hosted by [Github](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques). The versions used are following:
+* Junit: 5
+* EasyMock: 4.3
+* Java 11
+
+# Conclusion
+
 
 # TODO
 
@@ -190,9 +199,9 @@ In these example, the implementation to the test can be [that](code in github).
 * ~~Add some link to EasyMock official docs~~
 * ~~Add a code example in the github tecnologias_java~~
 * ~~Add gradle cmd test with `or`~~
-* Show the code to implementation to test pass
-* Add Section describing the version used in the example
-* Add a link to github example
+* ~~Show the code to implementation to test pass~~
+* ~~Add Section describing the version used in the example~~
+* ~~Add a link to github example~~
 * Add conclusion section
 * Review the writing
 * ask to someone review
