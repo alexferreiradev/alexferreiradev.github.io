@@ -183,6 +183,7 @@ The example used in theses tutorial is hosted by [Github](https://github.com/ale
 * Java 11
 
 # Conclusion
+The two libraries are enought to a developer create unit tests to his software. However, the developers need to pay attention to the versions and the compatibility between them. Therefore, the Junit offer a Platform to run tests and the EasyMock offer a way to isolate the unit from the its dependencies. There are anothers libraries, but this article is not comparing, it just is showing the example libraries to each requirements to create tests.
 
 
 # TODO
@@ -202,7 +203,7 @@ The example used in theses tutorial is hosted by [Github](https://github.com/ale
 * ~~Show the code to implementation to test pass~~
 * ~~Add Section describing the version used in the example~~
 * ~~Add a link to github example~~
-* Add conclusion section
+* ~~Add conclusion section~~
 * Review the writing
 * ask to someone review
 
