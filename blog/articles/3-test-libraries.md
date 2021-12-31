@@ -204,6 +204,7 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Add Section describing the version used in the example~~
 * ~~Add a link to github example~~
 * ~~Add conclusion section~~
+* Review the sections in mm
 * Review the writing
 * ask to someone review
 
@@ -213,9 +214,13 @@ The two libraries are enought to a developer create unit tests to his software. 
 * Create a post of Junit 4 and 5
 * Create a post of EasyMock (Explain all features and limitations)
 * Add TODO to new posts with a task to put link to the new posts
-* 
+*
 * Add second test section
 * Explain that this test is according to bussiness rules
 * List the business rules and validations
 * Explain how to create the next tests or find the test that are missing
 * Add a section of line coverage
+
+MM Test libraries content Plataforma Junit Mock Pratica projeto Exemplos de codigos Plano para criacao de testes
+Primieiro test Run test Explicacao de teste TDD Conclusao plan Apresentar libs Conceitos apresentados Pratica o
+Conclusao
