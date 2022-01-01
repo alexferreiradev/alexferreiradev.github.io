@@ -221,6 +221,45 @@ The two libraries are enought to a developer create unit tests to his software. 
 * Explain how to create the next tests or find the test that are missing
 * Add a section of line coverage
 
-MM Test libraries content Plataforma Junit Mock Pratica projeto Exemplos de codigos Plano para criacao de testes
-Primieiro test Run test Explicacao de teste TDD Conclusao plan Apresentar libs Conceitos apresentados Pratica o
-Conclusao
+MM
+
+Test libraries
+    content
+        Plataforma
+            Junit
+        Mock
+            EasyMock
+        Mock
+        Pratica
+            projeto
+            Exemplos de codigos
+            Plano para criacao de testes
+            Primieiro test
+            Run test
+            Explicacao de teste
+            TDD
+        Conclusao
+    plan
+        Apresentar libs
+            Junit
+            EasyMock
+        Conceitos apresentados
+            Plataforma
+            Mock
+        Pratica
+            intro sessao
+                o que tem na sesao
+                colocar em pratica
+            intro projeto
+                obj
+                arquitetura
+            Plano para criacao de teste
+            primeiro test
+            Run test
+            Explicacao de teste
+            TDD
+        Conclusao
+            Para que serve junit e easyMock
+            onde pode ser utilizado
+            outras libs similares
+
