@@ -254,12 +254,18 @@ Test libraries
                 obj
                 arquitetura
             Plano para criacao de teste
+            config deps
+                uso de junit e EasyMock
             primeiro test
             Run test
             Explicacao de teste
+                junit
+                EasyMock
             TDD
+                how to finish the implementation
         Conclusao
             Para que serve junit e easyMock
             onde pode ser utilizado
             outras libs similares
+
 
