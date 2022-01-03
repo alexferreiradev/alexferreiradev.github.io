@@ -17,9 +17,13 @@ class depends on a another class called FileService, you can test the ExportToJs
 FileService implementation, you can use some library to create a Mock of FileService. The mock will be a object of
 FileService, but without any implementation of the behaviors from the real implementation.
 
-## Project Example
+## Practice
 
-The best way to learn is practising. So, let define some project to examplify the use of test. There are two features in
+The best way to learn is practising. So, let define some project to examplify the use of test. In the follow sections we will present how to use the libraries, how to create a test and run and the full example are in the github repository referenced in the end. 
+
+### Project example
+
+There are two features in
 this project:
 
 - Generate a certificate in PDF format
@@ -68,7 +72,7 @@ public interface ExportService {
 }
 ```
 
-## Plan to create tests
+### Plan to create tests
 
 The creation of tests start from the scenarios that you need to test. There are two types of scenarios:
 
@@ -82,7 +86,7 @@ lead to a error when try to create a certificate object.
 Therefore, the first test is when the certificate object passed to exportService instance are correct and the two
 instances of the exportService is called.
 
-## First test
+### First test
 
 After plan the test, you can implement with Junit and EasyMock. A Test with `Junit 5` can be created with a Class that
 had `@Test` above a method. So, the method annotated is the first scenario.
@@ -157,8 +161,8 @@ class GenerateCertificateTest extends EasyMockSupport {
 }
 ```
 
-So, at this point, if we run the test with maven: `mvn test` or with gradle: `gradlew test`, the test will fail, because we did not implement the
-method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it.
+**Test detailed**
+
 Let's analyse the test:
 
 * line 1 - 2: define a mock exportService to be used to construct 
@@ -172,17 +176,24 @@ The test will verify if when we call the generateCertificate(), will be called t
 
 Therefore, the EasyMock will help you to validate that the logic to use the dependencies from your unit in the expected way. You can see more freatures from EasyMock at the [official documentation](https://easymock.org/user-guide.html#verification).
 
-# TDD - Test Driven Development
-After creating the test, we should implement the unit, do in a cycle step: run test, implement/fix, run test. So, the implementation is incomplete until the test had passed. 
-In these example, the implementation to the project can be [that](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques). 
+### Running a test
 
-# Versions used to example
+So, at this point, if we run the test with maven: `mvn test` or with gradle: `gradlew test`, the test will fail, because we did not implement the method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it.
+
+### Versions used to example
+
 The example used in theses tutorial is hosted by [Github](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques). The versions used are following:
 * Junit: 5
 * EasyMock: 4.3
 * Java 11
 
-# Conclusion
+## TDD - Test Driven Development
+
+After creating the test, we should implement the unit, do in a cycle step: run test, implement/fix, run test. So, the implementation is incomplete until the test had passed. 
+In these example, the implementation to the project can be [that](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques).
+
+## Conclusion
+
 The two libraries are enought to a developer create unit tests to his software. However, the developers need to pay attention to the versions and the compatibility between them. Therefore, the Junit offer a Platform to run tests and the EasyMock offer a way to isolate the unit from the its dependencies. There are anothers libraries, but this article is not comparing, it just is showing the example libraries to each requirements to create tests.
 
 
@@ -204,7 +215,9 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Add Section describing the version used in the example~~
 * ~~Add a link to github example~~
 * ~~Add conclusion section~~
-* Review the sections in mm
+* ~~Review the sections in mm~~
+* ~~Adjust the sections according to mm~~
+* Add infos to sections 
 * Review the writing
 * ask to someone review
 
@@ -214,7 +227,7 @@ The two libraries are enought to a developer create unit tests to his software. 
 * Create a post of Junit 4 and 5
 * Create a post of EasyMock (Explain all features and limitations)
 * Add TODO to new posts with a task to put link to the new posts
-*
+* 
 * Add second test section
 * Explain that this test is according to bussiness rules
 * List the business rules and validations
