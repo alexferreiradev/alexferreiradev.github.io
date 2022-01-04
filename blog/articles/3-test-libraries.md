@@ -23,22 +23,18 @@ The best way to learn is practising. So, let define some project to exemplify th
 
 ### Project example
 
-There are two features in
-this project:
-
+The example project is simple, it generate a certificate PDF acording to a object and a json with the metadata of the event. There are two features in this project:
 - Generate a certificate in PDF format
 - Generate a certificate metada in JSON format
 
-Therefore, we have a project that can have a class called `GenerateCertificateService` that has a constructor with two
-arguments of type `ExportService` which is an interface that has two implementations: `JsonExportService`
-and `PDFExportService`.
+#### Architecture
 
-### Architecture
-
-- Main class
-- Services: generateCertificate, exports
+We have a project that can have a class called `GenerateCertificateService` that has a constructor with two
+arguments of type `ExportService` which is an interface that has two implementations: `JsonExportService` and `PDFExportService`.
 
 **Classes**
+
+Classes in the project:
 
 **GenerateCertificate**
 
