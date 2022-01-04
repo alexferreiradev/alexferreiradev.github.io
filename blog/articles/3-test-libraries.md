@@ -7,7 +7,7 @@ that:
 * EasyMock
 
 The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that
-help you to isolate the test creating mocks for you.
+help you to isolate the test creating mocks for you. In the next sections you will see the concepts and how to use theses libraries in development proccess.
 
 ## Mock
 
@@ -19,7 +19,7 @@ FileService, but without any implementation of the behaviors from the real imple
 
 ## Practice
 
-The best way to learn is practising. So, let define some project to examplify the use of test. In the follow sections we will present how to use the libraries, how to create a test and run and the full example are in the github repository referenced in the end. 
+The best way to learn is practising. So, let define some project to exemplify the use of test. In the follow sections we will present how to use the libraries, how to create a test and run and the full example are in the github repository referenced in the end. 
 
 ### Project example
 
@@ -280,5 +280,3 @@ Test libraries
             Para que serve junit e easyMock
             onde pode ser utilizado
             outras libs similares
-
-
