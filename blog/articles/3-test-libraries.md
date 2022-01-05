@@ -27,14 +27,7 @@ The example project is simple, it generate a certificate PDF acording to a objec
 - Generate a certificate in PDF format
 - Generate a certificate metada in JSON format
 
-#### Architecture
-
-We have a project that can have a class called `GenerateCertificateService` that has a constructor with two
-arguments of type `ExportService` which is an interface that has two implementations: `JsonExportService` and `PDFExportService`.
-
-**Classes**
-
-Classes in the project:
+So, the project can be designed to have these classes:
 
 **GenerateCertificate**
 
@@ -213,8 +206,10 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Add conclusion section~~
 * ~~Review the sections in mm~~
 * ~~Adjust the sections according to mm~~
-* Add infos to sections 
+* ~~Add infos to sections~~ 
 * Review the writing
+* fix the code, put two methods in export pdf and json
+* fix the code in repository
 * ask to someone review
 
   next
