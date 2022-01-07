@@ -1,6 +1,6 @@
 # Test libraries for Java Developers deliver stable features
 
-A unit test need to be simple and test just one scenario in isolated way. There are two Java libraries that help to do
+A unit test need to be simple and test just one scenario in isolated way. There are two Java libraries that can help you to do
 that:
 
 * Junit
@@ -19,7 +19,7 @@ FileService, but without any implementation of the behaviors from the real imple
 
 ## Practice
 
-The best way to learn is practising. So, let define some project to exemplify the use of test. In the follow sections we will present how to use the libraries, how to create a test and run and the full example are in the github repository referenced in the end. 
+The best way to learn is practicing. So, let define some project to exemplify the use of the libraries to TDD. In the below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the full example are in the github repository.
 
 ### Project example
 
@@ -199,7 +199,7 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Add lines in the code to explain all the parts (Mock, replay, verify)~~
 * ~~Add some link to EasyMock official docs~~
 * ~~Add a code example in the github tecnologias_java~~
-* ~~Add gradle cmd test with `or`~~
+* ~~Add gradle cmd test with or~~
 * ~~Show the code to implementation to test pass~~
 * ~~Add Section describing the version used in the example~~
 * ~~Add a link to github example~~
