@@ -19,7 +19,7 @@ FileService, but without any implementation of the behaviors from the real imple
 
 ## Practice
 
-The best way to learn is practicing. So, let define some project to exemplify the use of the libraries to TDD. In the below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the full example are in the github repository.
+The best way to learn is practicing. So, let define some project to exemplify the use of the libraries to TDD. In the below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the full example in a github repository.
 
 ### Project example
 
@@ -206,7 +206,7 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Add conclusion section~~
 * ~~Review the sections in mm~~
 * ~~Adjust the sections according to mm~~
-* ~~Add infos to sections~~ 
+* ~~Add infos to sections~~
 * Review the writing
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
