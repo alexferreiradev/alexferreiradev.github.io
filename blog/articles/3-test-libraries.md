@@ -95,7 +95,7 @@ public class GenerateCertificateTest {
 } 
 ```
 
-After we need to create a instance of our unit that we will test: `GenerateCertificate`. After, we need to call the method to test our scenerio inside the method of the test:
+After we need to create a instance of our unit that we will be tested: `GenerateCertificate`. After, we need to call the method to test our scenerio inside the method of the test with the correct inputs:
 
 ```java
 import dev.alexferreira.testtechniques.example.certificate.model.Certificate;
