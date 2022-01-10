@@ -208,6 +208,7 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Adjust the sections according to mm~~
 * ~~Add infos to sections~~
 * Review the writing
+* Review with editor with dictionary 
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
 * ask to someone review
