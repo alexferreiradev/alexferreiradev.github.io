@@ -95,7 +95,7 @@ public class GenerateCertificateTest {
 } 
 ```
 
-After we need to create a instance of our unit that we will be tested: `GenerateCertificate`. After, we need to call the method to test our scenerio inside the method of the test with the correct inputs:
+After we need to create a instance of our unit that we will be tested: `GenerateCertificate`. After, we need to call the method to test our scenario inside the method of the test with the correct inputs:
 
 ```java
 import dev.alexferreira.testtechniques.example.certificate.model.Certificate;
@@ -131,15 +131,15 @@ import org.junit.jupiter.api.extension.ExtendWith;
 @ExtendWith(EasyMockExtension.class)
 class GenerateCertificateTest extends EasyMockSupport {
 
-/*1**/    @Mock
-/*2**/    private ExportService exportService;
-/*3**/
-/*4**/    @TestSubject
-/*5**/    private final GenerateCertificate generateCertificate = new GenerateCertificate(null);
-/*6**/
-/*7**/    @Test
-/*8**/    void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
-/*9**/        exportService.exportPDFFile(EasyMock.anyObject(Certificate.class));
+/*01**/    @Mock
+/*02**/    private ExportService exportService;
+/*03**/
+/*04**/    @TestSubject
+/*05**/    private final GenerateCertificate generateCertificate = new GenerateCertificate(null);
+/*06**/
+/*07**/    @Test
+/*08**/    void whenGenerateCertificate_withCertificateDataValid_thenExportCertificate() {
+/*09**/        exportService.exportPDFFile(EasyMock.anyObject(Certificate.class));
 /*10**/        replayAll();
 /*11**/
 /*12**/        CertificateData certificateData = new CertificateData();
