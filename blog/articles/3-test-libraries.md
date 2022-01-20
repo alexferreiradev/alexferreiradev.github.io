@@ -207,7 +207,9 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Review the sections in mm~~
 * ~~Adjust the sections according to mm~~
 * ~~Add infos to sections~~
-* Review the writing
+* ~~Review the writing~~
+* Doc review from Bruno
+* Plan the sections according to Bruno review
 * Review with editor with dictionary 
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
@@ -228,47 +230,17 @@ The two libraries are enought to a developer create unit tests to his software. 
 
 MM
 
-Test libraries
-    content
-        Plataforma
-            Junit
-        Mock
-            EasyMock
-        Mock
-        Pratica
-            projeto
-            Exemplos de codigos
-            Plano para criacao de testes
-            Primieiro test
-            Run test
-            Explicacao de teste
-            TDD
-        Conclusao
-    plan
-        Apresentar libs
-            Junit
-            EasyMock
-        Conceitos apresentados
-            Plataforma
-            Mock
-        Pratica
-            intro sessao
-                o que tem na sesao
-                colocar em pratica
-            intro projeto
-                obj
-                arquitetura
-            Plano para criacao de teste
-            config deps
-                uso de junit e EasyMock
-            primeiro test
-            Run test
-            Explicacao de teste
-                junit
-                EasyMock
-            TDD
-                how to finish the implementation
-        Conclusao
-            Para que serve junit e easyMock
-            onde pode ser utilizado
-            outras libs similares
+review 
+    Choose your public
+        to remove backgrounds unnecessary
+    change the intro to get attention
+        resolve a problem
+        expose the problem 
+        expose a solution to a problem
+    change the name of sections 
+        to get attention
+        to make consistent
+        to make sense
+        link each section each other
+    Put some image
+
