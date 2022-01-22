@@ -208,7 +208,7 @@ The two libraries are enought to a developer create unit tests to his software. 
 * ~~Adjust the sections according to mm~~
 * ~~Add infos to sections~~
 * ~~Review the writing~~
-* Doc review from Bruno
+* ~~Doc review from Bruno~~
 * Plan the sections according to Bruno review
 * Review with editor with dictionary 
 * fix the code, put two methods in export pdf and json
