@@ -230,17 +230,40 @@ The two libraries are enought to a developer create unit tests to his software. 
 
 MM
 
-review 
-    Choose your public
-        to remove backgrounds unnecessary
-    change the intro to get attention
-        resolve a problem
-        expose the problem 
-        expose a solution to a problem
-    change the name of sections 
-        to get attention
-        to make consistent
-        to make sense
-        link each section each other
-    Put some image
+plan 2
+    review
+        Choose your public
+            to remove backgrounds unnecessary
+        change the intro to get attention
+            resolve a problem
+            expose the problem
+            expose a solution to a problem
+        change the name of sections
+            to get attention
+            to make consistent
+            to make sense
+            link each section each other
+        Put some image
+    sections after review
+        titlle
+        intro 
+            when occour the problem
+            the problem
+            the solution 
+        problem
+            create a unit test isolating the dependencies
+            Softwares without tests unit
+        want 
+            Softwares stables
+            deliver stable features 
+            o
+        what I have
+            how to create a test
+            how to create isolate test
+            how to test diferents scenarios
+        my public 
+            dev pleno Java
+                quer se tornar senior 
+                softwares com baixa cobertura de codigo
+
 
