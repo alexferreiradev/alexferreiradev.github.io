@@ -229,7 +229,6 @@ The two libraries are enought to a developer create unit tests to his software. 
 * Add a section of line coverage
 
 MM
-
 plan 2
     review
         Choose your public
@@ -246,24 +245,30 @@ plan 2
         Put some image
     sections after review
         titlle
-        intro 
+        intro
             when occour the problem
             the problem
-            the solution 
+            the solution
         problem
             create a unit test isolating the dependencies
             Softwares without tests unit
-        want 
+        want
             Softwares stables
-            deliver stable features 
-            o
+            deliver stable features
+            make project stable 
+            make project updatable
+                new features
+                up to date technologies
+            make project updated
+                up to date technologies
         what I have
             how to create a test
-            how to create isolate test
+            how to create isolated test
             how to test diferents scenarios
-        my public 
+            how migrate a project without test to a stable 
+        my public
             dev pleno Java
-                quer se tornar senior 
+                quer se tornar senior
                 softwares com baixa cobertura de codigo
 
 
