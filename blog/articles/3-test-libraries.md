@@ -245,16 +245,22 @@ plan 2
         Put some image
     sections after review
         titlle
-        intro
+            deliver fast with unit tests
+        intro 
             when occour the problem
+                You have only integration tests
             the problem
-            the solution
+                the time to test is big
+            the solution 
+                use unit test with mocks
         problem
-            create a unit test isolating the dependencies
-            Softwares without tests unit
+            Softwares without unit tests
+            time to test is big
+            difficult to create a testing culture in a team
         want
             Softwares stables
             deliver stable features
+                create isolated tests
             make project stable 
             make project updatable
                 new features
@@ -265,10 +271,16 @@ plan 2
             how to create a test
             how to create isolated test
             how to test diferents scenarios
-            how migrate a project without test to a stable 
+            how migrate a project without test to a stable
+            what is the test content
+            how to create isolate test
+            how to use a library to mock
+            how to mock a dependency of a unit
+            how run a test
         my public
             dev pleno Java
                 quer se tornar senior
                 softwares com baixa cobertura de codigo
+
 
 
