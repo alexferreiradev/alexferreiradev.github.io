@@ -254,10 +254,11 @@ plan 2
             the solution
                 use unit test with mocks
         problem
+            fear of update the dependencies
+                without test, the dev will discover the change of a behavior of a lib in production
             Softwares without unit tests
             time to test is big
             difficult to create a testing culture in a team
-            fear of update the dependencies 
         want
             Softwares stables
             deliver stable features
@@ -282,6 +283,18 @@ plan 2
             dev pleno Java
                 quer se tornar senior
                 softwares com baixa cobertura de codigo
+    tasks
+        done
+            list the problems
+            list the contents
+            list the solutions
+            plan tasks
+        explore the problems
+        select a main problem
+        list titles
+        select 3 titles
+        update the article with the new points
+
 
 
 
