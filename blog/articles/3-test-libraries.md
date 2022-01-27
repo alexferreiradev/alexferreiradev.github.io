@@ -246,22 +246,23 @@ plan 2
     sections after review
         titlle
             deliver fast with unit tests
-        intro 
+        intro
             when occour the problem
                 You have only integration tests
             the problem
                 the time to test is big
-            the solution 
+            the solution
                 use unit test with mocks
         problem
             Softwares without unit tests
             time to test is big
             difficult to create a testing culture in a team
+            fear of update the dependencies 
         want
             Softwares stables
             deliver stable features
                 create isolated tests
-            make project stable 
+            make project stable
             make project updatable
                 new features
                 up to date technologies
@@ -281,6 +282,7 @@ plan 2
             dev pleno Java
                 quer se tornar senior
                 softwares com baixa cobertura de codigo
+
 
 
 
