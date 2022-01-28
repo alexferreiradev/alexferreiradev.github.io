@@ -257,8 +257,13 @@ plan 2
             fear of update the dependencies
                 without test, the dev will discover the change of a behavior of a lib in production
             Softwares without unit tests
+                fear to add teste
+                dont have knowledge to add test in the team
             time to test is big
+                there are only integration tests
+                there are a need of QA to test
             difficult to create a testing culture in a team
+                team have fear to test
         want
             Softwares stables
             deliver stable features
@@ -291,9 +296,13 @@ plan 2
             plan tasks
         explore the problems
         select a main problem
+            fear of update dependencies
         list titles
+            the main way to work with updates softwares
+            the easyest way to update your software
         select 3 titles
         update the article with the new points
+
 
 
 
