@@ -298,10 +298,17 @@ plan 2
         select a main problem
             fear of update dependencies
         list titles
-            the main way to work with updates softwares
-            the easyest way to update your software
+            update software
+                the main way to work with updates softwares
+                the easyest way to update your software
+            solution
+                dont have bugs in production anymore, use unit tests
+                have updated softwares, use unit tests
+                dont discovery bugs in production, use unit tests
+                    choose
         select 3 titles
         update the article with the new points
+
 
 
 
