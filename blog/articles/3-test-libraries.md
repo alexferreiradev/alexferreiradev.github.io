@@ -1,5 +1,9 @@
 # Don't discovery bugs in production, use unit tests
 
+
+
+## Unit Test Concepts
+
 A unit test need to be simple and test just one scenario in isolated way. There are two Java libraries that can help you to do
 that:
 
@@ -9,7 +13,7 @@ that:
 The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that
 help you to isolate the test creating mocks for you. In the next sections you will see the concepts and how to use theses libraries in development proccess.
 
-## Mock
+### Mock
 
 In a unit test, the main goal is to test some behavior from one unit (a class in Java). A mock is a way to create a
 object that the unit that you are testing depends on. So, If you are testing a Class called ExportToJsonService and this
@@ -17,7 +21,7 @@ class depends on a another class called FileService, you can test the ExportToJs
 FileService implementation, you can use some library to create a Mock of FileService. The mock will be a object of
 FileService, but without any implementation of the behaviors from the real implementation.
 
-## Practice
+## Learn to add unit test
 
 The best way to learn is practicing. So, let define some project to exemplify the use of the libraries to TDD. In the below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the full example in a github repository.
 
@@ -305,9 +309,12 @@ plan 2
                 dont have bugs in production anymore, use unit tests
                 have updated softwares, use unit tests
                 dont discovery bugs in production, use unit tests
-                    choose
         select 3 titles
         update the article with the new points
+            title
+            intro to problem
+            name of sections
+
 
 
 
