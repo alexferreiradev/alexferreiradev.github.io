@@ -1,4 +1,4 @@
-# Test libraries for Java Developers deliver stable features
+# Don't discovery bugs in production, use unit tests
 
 A unit test need to be simple and test just one scenario in isolated way. There are two Java libraries that can help you to do
 that:
