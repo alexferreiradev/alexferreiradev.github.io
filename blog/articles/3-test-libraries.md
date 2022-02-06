@@ -1,8 +1,12 @@
 # Don't discovery bugs in production, use unit tests
 
+[Image to all is fine]
+
+Intro to bugs in prod
+Data to loses with bugs
 
 
-## Unit Test Concepts
+## Unit Test
 
 A unit test need to be simple and test just one scenario in isolated way. There are two Java libraries that can help you to do
 that:
@@ -21,11 +25,11 @@ class depends on a another class called FileService, you can test the ExportToJs
 FileService implementation, you can use some library to create a Mock of FileService. The mock will be a object of
 FileService, but without any implementation of the behaviors from the real implementation.
 
-## Learn to add unit test
+## Unit test with 
 
 The best way to learn is practicing. So, let define some project to exemplify the use of the libraries to TDD. In the below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the full example in a github repository.
 
-### Project example
+### Project to add test
 
 The example project is simple, it generate a certificate PDF acording to a object and a json with the metadata of the event. There are two features in this project:
 - Generate a certificate in PDF format
