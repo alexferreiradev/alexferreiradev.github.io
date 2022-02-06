@@ -302,22 +302,33 @@ plan 2
             list the contents
             list the solutions
             plan tasks
-        explore the problems
-        select a main problem
-            fear of update dependencies
-        list titles
-            update software
-                the main way to work with updates softwares
-                the easyest way to update your software
-            solution
-                dont have bugs in production anymore, use unit tests
-                have updated softwares, use unit tests
-                dont discovery bugs in production, use unit tests
-        select 3 titles
+            explore the problems
+            select a main problem
+                fear of update dependencies
+            list titles
+                update software
+                    the main way to work with updates softwares
+                    the easyest way to update your software
+                solution
+                    dont have bugs in production anymore, use unit tests
+                    have updated softwares, use unit tests
+                    dont discovery bugs in production, use unit tests
+            select 3 titles
         update the article with the new points
-            title
-            intro to problem
+            done
+                title
+                intro to problem
             name of sections
+                intro 
+                Prevent bugs in production
+                    libraries to unit test to JAVA
+                    Isolating a unit test with mocks
+                Use Junit and EasyMock
+                    Implement using TDD
+                    Create a unit test
+                    EasyMock Detailed
+                Benefits using unit tests
+
 
 
 
