@@ -1,6 +1,6 @@
 # Don't discovery bugs in production, use unit tests
 
-[Image to all is fine]
+![Image to all is fine](https://www.meme-arsenal.com/memes/f146fd499738ead5ef3b2ee576ef3271.jpg)
 
 Intro to bugs in prod Data to loses with bugs Objective
 
