@@ -242,7 +242,7 @@ not comparing, it just is showing the example libraries to each requirements to 
 * ~~Add infos to sections~~
 * ~~Review the writing~~
 * ~~Doc review from Bruno~~
-* Plan the sections according to Bruno review
+~~* Plan the sections according to Bruno review~~
 * Review with editor with dictionary
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
@@ -359,7 +359,8 @@ plan 2
                     search more data 
                         about losing money with bugs 
                         news with
-                            software error 
+                            software error
+                                https://raygun.com/blog/costly-software-errors-history/
                             Software to marketplace 
                                 wrong price
                                     <https://querysprout.com/amazon-price-mistake-policy/>
