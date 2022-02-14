@@ -261,25 +261,115 @@ not comparing, it just is showing the example libraries to each requirements to 
 * Explain how to create the next tests or find the test that are missing
 * Add a section of line coverage
 
-MM plan 2 review Choose your public to remove backgrounds unnecessary change the intro to get attention resolve a
-problem expose the problem expose a solution to a problem change the name of sections to get attention to make
-consistent to make sense link each section each other Put some image sections after review titlle deliver fast with unit
-tests intro when occour the problem You have only integration tests the problem the time to test is big the solution use
-unit test with mocks problem fear of update the dependencies without test, the dev will discover the change of a
-behavior of a lib in production Softwares without unit tests fear to add teste dont have knowledge to add test in the
-team time to test is big there are only integration tests there are a need of QA to test difficult to create a testing
-culture in a team team have fear to test want Softwares stables deliver stable features create isolated tests make
-project stable make project updatable new features up to date technologies make project updated up to date technologies
-what I have how to create a test how to create isolated test how to test diferents scenarios how migrate a project
-without test to a stable what is the test content how to create isolate test how to use a library to mock how to mock a
-dependency of a unit how run a test my public dev pleno Java quer se tornar senior softwares com baixa cobertura de
-codigo tasks done list the problems list the contents list the solutions plan tasks explore the problems select a main
-problem fear of update dependencies list titles update software the main way to work with updates softwares the easyest
-way to update your software solution dont have bugs in production anymore, use unit tests have updated softwares, use
-unit tests dont discovery bugs in production, use unit tests select 3 titles update the article with the new points done
-title intro to problem name of sections intro Prevent bugs in production libraries to unit test to JAVA Isolating a unit
-test with mocks Use Junit and EasyMock Implement using TDD Create a unit test EasyMock Detailed Benefits using unit
-tests
+MM 
+plan 2
+    review
+        Choose your public
+            to remove backgrounds unnecessary
+        change the intro to get attention
+            resolve a problem
+            expose the problem
+            expose a solution to a problem
+        change the name of sections
+            to get attention
+            to make consistent
+            to make sense
+            link each section each other
+        Put some image
+    sections after review
+        titlle
+            deliver fast with unit tests
+        intro
+            when occour the problem
+                You have only integration tests
+            the problem
+                the time to test is big
+            the solution
+                use unit test with mocks
+        problem
+            fear of update the dependencies
+                without test, the dev will discover the change of a behavior of a lib in production
+            Softwares without unit tests
+                fear to add teste
+                dont have knowledge to add test in the team
+            time to test is big
+                there are only integration tests
+                there are a need of QA to test
+            difficult to create a testing culture in a team
+                team have fear to test
+        want
+            Softwares stables
+            deliver stable features
+                create isolated tests
+            make project stable
+            make project updatable
+                new features
+                up to date technologies
+            make project updated
+                up to date technologies
+        what I have
+            how to create a test
+            how to create isolated test
+            how to test diferents scenarios
+            how migrate a project without test to a stable
+            what is the test content
+            how to create isolate test
+            how to use a library to mock
+            how to mock a dependency of a unit
+            how run a test
+        my public
+            dev pleno Java
+                quer se tornar senior
+                softwares com baixa cobertura de codigo
+    new sections name
+        intro
+        Prevent bugs in production
+            libraries to unit test to JAVA
+            Isolating a unit test with mocks
+        Use Junit and EasyMock
+            Implement using TDD
+            Create a unit test
+            EasyMock Detailed
+        Benefits using unit tests
+    tasks
+        done
+            list the problems
+            list the contents
+            list the solutions
+            plan tasks
+            explore the problems
+            select a main problem
+                fear of update dependencies
+            list titles
+                update software
+                    the main way to work with updates softwares
+                    the easyest way to update your software
+                solution
+                    dont have bugs in production anymore, use unit tests
+                    have updated softwares, use unit tests
+                    dont discovery bugs in production, use unit tests
+            select 3 titles
+        update the article with the new points
+            done
+                title
+                intro to problem
+                name of sections
+            write sections
+                intro
+                    search more data 
+                        about losing money with bugs 
+                        news with
+                            software error 
+                            Software to marketplace 
+                                wrong price
+                                    <https://querysprout.com/amazon-price-mistake-policy/>
+                                    <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>
+                                Wrong calculation
+                                not finalise the order
+                            Software to car
+                            software to airplane
+                prevent bugs
+
 
 
 
