@@ -4,6 +4,9 @@
 
 Intro to bugs in prod Data to loses with bugs Objective
 
+Mariner 1 spacecraft
+An investigation revealed the cause to be a very simple software error. A hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. The overall cost of the omission was reported to be more than $18 million at the time (about $169 million in today’s world).
+
 ## Prevent bugs with Unit Test
 
 One of the preventions to discovery bugs in production is use unit test. A unit test need to be simple and test only one
