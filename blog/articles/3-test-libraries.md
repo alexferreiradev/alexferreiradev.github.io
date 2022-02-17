@@ -359,27 +359,20 @@ plan 2
                 name of sections
             write sections
                 intro
-                    search more data 
-                        about losing money with bugs 
+                    search more data
+                        about losing money with bugs
                         news with
                             software error
-                                https://raygun.com/blog/costly-software-errors-history/
-                            Software to marketplace 
+                                <https://raygun.com/blog/costly-software-errors-history/>
+                                    marine 
+                                    the morris worm
+                                    bitcoin hack
+                            Software to marketplace
                                 wrong price
-                                    <https://querysprout.com/amazon-price-mistake-policy/>
-                                    <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>
+                                    <https://querysprout.com/amazon-price-mistake-policy/> <https://querysprout.com/amazon-price-mistake-policy/>>
+                                    <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8> <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>>
                                 Wrong calculation
                                 not finalise the order
                             Software to car
                             software to airplane
                 prevent bugs
-
-
-
-
-
-
-
-
-
-
