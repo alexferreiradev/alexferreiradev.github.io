@@ -1,15 +1,12 @@
-# Don't discovery bugs in production, use unit tests
+# Don't discover bugs in production, use unit tests
 
 ![Image to all is fine](https://www.meme-arsenal.com/memes/f146fd499738ead5ef3b2ee576ef3271.jpg)
 
-Intro to bugs in prod Data to loses with bugs Objective
-
-Mariner 1 spacecraft
-An investigation revealed the cause to be a very simple software error. A hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. The overall cost of the omission was reported to be more than $18 million at the time (about $169 million in today’s world).
+A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause was a very simple software error, a hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. The overall cost of the omission was reported to be more than $18 million at the time (about $169 million in today’s world). Therefore, dont lose money discovering bugs in production, prevent it with a simple method, use tests in the development stage. In this article, we will present one type of test that can be made with Java softwares, how to create and run them in the development stage. At the end, you will be ready to configure your project with tests libraries, plan the scenarios that will be tested, create the tests and mocks and finally, prevent bugs in production.  
 
 ## Prevent bugs with Unit Test
 
-One of the preventions to discovery bugs in production is use unit test. A unit test need to be simple and test only one
+The most simple test is unit test. It need to be simple and test only one
 scenario in isolated way. There are two Java libraries that can help you to do that:
 
 * Junit
@@ -27,13 +24,13 @@ class depends on a another class called FileService, you can test the ExportToJs
 FileService implementation, you can use some library to create a Mock of FileService. The mock will be a object of
 FileService, but without any implementation of the behaviors from the real implementation.
 
-## Unit test with
+## Create a unit test
 
-The best way to learn is practicing. So, let define some project to exemplify the use of the libraries to TDD. In the
+Now, you know about unit test and mocks. So, let define some project to exemplify the use of the libraries to TDD. In the
 below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the
 full example in a github repository.
 
-### Project to add test
+### Project example
 
 The example project is simple, it generate a certificate PDF acording to a object and a json with the metadata of the
 event. There are two features in this project:
@@ -75,7 +72,7 @@ public interface ExportService {
 }
 ```
 
-### Plan to create tests
+### Planning your tests
 
 The creation of tests start from the scenarios that you need to test. There are two types of scenarios:
 
@@ -89,7 +86,7 @@ lead to a error when try to create a certificate object.
 Therefore, the first test is when the certificate object passed to exportService instance are correct and the two
 instances of the exportService is called.
 
-### First test
+### First unit test
 
 After plan the test, you can implement with Junit and EasyMock. A Test with `Junit 5` can be created with a Class that
 had `@Test` above a method. So, the method annotated is the first scenario.
