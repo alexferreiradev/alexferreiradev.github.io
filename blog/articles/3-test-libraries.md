@@ -2,7 +2,9 @@
 
 ![Image to all is fine](https://www.meme-arsenal.com/memes/f146fd499738ead5ef3b2ee576ef3271.jpg)
 
-A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause was a very simple software error, a hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. The overall cost of the omission was reported to be more than $18 million at the time (about $169 million in today’s world). Therefore, dont lose money discovering bugs in production, prevent it with a simple method, use tests in the development stage. In this article, we will present one type of test that can be made with Java softwares, how to create and run them in the development stage. At the end, you will be ready to configure your project with tests libraries, plan the scenarios that will be tested, create the tests and mocks and finally, prevent bugs in production.  
+A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause was a very simple software error, a hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. The overall cost of the omission was reported to be more than $18 million at the time (about $169 million in today’s world). 
+
+Therefore, don't lose money discovering bugs in production, prevent it with a simple method, use tests in the development stage. In this article, we will present one type of test that can be made with Java softwares, how to create and run them in the development stage. At the end, you will be ready to configure your project with tests libraries, plan the scenarios that will be tested, create the tests and mocks and finally, prevent bugs in production.  
 
 ## Prevent bugs with Unit Test
 
@@ -243,6 +245,11 @@ not comparing, it just is showing the example libraries to each requirements to 
 * ~~Review the writing~~
 * ~~Doc review from Bruno~~
 ~~* Plan the sections according to Bruno review~~
+* change the mock to be the prevent bugs, after, we will present the libraries, just in the next session 
+* remove refer to tdd in the creation section
+* change the section create unit test
+* review conclusion
+* change TDD to refer, but not the main point, just to future
 * Review with editor with dictionary
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
@@ -254,7 +261,7 @@ not comparing, it just is showing the example libraries to each requirements to 
 * Create a post of Junit 4 and 5
 * Create a post of EasyMock (Explain all features and limitations)
 * Add TODO to new posts with a task to put link to the new posts
-*
+* 
 * Add second test section
 * Explain that this test is according to bussiness rules
 * List the business rules and validations
