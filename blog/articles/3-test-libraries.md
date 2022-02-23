@@ -9,14 +9,7 @@ Therefore, don't lose money discovering bugs in production, prevent it with a si
 ## Prevent bugs with Unit Test
 
 The most simple test is unit test. It need to be simple and test only one
-scenario in isolated way. There are two Java libraries that can help you to do that:
-
-* Junit
-* EasyMock
-
-The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that
-help you to isolate the test creating mocks for you. In the next sections you will see the concepts and how to use
-theses libraries in development proccess.
+scenario in isolated way. 
 
 ### Mock
 
@@ -28,9 +21,12 @@ FileService, but without any implementation of the behaviors from the real imple
 
 ## Create a unit test
 
-Now, you know about unit test and mocks. So, let define some project to exemplify the use of the libraries to TDD. In the
-below sections, we will present how to use the libraries, how to create and run a test, and in the end, you can find the
-full example in a github repository.
+Now, you know about unit test and mocks. Before starting creating a tests, we need libraries to don't reinvent the wheel. There are two Java libraries that can help you to create unit tests in JAVA:
+
+* Junit
+* EasyMock
+
+The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that help you to isolate the test creating mocks for you. In the next sections, you will see the concepts and how to use theses libraries in development proccess and in the end, you will find the full example of a project with theses libraries in a github repository.
 
 ### Project example
 
