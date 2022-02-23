@@ -30,8 +30,7 @@ The first one is a platform that help a java developer to create tests and run i
 
 ### Project example
 
-The example project is simple, it generate a certificate PDF acording to a object and a json with the metadata of the
-event. There are two features in this project:
+So, let define some project to exemplify the use of the java test libraries. The example project is simple, it generate a certificate PDF acording to a object and a json with the metadata of the event. There are two features in this project:
 
 - Generate a certificate in PDF format
 - Generate a certificate metada in JSON format
