@@ -240,7 +240,7 @@ not comparing, it just is showing the example libraries to each requirements to 
 * ~~Review the writing~~
 * ~~Doc review from Bruno~~
 ~~* Plan the sections according to Bruno review~~
-* change the mock to be the prevent bugs, after, we will present the libraries, just in the next session 
+* ~~change the mock to be the prevent bugs, after, we will present the libraries, just in the next session~~ 
 * remove refer to tdd in the creation section
 * change the section create unit test
 * review conclusion
