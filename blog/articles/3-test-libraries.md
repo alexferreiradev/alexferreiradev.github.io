@@ -189,9 +189,7 @@ the [official documentation](https://easymock.org/user-guide.html#verification).
 
 ### Running a test
 
-So, at this point, if we run the test with maven: `mvn test` or with gradle: `gradlew test`, the test will fail, because
-we did not implement the method like the test expect. TDD (Test driven development) propose these, you define the test,
-after you implement it.
+So, at this point, if we run the test with maven: `mvn test` or with gradle: `gradlew test`, the test will fail, because we did not implement the method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it. According to TDD principle, after creating the test, we should implement the unit in a cycle step: run test, implement/fix, run test. So, the implementation is incomplete until the test had passed.
 
 ### Versions used to example
 
@@ -202,12 +200,6 @@ are following:
 * Junit: 5
 * EasyMock: 4.3
 * Java 11
-
-## TDD - Test Driven Development
-
-After creating the test, we should implement the unit, do in a cycle step: run test, implement/fix, run test. So, the
-implementation is incomplete until the test had passed. In these example, the implementation to the project can
-be [that](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques).
 
 ## Conclusion
 
@@ -241,7 +233,7 @@ not comparing, it just is showing the example libraries to each requirements to 
 * ~~Doc review from Bruno~~
 ~~* Plan the sections according to Bruno review~~
 * ~~change the mock to be the prevent bugs, after, we will present the libraries, just in the next session~~ 
-* remove refer to tdd in the creation section
+* ~~remove refer to tdd in the creation section~~
 * change the section create unit test
 * review conclusion
 * change TDD to refer, but not the main point, just to future
