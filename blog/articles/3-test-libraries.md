@@ -2,9 +2,9 @@
 
 ![Image to all is fine](https://www.meme-arsenal.com/memes/f146fd499738ead5ef3b2ee576ef3271.jpg)
 
-A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause was a very simple software error, a hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. The overall cost of the omission was reported to be more than $18 million at the time (about $169 million in today’s world). 
+A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause. A very simple software error, the developer omitted an hyfen in a line of code. That sent an incorrect guidance signals to to the spacecraft. The cost of the omission turned out to be more than $18 million at the time (about $169 million in today’s currency).
 
-Therefore, don't lose money discovering bugs in production, prevent it with a simple method, use tests in the development stage. In this article, we will present one type of test that can be made with Java softwares, how to create and run them in the development stage. At the end, you will be ready to configure your project with tests libraries, plan the scenarios that will be tested, create the tests and mocks and finally, prevent bugs in production.  
+So, don't lose money discovering bugs in production. Prevent it with a simple method, use tests in the development stage. Here you will learn one type of test for Java projects, and how to create and run them in during development. At the end, you will be ready to configure your project with tests. Use libraries, plan the scenarios and create the tests and mocks. Finally, you will prevent bugs in production.  
 
 ## Prevent bugs with Unit Test
 
@@ -237,7 +237,11 @@ not comparing, it just is showing the example libraries to each requirements to 
 * ~~change the section create unit test~~
 * review conclusion
 * change TDD to refer, but not the main point, just to future
-* Review with editor with dictionary
+* Review with editor with dictionary: 
+* https://www.grammarly.com/
+* https://prowritingaid.com/Premium
+* https://languagetool.org/pt-BR
+* https://hemingwayapp.com/
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
 * ask to someone review
