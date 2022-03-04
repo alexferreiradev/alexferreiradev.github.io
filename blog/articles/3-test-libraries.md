@@ -203,6 +203,8 @@ are following:
 
 ## Conclusion
 
+In this article you learned how to prevents bugs with unit tests, the libraries that you can use to create the tests and mocks and now you can prevents bug in production. 
+
 The two libraries are enought to a developer create unit tests to his software. However, the developers need to pay
 attention to the versions and the compatibility between them. Therefore, the Junit offer a Platform to run tests and the
 EasyMock offer a way to isolate the unit from the its dependencies. There are anothers libraries, but this article is
