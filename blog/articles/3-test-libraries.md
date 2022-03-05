@@ -235,7 +235,7 @@ I am a Java Developer that help anothers Java developers to apply tests techiniq
 * ~~remove refer to tdd in the creation section~~
 * ~~change the section create unit test~~
 * ~~review conclusion~~
-* change TDD to refer, but not the main point, just to future
+* ~~change TDD to refer, but not the main point, just to future~~
 * Review with editor with dictionary: 
 * https://www.grammarly.com/
 * https://prowritingaid.com/Premium
