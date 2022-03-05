@@ -194,8 +194,7 @@ So, at this point, if we run the test with maven: `mvn test` or with gradle: `gr
 ### Versions used in this example
 
 The example used in theses tutorial is hosted
-by [Github](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques). The versions used
-are following:
+by [Github](https://github.com/alexferreiradev/tecnologias_java/tree/test-techniques/test-techniques). The versions used are following:
 
 * Junit: 5
 * EasyMock: 4.3
@@ -203,12 +202,10 @@ are following:
 
 ## Conclusion
 
-In this article you learned how to prevents bugs with unit tests, the libraries that you can use to create the tests and mocks and now you can prevents bug in production. 
+In this article you learned how to prevents bugs with unit tests, the libraries that you can use to create the tests and mocks and now you can prevents bugs in production. The two libraries used in this article are enought to a developer create unit tests to his software. However, the developers need to pay
+attention to the versions and the compatibility between them. There are anothers libraries to solve the same problem that we will cover in future articles. 
 
-The two libraries are enought to a developer create unit tests to his software. However, the developers need to pay
-attention to the versions and the compatibility between them. Therefore, the Junit offer a Platform to run tests and the
-EasyMock offer a way to isolate the unit from the its dependencies. There are anothers libraries, but this article is
-not comparing, it just is showing the example libraries to each requirements to create tests.
+I am a Java Developer that help anothers Java developers to apply tests techiniques in software development, So they deliver stable features faster without breaking things.
 
 # TODO
 
@@ -237,7 +234,7 @@ not comparing, it just is showing the example libraries to each requirements to 
 * ~~change the mock to be the prevent bugs, after, we will present the libraries, just in the next session~~ 
 * ~~remove refer to tdd in the creation section~~
 * ~~change the section create unit test~~
-* review conclusion
+* ~~review conclusion~~
 * change TDD to refer, but not the main point, just to future
 * Review with editor with dictionary: 
 * https://www.grammarly.com/
