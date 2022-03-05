@@ -205,7 +205,7 @@ by [Github](https://github.com/alexferreiradev/tecnologias_java/tree/test-techni
 In this article you learned how to prevents bugs with unit tests, the libraries that you can use to create the tests and mocks and now you can prevents bugs in production. The two libraries used in this article are enought to a developer create unit tests to his software. However, the developers need to pay
 attention to the versions and the compatibility between them. There are anothers libraries to solve the same problem that we will cover in future articles. 
 
-I am a Java Developer that help anothers Java developers to apply tests techiniques in software development, So they deliver stable features faster without breaking things.
+I am a Java Developer that help anothers Java developers to apply tests techiniques in software development, so they deliver stable features faster without break things.
 
 # TODO
 
