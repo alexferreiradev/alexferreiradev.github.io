@@ -231,17 +231,20 @@ I am a Java Developer that help anothers Java developers to apply tests techiniq
 * ~~Add infos to sections~~
 * ~~Review the writing~~
 * ~~Doc review from Bruno~~
-~~* Plan the sections according to Bruno review~~
+* ~~Plan the sections according to Bruno review~~
 * ~~change the mock to be the prevent bugs, after, we will present the libraries, just in the next session~~ 
 * ~~remove refer to tdd in the creation section~~
 * ~~change the section create unit test~~
 * ~~review conclusion~~
 * ~~change TDD to refer, but not the main point, just to future~~
-* Review with editor with dictionary: 
-* https://www.grammarly.com/
-* https://prowritingaid.com/Premium
-* https://languagetool.org/pt-BR
+* ~~Review with editor with dictionary:~~ 
+* ~~https://www.grammarly.com/~~
+* ~~https://prowritingaid.com/Premium~~
+* ~~https://languagetool.org/pt-BR~~
 * https://hemingwayapp.com/
+* ~~review project exemplo~~
+* review sc: mock
+* review sc: create uni test
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
 * ask to someone review
