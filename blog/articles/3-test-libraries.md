@@ -26,8 +26,7 @@ Now, you know about unit test and mocks. Before starting creating a tests, we ne
 * Junit
 * EasyMock
 
-The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that help you to isolate the test creating mocks for you. In the next sections, you will see the concepts and how to use theses libraries in development proccess and in the end, you will find the full example of a project with theses libraries in a github repository.
-
+The first one is a platform that help a java developer to create tests and run in a JVM. The second is a library that help you to isolate the test creating mocks for you. In the next sessions, you will learn how to use theses libraries in development proccess.  In the end, you will find the full example of a project with theses libraries in a github repository.
 ### Project example
 
 So, let define some project to exemplify the use of the java test libraries. This project is simple, it generates a PDF certificate to participants of an event. So, there are two features in this project:
@@ -35,7 +34,7 @@ So, let define some project to exemplify the use of the java test libraries. Thi
 - Generate a certificate in PDF format
 - Generate a certificate metada in JSON format
 
-So, the project can be designed to have these classes:
+So, we designed the project to have these classes:
 
 **GenerateCertificate**
 
