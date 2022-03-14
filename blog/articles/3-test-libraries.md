@@ -84,7 +84,7 @@ instances of the exportService is called.
 
 ### First unit test
 
-After plan the test, you can implement with Junit and EasyMock. A Test with `Junit 5` can be created with a Class that
+After plan the test, develop it with Junit and EasyMock. We can create a Test with `Junit 5` with a Class that
 had `@Test` above a method. So, the method annotated is the first scenario.
 
 **GenerateCertificateTest**
