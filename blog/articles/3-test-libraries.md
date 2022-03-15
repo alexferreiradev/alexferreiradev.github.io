@@ -102,7 +102,7 @@ public class GenerateCertificateTest {
 } 
 ```
 
-After we need to create a instance of our unit that we will be tested: `GenerateCertificate`. After, we need to call the
+We created a test for some unit. Now we need to create a instance of our unit: `GenerateCertificate`. After, we need to call the
 method to test our scenario inside the method of the test with the correct inputs:
 
 ```java
