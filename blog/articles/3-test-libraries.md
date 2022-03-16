@@ -102,7 +102,7 @@ public class GenerateCertificateTest {
 } 
 ```
 
-We created a test for some unit. Now we need to create a instance of our unit: `GenerateCertificate`. After, we need to call the
+We created a test for the unit. Now we need to create a instance of our unit: `GenerateCertificate`. After, we need to call the
 method to test our scenario inside the method of the test with the correct inputs:
 
 ```java
@@ -125,8 +125,7 @@ class GenerateCertificateTest {
 }
 ```
 
-After, we need to create the scenario that will be validated. For this propose we need to create mocks and asserts. We
-use the EasyMock library in this example:
+After, We use the EasyMock library  to create mocks and call's verification.  So, we can create a scenario to test some code flux. See the example above:
 
 ```java
 import dev.alexferreira.testtechniques.example.certificate.model.Certificate;
