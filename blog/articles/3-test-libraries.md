@@ -170,8 +170,8 @@ class GenerateCertificateTest extends EasyMockSupport {
 
 Let's analyse the test:
 
-* line 1 - 2: define a mock exportService to be used to construct
-* line 4: define that the object that will use the mock will be created by the filed annotated.
+* line 1 - 2: define a mock exportService. The annotation specific to create an instance without any behavior.
+* line 4: create a instance of the unit and inject the mocks.
 * line 5: define the object that will be tested and injected the mocks
 * line 7-16: define the block to test, what will be executed by Junit
 * line 10: call replayAll to expecify to EasyMock that the mocks will be used after that point.
