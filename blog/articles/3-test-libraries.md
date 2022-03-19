@@ -172,11 +172,10 @@ Let's analyse the test:
 
 * line 1 - 2: define a mock exportService. The annotation specific to create an instance without any behavior.
 * line 4: create a instance of the unit and inject the mocks.
-* line 5: define the object that will be tested and injected the mocks
-* line 7-16: define the block to test, what will be executed by Junit
-* line 10: call replayAll to expecify to EasyMock that the mocks will be used after that point.
-* line 15: call verifyAll to expecify to EasyMock that need to verify all calls in all mocks created and throw an error
-  when some call are not expected.
+* line 5: define the object to test and inject the mocks
+* line 7-16: define the block to test and Junit execute it
+* line 10: call `replayAll` to specify for EasyMock the mocks to verify after that point.
+* line 15: call `verifyAll` to configure EasyMock to verify all calls in all mocks created. It will throw an error when some call are not expected.
 
 The test will verify if when we call the generateCertificate(), will be called the exportPDFFile() method from
 exportService mock. If it was not called, the test will fail.
