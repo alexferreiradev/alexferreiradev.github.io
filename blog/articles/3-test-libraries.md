@@ -177,12 +177,9 @@ Let's analyse the test:
 * line 10: call `replayAll` to specify for EasyMock the mocks to verify after that point.
 * line 15: call `verifyAll` to configure EasyMock to verify all calls in all mocks created. It will throw an error when some call are not expected.
 
-The test will verify if when we call the generateCertificate(), will be called the exportPDFFile() method from
-exportService mock. If it was not called, the test will fail.
+The test will verify the calls to `generateCertificate`. If `exportPDFFile()` was not called, the test will fail.
 
-Therefore, the EasyMock will help you to validate that the logic to use the dependencies from your unit in the expected
-way. You can see more freatures from EasyMock at
-the [official documentation](https://easymock.org/user-guide.html#verification).
+Therefore, the EasyMock will help you to validate the unit dependencies behaviors. You can see more features from EasyMock at the [official documentation](https://easymock.org/user-guide.html#verification).
 
 ### Running a test
 
