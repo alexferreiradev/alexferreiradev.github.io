@@ -183,7 +183,7 @@ Therefore, the EasyMock will help you to validate the unit dependencies behavior
 
 ### Running a test
 
-So, at this point, if we run the test with maven: `mvn test` or with gradle: `gradlew test`, the test will fail, because we did not implement the method like the test expect. TDD (Test driven development) propose these, you define the test, after you implement it. According to TDD principle, after creating the test, we should implement the unit in a cycle step: run test, implement/fix, run test. So, the implementation is incomplete until the test had passed. More information about TDD can be found [here](https://en.wikipedia.org/wiki/Test-driven_development).
+So, at this point, we can run the test with maven: `mvn test` or with gradle: `gradlew test`. The test will fail, because we did not implement the function like the test expect. According to Test driven development (TDD), we should implement the unit in a cyclic process. You need run test, implement/fix and run test. So, the implementation is incomplete until the test had passed. Find more information about TDD [here](https://en.wikipedia.org/wiki/Test-driven_development).
 
 ### Versions used in this example
 
