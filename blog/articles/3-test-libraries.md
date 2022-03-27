@@ -13,7 +13,8 @@ scenario in isolated way.
 
 ### Mock
 
-In a unit test, the main goal is to test some behavior from one unit (a class in Java). A mock is a way to create a object that the unit that you are testing depends on. So, If you are testing a Class called ExportToJsonService and this class depends on a another class called FileService, you can test the ExportToJsonService without instantiate the real FileService implementation, you can use some library to create a Mock of FileService. The mock will be a object of FileService, but without any implementation of the behaviors from the real implementation.
+In a unit test, the main goal is to test some behavior from one unit (a class in Java). A mock is a way to create a object that the unit that you are testing depends on. So, If you are testing a Class called `ExportToJsonService` and this class depends on a another class called `FileService`, you can test the `ExportToJsonService` without instantiate the real `FileService` implementation, you can use some library to create a Mock of `FileService`. The mock will be a object of `FileService`, but without any implementation of the behaviors from the real implementation.
+
 ## Create a unit test
 
 Now, you know about unit test and mocks. Before starting creating a tests, we need libraries to don't reinvent the wheel. There are two Java libraries that can help you to create unit tests in JAVA:
