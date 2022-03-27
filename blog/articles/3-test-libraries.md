@@ -233,8 +233,6 @@ I am a Java Developer that help another Java developers to apply tests technique
 * ~~https://languagetool.org/pt-BR~~
 * ~~https://hemingwayapp.com/~~
 * ~~review project exemplo~~
-* review sc: mock
-* review sc: create uni test
 * fix the code, put two methods in export pdf and json
 * fix the code in repository
 * ask to someone review
