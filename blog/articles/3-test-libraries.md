@@ -2,7 +2,7 @@
 
 ![Image to all is fine](https://www.meme-arsenal.com/memes/f146fd499738ead5ef3b2ee576ef3271.jpg)
 
-A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause. A very simple software error, the developer omitted an hyfen in a line of code. That sent an incorrect guidance signals to to the spacecraft. The cost of the omission turned out to be more than $18 million at the time (about $169 million in today’s currency).
+A bug in software development is common, but some times it can cost a lot. The most known case of a bug that cost million of dollars was the Mariner 1 spacecraft. An investigation revealed the cause. A very simple software error, the developer omitted an hyphen in a line of code. That sent an incorrect guidance signals to to the spacecraft. The cost of the omission turned out to be more than $18 million at the time (about $169 million in today’s currency).
 
 So, don't lose money discovering bugs in production. Prevent it with a simple method, use tests in the development stage. Here you will learn one type of test for Java projects, and how to create and run them in during development. At the end, you will be ready to configure your project with tests. Use libraries, plan the scenarios and create the tests and mocks. Finally, you will prevent bugs in production.  
 
