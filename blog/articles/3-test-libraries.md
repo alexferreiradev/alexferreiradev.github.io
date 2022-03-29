@@ -59,7 +59,9 @@ public class GenerateCertificate {
 ```java
 public interface ExportService {
 
-    void export(Certificate certificate);
+    void exportJsonFile(Certificate certificate);
+
+    void exportPDFFile(Certificate certificate);
 
 }
 ```
@@ -233,8 +235,8 @@ I am a Java Developer that help another Java developers to apply tests technique
 * ~~https://languagetool.org/pt-BR~~
 * ~~https://hemingwayapp.com/~~
 * ~~review project exemplo~~
-* fix the code, put two methods in export pdf and json
-* fix the code in repository
+~~* fix the code, put two methods in export pdf and json~~
+~~* fix the code in repository~~
 * ask to someone review
 
   next
