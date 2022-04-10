@@ -235,22 +235,12 @@ I am a Java Developer that help another Java developers to apply tests technique
 * ~~https://languagetool.org/pt-BR~~
 * ~~https://hemingwayapp.com/~~
 * ~~review project exemplo~~
-~~* fix the code, put two methods in export pdf and json~~
-~~* fix the code in repository~~
-* ask to someone review
-
-  next
-* Explain how to debug a test and how can be usefull
-* Explain how the mock work and can be used (only mainly features)
-* Create a post of Junit 4 and 5
-* Create a post of EasyMock (Explain all features and limitations)
-* Add TODO to new posts with a task to put link to the new posts
-* 
-* Add second test section
-* Explain that this test is according to bussiness rules
-* List the business rules and validations
-* Explain how to create the next tests or find the test that are missing
-* Add a section of line coverage
+* ~~fix the code, put two methods in export pdf and json~~
+* ~~fix the code in repository~~
+* ~~ask to someone review~~
+* decidir qual a melhor forma de guardar historico de 5 minutos
+* organizar branch
+* mergiar na develop
 
 MM 
 plan 2
