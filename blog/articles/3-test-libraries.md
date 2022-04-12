@@ -313,22 +313,31 @@ plan 2
             EasyMock Detailed
         Benefits using unit tests
     formas de organizar git repo
-        squash de tudo ? 
-            nao guarda data e hora de commits ?
+        existe forma de exportar uma branch ?
+            desde a base até ultimo commit ?
+            qual formato de arquivo ?
+                somente infos de datas
+                    git log --branches --tags --remotes --full-history --date-order --format='%ai %an <%ae> %h %f'
+                diff
+                    teria que ser um snapshot do git todo
+            teria que ser via script ?
+            pesq
+                <https://stiltsoft.com/blog/2020/11/how-to-export-commit-and-pull-request-data-from-bitbucket-to-csv/?utm_source=atlassian-community&utm_medium=answer&utm_campaign=graphs-traffic-sources&utm_content=export-the-full-commit-history-sourcetree>
+                git ofcial
+                    <https://git-scm.com/docs/git-fast-export>
+                    <https://git-scm.com/docs/git-bundle>
+        Criar arquivo metadados ?
+            mover datas de commits para arquivo ?
+            seria dificil extrair datas dos commits ?
+            teria que ser via script ?
+        manter diffs em zip ?
+            podemos manter toda a branch ?
+            como copiar estes arquivos do git ?
+            teria que ser via script ?
         manter todos commits ?
             fica muito grande o historico de branches
-        Criar arquivo metadados ?
-            mover datas de commits para arquivo ? 
-            seria dificil extrair datas dos commits ? 
-            teria que ser via script ? 
-        manter diffs em zip ?
-            podemos manter toda a branch ? 
-            como copiar estes arquivos do git ? 
-            teria que ser via script ? 
-        existe forma de exportar uma branch ? 
-            desde a base até ultimo commit ? 
-            qual formato de arquivo ? 
-            teria que ser via script ? 
+        squash de tudo ?
+            nao guarda data e hora de commits ?
     tasks
         done
             list the problems
@@ -358,18 +367,19 @@ plan 2
                             about losing money with bugs
                             news with
                                 software error
-                                    <https://raygun.com/blog/costly-software-errors-history/> <https://raygun.com/blog/costly-software-errors-history/>>
+                                    <https://raygun.com/blog/costly-software-errors-history/> <https://raygun.com/blog/costly-software-errors-history/>> <https://raygun.com/blog/costly-software-errors-history/>>
                                         marine
                                         the morris worm
                                         bitcoin hack
                                 Software to marketplace
                                     wrong price
-                                        <https://querysprout.com/amazon-price-mistake-policy/> <https://querysprout.com/amazon-price-mistake-policy/>> <https://querysprout.com/amazon-price-mistake-policy/>>
-                                        <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8> <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>> <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>>
+                                        <https://querysprout.com/amazon-price-mistake-policy/> <https://querysprout.com/amazon-price-mistake-policy/>> <https://querysprout.com/amazon-price-mistake-policy/>> <https://querysprout.com/amazon-price-mistake-policy/>>
+                                        <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8> <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>> <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>> <https://help.vtex.com/tutorial/troubleshooting-price-divergence-errors-in-marketplace-orders--6MbmPX4SKyRkcTJxVhRna8>>
                                     Wrong calculation
                                     not finalise the order
                                 Software to car
                                 software to airplane
                     prevent bugs
         melhor forma de organizar branchs
+
 
