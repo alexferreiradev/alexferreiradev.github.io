@@ -326,6 +326,11 @@ plan 2
                 git ofcial
                     <https://git-scm.com/docs/git-fast-export>
                     <https://git-scm.com/docs/git-bundle>
+                    fast-export
+                        nao exporta em arquivo, e sim em output
+                        fazer teste de import 
+                            ver oq restaura
+                            tem que ser em novo repo para nao correr risco de perder nada
         Criar arquivo metadados ?
             mover datas de commits para arquivo ?
             seria dificil extrair datas dos commits ?
