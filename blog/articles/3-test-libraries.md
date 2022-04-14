@@ -331,6 +331,10 @@ plan 2
                         fazer teste de import 
                             ver oq restaura
                             tem que ser em novo repo para nao correr risco de perder nada
+                            tasks
+                                done
+                                    create repo 
+                                    criar branch 
         Criar arquivo metadados ?
             mover datas de commits para arquivo ?
             seria dificil extrair datas dos commits ?
@@ -385,6 +389,8 @@ plan 2
                                 Software to car
                                 software to airplane
                     prevent bugs
-        melhor forma de organizar branchs
+            melhor forma de organizar branchs
+                transferido tarefa para focus
+
 
 
