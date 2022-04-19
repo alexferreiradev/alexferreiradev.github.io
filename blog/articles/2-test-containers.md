@@ -15,28 +15,44 @@ temp tcdb
         dev pleno
     sessões do artigo
         intro
+            relevancia para problema
+            problema
+            Intro de solucao
         lib test containers
+            background 
+            funcionalidades
         uso 
             configuração
-            funcionalidades
-            examples de uso
+            examples de funcao 
+                local
+                compartilhado
             ref ao artigo de como usar
         conclusao
             exemplos de outras libs similares
             limitações
     tasks
         done
+            criar branch
+            criar post .md
+            iniciar 5 minutes
         plan
-            planejar problema
-            decidir publico
-            plan sections
+            done
+                planejar problema
+                decidir publico
+                plan sections
+        criar todo em md
+        next plans
+            pesq conteudos
+                libs similares a testContainers
+                custo de montar ambiente stg
+                    replicar prd
+                custo operacional
+                    ter equipe dedicada
+                listar problemas de nao usar lib
             plan code
             plan the conclusion
             plan cronograma
-        criar branch
-        criar post .md
-        criar todo em md
-        iniciar 5 minutes
+
 
 
 
