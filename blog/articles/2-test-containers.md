@@ -21,16 +21,23 @@
 ## MM
 temp tcdb
     Problema
-        construção de ambiente grande para testes integracao
-        muita configuração para rodar testes de integracao
-        ambiente diferente para cada dev
-        teste dependente de plataforma
-        custo alto para ambiente de QA
-        equipes com stack de tecnologias engessadas
-            devido alto custo de montar diferentes arquiteturas de testes
+        dores
+            construção de ambiente grande para testes integracao
+            muita configuração para rodar testes de integracao
+            ambiente diferente para cada dev
+            teste dependente de plataforma
+            custo alto para ambiente de QA
+            equipes com stack de tecnologias engessadas
+                devido alto custo de montar diferentes arquiteturas de testes
+        custo para testar
     publico
         dev junior 
         dev pleno
+    AIDA
+        action
+        des
+        i
+        A
     sessões do artigo
         intro
             relevancia para problema
@@ -60,18 +67,23 @@ temp tcdb
                 plan sections
             criar sections
         think about intro
+        pesq conteudos
+            custo de ambiente 
+                custo de servidor 
+                noticia sobre custo
+                blog que referencia custo
+            custo de montar ambiente stg
+                replicar prd
+            custo operacional
+                ter equipe dedicada
+            listar problemas de nao usar lib
+            total de trabalhos remotos 
+            libs similares a testContainers
         extract info from oficial site 
         list main features
         list real problems
         next plans
-            pesq conteudos
-                libs similares a testContainers
-                custo de montar ambiente stg
-                    replicar prd
-                custo operacional
-                    ter equipe dedicada
-                listar problemas de nao usar lib
-                total de trabalhos remotos 
             plan code
             plan the conclusion
             plan cronograma
+
