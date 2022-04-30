@@ -1,7 +1,9 @@
 # Waste less money, use testContainers
 
-- problem in Pipeline, IT, dev Proccess, remote works
-- intro to solution
+The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. 
+- data with the costs
+So, to waste less money there are two tools, docker and testContainers. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your testing system.
+  In this article we will show how to use these tools to create your test enviroument and have a lowest cost.
 
 ## Test Containers library
 - background
@@ -31,7 +33,7 @@ temp tcdb
                 devido alto custo de montar diferentes arquiteturas de testes
         custo para testar
     publico
-        dev junior 
+        dev junior
         dev pleno
     AIDA
         action
@@ -41,14 +43,22 @@ temp tcdb
     sessões do artigo
         intro
             relevancia para problema
+                dados 
             problema
+                alto custo para ambiente de testes ou stg
+                inflexibilidade de ambiente stg
             Intro de solucao
+                Existencia de libraries
+                docker 
+                    oq resolve
+                test containers
+                    oq resolve
         lib test containers
-            background 
+            background
             funcionalidades
-        uso 
+        uso
             configuração
-            examples de funcao 
+            examples de funcao
                 local
                 compartilhado
             ref ao artigo de como usar
@@ -66,24 +76,27 @@ temp tcdb
                 decidir publico
                 plan sections
             criar sections
-        think about intro
+            think about intro
         pesq conteudos
-            custo de ambiente 
-                custo de servidor 
+            custo de ambiente
+                custo de servidor
+                    <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>
                 noticia sobre custo
                 blog que referencia custo
+                    <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>
             custo de montar ambiente stg
                 replicar prd
             custo operacional
                 ter equipe dedicada
             listar problemas de nao usar lib
-            total de trabalhos remotos 
+            total de trabalhos remotos
             libs similares a testContainers
-        extract info from oficial site 
+        extract info from oficial site
         list main features
         list real problems
         next plans
             plan code
             plan the conclusion
             plan cronograma
+
 
