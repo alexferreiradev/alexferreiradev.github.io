@@ -5,8 +5,15 @@ The devOps help us a lot, but just a big infrastructure don't resolve the proble
 So, to waste less money there are two tools, docker and testContainers. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your testing system.
   In this article we will show how to use these tools to create your test enviroument and have a lowest cost.
 
-## Test Containers library
-- background
+## Creating infrastructure with Docker
+- What is the problem to solve: pipeline compartilhado
+- What is docker
+- how it works
+- how can solve your problem
+
+## Provisioning with TestContainers library
+- what is
+- what env can I use
 - main features
 
 ## Using Test Containers
