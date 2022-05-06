@@ -2,6 +2,8 @@
 
 The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments are of higher cost. 
 - data with the costs
+- : AWS: 327$ + 3$ = 330$ monthly
+
 So, to waste less money there are two tools, docker and testContainers. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your testing system.
   In this article we will show how to use these tools to create your test environment and have a lowest cost.
 
