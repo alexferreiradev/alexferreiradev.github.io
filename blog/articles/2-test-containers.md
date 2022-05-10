@@ -2,6 +2,7 @@
 
 The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments are of higher cost. 
 - data with the costs
+According with [cost] the cost to create a server is 2k until 15k. Its is a higher cost depends on the company. 
 - : AWS: 327$ + 3$ = 330$ monthly
 
 So, to waste less money there are two tools, docker and testContainers. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your testing system.
@@ -28,6 +29,8 @@ So, to waste less money there are two tools, docker and testContainers. The dock
 - limitations 
 - Others libs examples
 
+
+[cost]: https://www.servermania.com/kb/articles/how-much-does-a-typical-home-server-cost/
 
 ## MM
 temp tcdb
