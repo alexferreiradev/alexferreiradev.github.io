@@ -4,6 +4,9 @@ The devOps help us a lot, but just a big infrastructure don't resolve the proble
 - data with the costs
 According with [cost] the cost to create a server is 2k until 15k. Its is a higher cost depends on the company. 
 - : AWS: 327$ + 3$ = 330$ monthly
+- R$6.99 – R$799.99+/mês para manter um servidor
+- Um servidor de pequeno porte mantido numa sala com ar condicionado consome pelo menos R$ 250,00 por mês.
+  Isso custa cerca de R$ 3.000,00 por ano.[https://blog.unimake.com.br/gemini/7-despesas-que-sua-empresa-vai-ter-com-um-servidor-de-backup-interno/]
 
 So, to waste less money there are two tools, docker and testContainers. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your testing system.
   In this article we will show how to use these tools to create your test environment and have a lowest cost.
@@ -91,14 +94,17 @@ temp tcdb
             think about intro
         pesq conteudos
             custo de ambiente
-                custo de servidor
-                    <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
-                    list sites of servers
-                        the lower cost
-                    stimate a cost with AWS
-                noticia sobre custo
-                blog que referencia custo
-                    <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                done
+                    blog que referencia custo
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                    custo de servidor
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        list sites of servers
+                            the lower cost
+                        stimate a cost with AWS
+                    noticia sobre custo
+                        pesq e ver tem tem
+                            senao deixa soh custo estimado de server mania
             custo de montar ambiente stg
                 replicar prd
             custo operacional
