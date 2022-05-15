@@ -1,4 +1,4 @@
-# Waste less money, use testContainers
+# Stop suffering with tests, use TestContainers
 
 The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments are of higher cost. 
 - data with the costs
