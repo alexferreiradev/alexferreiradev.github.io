@@ -14,6 +14,8 @@ So, to waste less money and continue increasing the delivery quality, in this ar
   In this article we will show how to use these tools to create your test environment and have a lowest cost.
 
 ## Creating infrastructure with Docker
+
+All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The library TestContainers make easy   
 - What is the problem to solve: pipeline compartilhado
 - What is docker
 - how it works
