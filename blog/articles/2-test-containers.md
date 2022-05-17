@@ -85,6 +85,27 @@ temp tcdb
             exemplos de outras libs similares
             limitações
     titulo
+    apresentação CPGoias 2
+        publico
+            devs goianos junior e plenos
+        topicos
+            intro 
+            test containers
+                resolve qual problema
+                funcoes
+            wiremock
+        pratica
+            apresentar sistema
+                infra
+                funcao do servico
+                diagrama de atividades
+            testes cotidianos
+                entradas e saidas
+                testes de erros
+            Conclusao
+                formas de usar libs
+        tasks
+            done
     tasks
         done
             criar branch
@@ -123,3 +144,4 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
+
