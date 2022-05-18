@@ -86,26 +86,35 @@ temp tcdb
             limitações
     titulo
     apresentação CPGoias 2
-        publico
-            devs goianos junior e plenos
-        topicos
-            intro 
-            test containers
-                resolve qual problema
-                funcoes
-            wiremock
-        pratica
-            apresentar sistema
-                infra
-                funcao do servico
-                diagrama de atividades
-            testes cotidianos
-                entradas e saidas
-                testes de erros
-            Conclusao
-                formas de usar libs
-        tasks
-            done
+    publico
+        devs goianos junior e plenos
+    topicos
+        intro 
+        test containers
+            resolve qual problema
+            funcoes
+        wiremock
+    pratica
+        apresentar sistema
+            infra
+            funcao do servico
+            diagrama de atividades
+        testes cotidianos
+            entradas e saidas
+            testes de erros
+        Conclusao
+            formas de usar libs
+    tasks
+        done
+        create slides contents
+        create slides
+        create open certificate branch
+        add diagrams to
+            interfaces
+        add integration tests 
+            interfaces
+        add api use with feign
+            use interface
     tasks
         done
             criar branch
