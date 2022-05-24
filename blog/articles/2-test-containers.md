@@ -86,35 +86,41 @@ temp tcdb
             limitações
     titulo
     apresentação CPGoias 2
-    publico
-        devs goianos junior e plenos
-    topicos
-        intro 
-        test containers
-            resolve qual problema
-            funcoes
-        wiremock
-    pratica
-        apresentar sistema
-            infra
-            funcao do servico
-            diagrama de atividades
-        testes cotidianos
-            entradas e saidas
-            testes de erros
-        Conclusao
-            formas de usar libs
-    tasks
-        done
-        create slides contents
-        create slides
-        create open certificate branch
-        add diagrams to
-            interfaces
-        add integration tests 
-            interfaces
-        add api use with feign
-            use interface
+        publico
+            devs goianos junior e plenos
+        topicos
+            intro
+            test containers
+                resolve qual problema
+                funcoes
+            wiremock
+                resolve qual problema
+                funcoes
+        tempo
+            25 a 55 minutos
+                com tempo de perguntas
+        pratica
+            apresentar sistema
+                infra
+                funcao do servico
+                diagrama de atividades
+            testes cotidianos
+                entradas e saidas
+                testes de erros
+            Conclusao
+                formas de usar libs
+        tasks
+            done
+                leitura de regulamento CPGO2
+            create slides contents
+            create slides
+            create open certificate branch
+            add diagrams to
+                interfaces
+            add integration tests
+                interfaces
+            add api use with feign
+                use interface
     tasks
         done
             criar branch
@@ -130,9 +136,9 @@ temp tcdb
             custo de ambiente
                 done
                     blog que referencia custo
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                     custo de servidor
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                         list sites of servers
                             the lower cost
                         stimate a cost with AWS
@@ -153,4 +159,3 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
-
