@@ -15,16 +15,10 @@ So, to waste less money and continue increasing the delivery quality, in this ar
 
 ## Creating infrastructure with Docker
 
-All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. 
-- What is the problem to solve: pipeline compartilhado
-- What is docker
-- how it works
-- how can solve your problem
+All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The Docker is a tool that can help the dev to run each dependency in containers. More about docker can be found here: [Docker Official](https://docs.docker.com/)
 
 ## Provisioning with TestContainers library
-- what is
-- what env can I use
-- main features
+The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. More information can be found here: [TestContainers](https://www.testcontainers.org/quickstart/junit_5_quickstart/)
 
 ## Using Test Containers
 - configuration
