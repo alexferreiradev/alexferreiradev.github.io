@@ -21,7 +21,13 @@ All softwares need some infra structure like database or a message broker. The b
 The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. More information can be found here: [TestContainers](https://www.testcontainers.org/quickstart/junit_5_quickstart/)
 
 ## Using Test Containers
-- configuration
+First of all, you need to add the library in your dependency management. In gradle you can do that:
+```groovy
+testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
+testImplementation "org.testcontainers:testcontainers:1.17.2"
+testImplementation "org.testcontainers:junit-jupiter:1.17.2"
+```
+You can follow the quick start from [quick-start2][quick-start1]
 - real use example
 - ref to new article 
 
@@ -32,6 +38,9 @@ The library `TestContainers` make it easy creating all the envirorment to your t
 
 
 [cost]: https://www.servermania.com/kb/articles/how-much-does-a-typical-home-server-cost/
+[TestContainers-quickstart]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
+[TestContainer-lib]: https://www.testcontainers.org/quickstart/junit_5_quickstart/#1-add-testcontainers-as-a-test-scoped-dependency
+[quick-start1]:[TestContainers-quickstart]
 
 ## MM
 temp tcdb
