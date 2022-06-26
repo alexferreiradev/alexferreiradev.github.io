@@ -51,7 +51,7 @@ temp tcdb
             ambiente diferente para cada dev
             teste dependente de plataforma
             custo alto para ambiente de QA
-            subir ambiente manualmente 
+            subir ambiente manualmente
             equipes com stack de tecnologias engessadas
                 devido alto custo de montar diferentes arquiteturas de testes
         custo para testar
@@ -77,8 +77,23 @@ temp tcdb
                 test containers
                     oq resolve
         lib test containers
-            background
             funcionalidades
+                data acess layer intergration tests
+                    implantar DB para seus testes
+                    manter mesma versao
+                application integration tests
+                    toda aplicação com dependencias
+                    tempo de vida curto
+                        somente o teste
+                ui acceptances tests
+                    teste de interfaces com containers de browsers como selenium
+                much more
+                    qualquer container que você criar 
+            background
+                suportado 
+                    jUnit4
+                    junit5
+                    spock 
         uso
             configuração
             examples de funcao
@@ -100,28 +115,31 @@ temp tcdb
                 plan sections
             criar sections
             think about intro
-        pesq conteudos
-            done
-                blog que referencia custo
-                    <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
-                custo de servidor
-                    <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
-                    list sites of servers
-                        the lower cost
-                    stimate a cost with AWS
-                noticia sobre custo
-                    pesq e ver tem tem
-                        senao deixa soh custo estimado de server mania
-                custo de ambiente
-                listar problemas de nao usar lib
-            custo de montar ambiente stg
-                replicar prd
-            custo operacional
-                ter equipe dedicada
-            total de trabalhos remotos
-            libs similares a testContainers
-        extract info from oficial site
-        list main features
+            pesq conteudos
+                done
+                    blog que referencia custo
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                    custo de servidor
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        list sites of servers
+                            the lower cost
+                        stimate a cost with AWS
+                    noticia sobre custo
+                        pesq e ver tem tem
+                            senao deixa soh custo estimado de server mania
+                    custo de ambiente
+                    listar problemas de nao usar lib
+                    custo de montar ambiente stg
+                        replicar prd
+                    custo operacional
+                        ter equipe dedicada
+                    total de trabalhos remotos
+                    libs similares a testContainers
+            extract info from oficial site
+                done
+                    funcionalidades
+                    requisitos
+            list main features
         list real problems
         next plans
             plan code
