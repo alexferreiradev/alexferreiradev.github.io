@@ -70,6 +70,7 @@ temp tcdb
             problema
                 alto custo para ambiente de testes ou stg
                 inflexibilidade de ambiente stg
+                diferentes ambientes entre a equipe
             Intro de solucao
                 Existencia de libraries
                 docker
@@ -88,12 +89,12 @@ temp tcdb
                 ui acceptances tests
                     teste de interfaces com containers de browsers como selenium
                 much more
-                    qualquer container que você criar 
+                    qualquer container que você criar
             background
-                suportado 
+                suportado
                     jUnit4
                     junit5
-                    spock 
+                    spock
         uso
             configuração
             examples de funcao
@@ -118,9 +119,9 @@ temp tcdb
             pesq conteudos
                 done
                     blog que referencia custo
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                     custo de servidor
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                         list sites of servers
                             the lower cost
                         stimate a cost with AWS
@@ -140,7 +141,18 @@ temp tcdb
                     funcionalidades
                     requisitos
             list main features
-        list real problems
+        plan sections
+            list real problems
+        write sections
+            done
+            intro
+            lib
+            uso
+            conclusao
+        lead magnet
+            create link to calendly to articles
+                a way to capture the email and create network
+            put link to calendly in article
         next plans
             plan code
             plan the conclusion
