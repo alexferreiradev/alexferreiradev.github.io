@@ -54,7 +54,13 @@ temp tcdb
             subir ambiente manualmente
             equipes com stack de tecnologias engessadas
                 devido alto custo de montar diferentes arquiteturas de testes
+        versao de plataformas
+            diferentes versoes na equipe de devs
+        configuracoes extras
+            repassar script para cada dev
         custo para testar
+            criar ambiente para pipeline de testes
+                aumenta o custo homologacao
     publico
         dev junior
         dev pleno
@@ -141,8 +147,8 @@ temp tcdb
                     funcionalidades
                     requisitos
             list main features
-        plan sections
-            list real problems
+            plan sections
+                list real problems
         write sections
             done
             intro
@@ -157,3 +163,4 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
+
