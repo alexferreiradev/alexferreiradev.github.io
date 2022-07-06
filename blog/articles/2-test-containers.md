@@ -1,6 +1,6 @@
 # Stop suffering with tests, use TestContainers
 
-The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments are of higher cost. 
+The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost.  
 - data with the costs
 According with [cost] the cost to create a server is 2k until 15k. Its is a higher cost depends on the company. 
 - : AWS: 327$ + 3$ = 330$ monthly
@@ -8,7 +8,7 @@ According with [cost] the cost to create a server is 2k until 15k. Its is a high
 - Um servidor de pequeno porte mantido numa sala com ar condicionado consome pelo menos R$ 250,00 por mês.
   Isso custa cerca de R$ 3.000,00 por ano.[https://blog.unimake.com.br/gemini/7-despesas-que-sua-empresa-vai-ter-com-um-servidor-de-backup-interno/]
 
-More over, the cost might be duplicated when need a envirorment to production and another to staging. According to theses, the cost to test can increase a lot with a two envirorment. 
+More over, the cost might be duplicated when need a envirorment to production and another to staging. According to theses, the cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms
 
 So, to waste less money and continue increasing the delivery quality, in this article we will show how can use two tools, docker and testContainers to decrease the cost to test systems with Java. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your testing system.
   In this article we will show how to use these tools to create your test environment and have a lowest cost.
