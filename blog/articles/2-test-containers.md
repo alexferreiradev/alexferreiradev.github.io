@@ -149,10 +149,16 @@ temp tcdb
                 list real problems
             review the sections
         criar projeto de exemplo
-            criar branch em openCertificate
+            done
+                criar branch em openCertificate
+                    test-containers-article
             criar config 
+            criar docker compose
+            criar lista de tarefas
             criar classes de teste
             criar teste de integracao
+                banco 
+                rodar migrations
         write sections
             done
                 intro
