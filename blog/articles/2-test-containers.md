@@ -152,8 +152,8 @@ temp tcdb
             done
                 criar branch em openCertificate
                     test-containers-article
-            criar config 
-            criar docker compose
+                criar config maven
+                criar docker compose
             criar lista de tarefas
             criar classes de teste
             criar teste de integracao
