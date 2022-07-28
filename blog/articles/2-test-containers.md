@@ -154,16 +154,28 @@ temp tcdb
                     test-containers-article
                 criar config maven
                 criar docker compose
-            criar lista de tarefas
+                criar lista de tarefas
+            configurar flyway no projeto
             criar classes de teste
+                container banco de dados
+                    rodar migrations
+                initializer containers compartilhado
+                initializer container local
+                classe abstract test integracao
             criar teste de integracao
                 banco 
-                rodar migrations
+                    repository
+                        insercao de dados
+                        busca de dados
+            integracao com spring
+                initializer
         write sections
             done
                 intro
                 lib
             uso
+                container compartilhado
+                container local
             conclusao
         lead magnet
             create link to calendly to articles
