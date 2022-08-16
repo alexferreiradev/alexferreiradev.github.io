@@ -155,20 +155,19 @@ temp tcdb
                 criar config maven
                 criar docker compose
                 criar lista de tarefas
-            configurar flyway no projeto
-            criar classes de teste
-                container banco de dados
-                    rodar migrations
-                initializer containers compartilhado
-                initializer container local
-                classe abstract test integracao
+                configurar flyway no projeto
+                criar classes de teste
+                    container banco de dados
+                        rodar migrations
+                    initializer containers compartilhado
+                    initializer container local
+                    classe abstract test integracao
             criar teste de integracao
                 banco 
                     repository
                         insercao de dados
                         busca de dados
-            integracao com spring
-                initializer
+                ajustar migrations com tdd
         write sections
             done
                 intro
