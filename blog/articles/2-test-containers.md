@@ -162,11 +162,16 @@ temp tcdb
                     initializer containers compartilhado
                     initializer container local
                     classe abstract test integracao
+                configurar para usuario de invillia ter permisao no git
+                    nao consigo fazer push no projeto
+            commit all branch 
+                push 
             criar teste de integracao
                 banco 
                     repository
                         insercao de dados
                         busca de dados
+                listar next tarefas 
                 ajustar migrations com tdd
         write sections
             done
@@ -184,3 +189,4 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
+
