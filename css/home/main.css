@@ -45,3 +45,13 @@ body {
 	justify-content: center;
 	color: #22781db3;
 }
+
+.github-link {
+	color: darkblue;
+	/*font-weight: bold;*/
+	font-style: italic;
+}
+
+.sub-item {
+	margin-left: 2em;
+}
