@@ -1,239 +1,337 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-type" content="text/html;charset=UTF8"/>
-	<title>Alex R. Ferreira</title>
+    <meta content="text/html;charset=UTF8" http-equiv="Content-type"/>
+    <title>Alex R. Ferreira</title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
-	<link rel="stylesheet" type="text/css" href="css/elements.css">
-	<link rel="stylesheet" type="text/css" href="css/commons.css">
-	<link rel="stylesheet" type="text/css" href="css/home/sections.css">
-	<link rel="stylesheet" type="text/css" href="css/home/header.css">
-	<link rel="stylesheet" type="text/css" href="css/home/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/home/main.css">
+    <link href="css/elements.css" rel="stylesheet" type="text/css">
+    <link href="css/commons.css" rel="stylesheet" type="text/css">
+    <link href="css/home/sections.css" rel="stylesheet" type="text/css">
+    <link href="css/home/header.css" rel="stylesheet" type="text/css">
+    <link href="css/home/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/home/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<section id="own-image" class="container-fluid">
-	<div class="row wrap-img">
-		<img src="img/perfil_208xy.png" class="medium-image profile-img rounded">
-	</div>
-	<div class="row">
-		<span class="col profile-text">Desenvolvedor desde 2012</span>
-	</div>
+<section class="container-fluid" id="own-image">
+    <div class="row wrap-img">
+        <img class="medium-image profile-img rounded" src="img/perfil_208xy.png">
+    </div>
+    <div class="row">
+        <span class="col profile-text">Sr. Backend Developer</span>
+    </div>
 </section>
-<section id="articles" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img src="img/home/article_icon_transparent.png" class="flex-center large-icon">
-			<span class="section-title row">Artigos</span>
-		</div>
-		<div class="col-md col-10">
-			<ul>
-				<li>
-					<a href="https://dev.to/alexferreiradev/dont-discover-bugs-in-production-use-unit-tests-27b0">Don't discover bugs in production, use unit tests</a>
-				</li>
-				<li>
-					<a href="https://dev.to/alexferreiradev/">Mais em dev.to</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+<section class="container card" id="articles">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/article_icon_transparent.png">
+            <span class="section-title row">Artigos</span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    <a href="https://dev.to/alexferreiradev/dont-discover-bugs-in-production-use-unit-tests-27b0">Don't
+                        discover bugs in production, use unit tests</a>
+                </li>
+                <li>
+                    <p>Saindo do forno um sobre test containers para testes de integração...</p>
+                </li>
+                <li>
+                    <a href="https://dev.to/alexferreiradev/">Mais em dev.to</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<section id="apps" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-12">
-			<img src="img/home/app_icon.png" class="flex-center large-icon">
-			<span class="section-title row">Aplicativos</span>
-		</div>
-		<div class="col-md col-12">
-			<ul>
-				<li>
-					<h3>SESI Venda-Online</h3>
-					Participação da equipe que mantém o aplicativo que utiliza ReactJS e está disponível para acesso por este <a href="https://www.sesigoias.com.br/venda-online">link</a>
-				</li>
-				<li>
-					<h3>Bewallet</h3>
-					Manutenção do aplicativo para fazer utilizar services do android para manter conexão via websocket com servidor e poder atualizar todos dados rapidamente. O
-					aplicativo esta disponível na PlayStore através deste <a href="https://play.google.com/store/apps/details?id=com.anfeli.bewallet">link</a>
-				</li>
-				<li>
-					<h3>Popular movies</h3>
-					<p>
-						Aplicativo criado durante o curso de Android da Udacity. Mostra os filmes cadastrados no site de filmes online the movie db.
-					</p>
-				</li>
-				<li>
-					<h3>Baking off</h3>
-					<p>
-						Aplicativo criado durante o curso de Android da Udacity. Mostra os ingredientes de receitas de doces.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+<section class="container card" id="talks">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/mic_icon.png">
+            <span class="section-title row">Palestras</span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    <h3>International Developer Career Day - 2022</h3>
+                    <p>
+                        Palestra sobre TestContainers + Wiremock + Quarkus em inglês. Demonstrei como configurar e criar
+                        testes para ambas bibliotecas. Os códigos podem ser encontrados no <a class="github-link"
+                                                                                              href="https://github.com/alexferreiradev/OpenCertificate/tree/international-dev-career-day-22/backend">Git
+                        Hub</a>.
+                    </p>
+                </li>
+                <li>
+                    <h3>Campus Party Goiás - 2022</h3>
+                    <p>
+                        Palestra sobre TestContainers + Wiremock + Quarkus. Demonstrei como configurar e criar testes
+                        para ambas bibliotecas. Os códigos podem ser encontrados no <a class="github-link"
+                                                                                       href="https://github.com/alexferreiradev/OpenCertificate/tree/cpgo2-22/backend">Git
+                        Hub</a>.
+                    </p>
+                </li>
+                <li>
+                    <h3>Campus Party Goiás - 2019</h3>
+                    <p>
+                    <ul class="sub-item">
+                        <li>Join Community: Palestra sobre TDD no mundo Android utilizando a linguagem Kotlin. Abordei
+                            como utilizar o MVP e realizar testes de unidade para todas camadas, desde a View
+                            até o Model. Os códigos podem ser encontrados no <a class="github-link"
+                                                                                href="http://www.github.com/alexferreiradev/CPBR-GO19">Git
+                                Hub</a>.
+                        </li>
+                        <li>
+							Jobs: Palestra sobre TDD com Easy Mock. Codigos podem ser encontrados no <a class="github-link" href="https://github.com/alexferreiradev/tecnologias_java/blob/test-techniques/test-techniques/src/test/java/dev/alexferreira/testtechniques/example/certificate/GenerateCertificateTest.java">Git Hub</a>
+                        </li>
+                    </ul>
+                    </p>
+                </li>
+                <li>
+                    <h3>DevFest Cerrado - 2018</h3>
+                    <p>
+                        Palestra sobre expressão regular e o uso com google functions. O hello world continha o uso de
+                        regex para recuperar o e-mail de um texto de apresentação. Os
+                        códigos podem ser encontrados no <a class="github-link"
+                                                            href="http://www.github.com/alexferreiradev/">Git Hub</a>.
+                    </p>
+                </li>
+                <li>
+                    <h3>Gojava - 2018</h3>
+                    <p>
+                        Palestra sobre expressão regular durante duas horas. Demonstrei de forma clara como criar . Os
+                        códigos podem ser encontrados no <a class="github-link"
+                                                            href="http://www.github.com/alexferreiradev/">Git Hub</a>.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<section id="opensource-projects" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img src="img/home/os_icon.png" class="flex-center large-icon">
-			<span class="section-title row">Projetos Open Source</span>
-		</div>
-		<div class="col-md col-10">
-			<ul>
-				<li>
-					<h3>TOMEE</h3>
-					<p>
-						Comecei a ajudar o projeto traduzindo algumas páginas de tutoriais oficiais do projeto para o português.
-					</p>
-				</li>
-				<li>
-					<h3>Gojava certificados</h3>
-					<p>
-						Criei um software para criar certificados de eventos organizados pela entidade através de um arquivo CSV com os dados dos participantes.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+<section class="container card" id="opensource-projects">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/os_icon.png">
+            <span class="section-title row">Projetos Open Source</span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    <h3><a href="https://github.com/alexferreiradev/OpenCertificate">Open Certificate</a></h3>
+                    <p>
+                        Criei um software para criar certificados de eventos organizados pela entidade através de um
+                        arquivo CSV com os dados dos participantes. Caso queira contribuir com o projeto, entre em
+                        contato comigo pelo: <a href="mailto:open.certificate@gmail.com">open.certificate@gmail.com</a>
+                    </p>
+                </li>
+                <li>
+                    <h3><a href="https://github.com/alexferreiradev/gerenciador_horas_trabalho">Horas de talento</a>
+                    </h3>
+                    <p>
+                        Criei um software para facilitar no lançamento de horas de trabalho com intervalos. Caso queira
+                        contribuir com o projeto, submeta seu PR.
+                    </p>
+                </li>
+                <li>
+                    <h3><a href="https://github.com/apache/tomee">TOMEE</a></h3>
+                    <p>
+                        Comecei a ajudar o projeto traduzindo algumas páginas de tutoriais oficiais do projeto para o
+                        português.
+                    </p>
+                </li>
+                <li>
+                    <h3><a href="https://github.com/alexferreiradev/gerador_certificado_java">Gerador de
+                        certificados</a></h3>
+                    <p>
+                        Criei um software para criar certificados de eventos organizados pela entidade através de um
+                        arquivo CSV com os dados dos participantes. Este projeto foi transformado em uma plataforma para
+                        o GOJAVA para geração e validação de certificados de eventos promovidos pela entidade, o Open
+                        Certificate.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<section id="talks" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img src="img/home/mic_icon.png" class="flex-center large-icon">
-			<span class="section-title row">Palestras</span>
-		</div>
-		<div class="col-md col-10">
-			<ul>
-				<li>
-					<h3>Campus Party Goiás - 2019</h3>
-					<p>
-						Palestra sobre TDD no mundo Android utilizando a linguagem Kotlin. Abordei como utilizar o MVP e realizar testes de unidade para todas camadas, desde a View
-						até o Model. Os códigos podem ser encontrados no <a href="http://www.github.com/alexferreiradev/CPBR-GO19">Git Hub</a>.
-					</p>
-				</li>
-				<li>
-					<h3>DevFest Cerrado - 2018</h3>
-					<p>
-						Palestra sobre expressão regular e o uso com google functions. O hello world continha o uso de regex para recuperar o e-mail de um texto de apresentação. Os
-						códigos podem ser encontrados no <a href="http://www.github.com/alexferreiradev/">Git Hub</a>.
-					</p>
-				</li>
-				<li>
-					<h3>Gojava - 2018</h3>
-					<p>
-						Palestra sobre expressão regular durante duas horas. Os códigos podem ser encontrados no <a href="http://www.github.com/alexferreiradev/">Git Hub</a>.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+<section class="container card" id="apps">
+    <div class="row">
+        <div class="col-md-4 col-12">
+            <img class="flex-center large-icon" src="img/home/app_icon.png">
+            <span class="section-title row">Aplicativos</span>
+        </div>
+        <div class="col-md col-12">
+            <ul>
+                <li>
+                    <h3>SESI Venda-Online</h3>
+                    Participação da equipe que mantém o aplicativo que utiliza ReactJS e está disponível para acesso por
+                    este <a href="https://www.sesigoias.com.br/venda-online">link</a>
+                </li>
+                <li>
+                    <h3>Bewallet</h3>
+                    Manutenção do aplicativo para fazer utilizar services do android para manter conexão via websocket
+                    com servidor e poder atualizar todos dados rapidamente. O
+                    aplicativo esta disponível na PlayStore através deste <a
+                        href="https://play.google.com/store/apps/details?id=com.anfeli.bewallet">link</a>
+                </li>
+                <li>
+                    <h3>Popular movies</h3>
+                    <p>
+                        Aplicativo criado durante o curso de Android da Udacity. Mostra os filmes cadastrados no site de
+                        filmes online the movie db.
+                    </p>
+                </li>
+                <li>
+                    <h3>Baking off</h3>
+                    <p>
+                        Aplicativo criado durante o curso de Android da Udacity. Mostra os ingredientes de receitas de
+                        doces.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<section id="events" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img src="img/home/upgrade_icon.png" class="flex-center large-icon">
-			<span class="section-title row">Eventos</span>
-		</div>
-		<div class="col-md col-10">
-			<ul>
-				<li>
-					<h3>DevFest Cerrado - 2018</h3>
-					<p>
-						Assisti várias palestras, dentre sobre java script com containers, organização de tempo e outras.
-					</p>
-				</li>
-				<li>
-					<h3>Gojava - 2018</h3>
-					<p>
-						Assisti várias palestras, dentre a do influenciador do manifesto ágil Venkat Subramaniam, microserviços com o Rafael benevides e aprendendo ir rumo ao
-						sucesso com o Bruno Souza do Code4Life.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+<section class="container card" id="events">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/upgrade_icon.png">
+            <span class="section-title row">Eventos</span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    <h3>Campus Party Goiás - 2022</h3>
+                    <p>
+                        Assisti várias palestras, dentre sobre organização de tempo, foco na carreira satélites
+                        brasileiros e dentre outras.
+                    </p>
+                </li>
+                <li>
+                    <h3>DevFest Cerrado - 2018</h3>
+                    <p>
+                        Assisti várias palestras, dentre sobre java script com containers, organização de tempo e
+                        outras.
+                    </p>
+                </li>
+                <li>
+                    <h3>Gojava - 2018</h3>
+                    <p>
+                        Assisti várias palestras, dentre a do influenciador do manifesto ágil Venkat Subramaniam,
+                        microserviços com o Rafael benevides e aprendendo ir rumo ao
+                        sucesso com o Bruno Souza do Code4Life.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 <section class="container card" id="courses">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img class="flex-center large-icon" src="img/home/upgrade_icon.png">
-			<span class="section-title row">Cursos</span>
-		</div>
-		<div class="col-md col-10">
-			<ul>
-				<li>
-					<h3>Bootcamp GoStack - 2020</h3>
-					<p>
-						Curso para tornar-se um desenvolvedor fullstack utilizando a stack de JavaScript. Após a Omnistack, decidi fazer o curso para eu iniciar neste mundo novo de
-						frontend com o React. O curso inicia com o básico de node para backend e depois avança dentro de ReactJS e React Native no frontend, além de vários tópicos
-						extras que temos. O desenvolvedor sai do curso preparado para criar aplicações desde o backend até o frontend com a stack de JS. Mais informações neste <a
-							href="https://pages.rocketseat.com.br/gostack">link</a>
-					</p>
-				</li>
-				<li>
-					<h3>Udacity-2018</h3>
-					<p>
-						Nanodegree para Android. Um Nanodegree é diferente de cursos, pois tem que fazer envios de projetos e são comparados a uma graduação rápida em determinado
-						assunto. Toda a base de conhecimento que obtive de Android foi formado neste nanodegree.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/upgrade_icon.png">
+            <span class="section-title row">Cursos</span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    <h3>Bootcamp GoStack - 2020</h3>
+                    <p>
+                        Curso para tornar-se um desenvolvedor fullstack utilizando a stack de JavaScript. Após a
+                        Omnistack, decidi fazer o curso para eu iniciar neste mundo novo de
+                        frontend com o React. O curso inicia com o básico de node para backend e depois avança dentro de
+                        ReactJS e React Native no frontend, além de vários tópicos
+                        extras que temos. O desenvolvedor sai do curso preparado para criar aplicações desde o backend
+                        até o frontend com a stack de JS. Mais informações neste <a
+                            href="https://pages.rocketseat.com.br/gostack">link</a>
+                    </p>
+                </li>
+                <li>
+                    <h3>Udacity-2018</h3>
+                    <p>
+                        Nanodegree para Android. Um Nanodegree é diferente de cursos, pois tem que fazer envios de
+                        projetos e são comparados a uma graduação rápida em determinado
+                        assunto. Toda a base de conhecimento que obtive de Android foi formado neste nanodegree.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<section id="books" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img src="img/home/books_icon.png" class="flex-center large-icon">
-			<span class="section-title row">Livros</span>
-		</div>
-		<div class="col-md col-10">
-			<ul>
-				<li>
-					Biografia de Elon Musk
-				</li>
-				<li>
-					html head
-				</li>
-				<li>
-					C completo e total
-				</li>
-				<li>
-					Java Effective
-				</li>
-			</ul>
-		</div>
-	</div>
+<section class="container card" id="certifications">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/certification.png">
+            <span class="section-title row"><a
+                    href="https://www.linkedin.com/in/alexferreirati/details/certifications/">Certificações</a></span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    <h3><a href="https://www.linkedin.com/in/alexferreirati/details/certifications/">MTA - JAVA -
+                        2019</a></h3>
+                    <p>
+                        Certificação <a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWIolS">Microsoft
+                        Technology Associate na linguagem de programação JAVA</a>.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-<section id="curriculum" class="container card">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
-			<img src="img/home/cv_icon.png" class="flex-center large-icon">
-			<span class="section-title row">Currículo</span>
-		</div>
-		<div class="col-md col-10">
-			<img src="img/home/pdf_icon.png" class="medium-icon">
-			<a href="content/cv.pdf"><span class="label-info">Baixar PDF</span></a>
-		</div>
-	</div>
+<section class="container card" id="books">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/books_icon.png">
+            <span class="section-title row">Livros</span>
+        </div>
+        <div class="col-md col-10">
+            <ul>
+                <li>
+                    Biografia de Elon Musk
+                </li>
+                <li>
+                    html head
+                </li>
+                <li>
+                    C completo e total
+                </li>
+                <li>
+                    Java Effective
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="container card" id="curriculum">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <img class="flex-center large-icon" src="img/home/cv_icon.png">
+            <span class="section-title row">Currículo</span>
+        </div>
+        <div class="col-md col-10">
+            <img class="medium-icon" src="img/home/pdf_icon.png">
+            <a href="content/cv.pdf"><span class="label-info">Baixar PDF</span></a>
+        </div>
+    </div>
 </section>
 
 <footer id="footer">
-	<span class="footername">Alex Rabelo Ferreira @Copyrights 2019</span><br/>
-	<span class="reset-body text">Goiânia - Goiás</span><br/><br/>
-	<span class="reset-body text">E-mail: <a href="mailto:arf92@live.com">arf92@live.com</a></span>
-	<span class="reset-body version">v1.1.0</span>
+    <span class="footername">Alex Rabelo Ferreira @Copyrights 2019</span><br/>
+    <span class="reset-body text">Goiânia - Goiás</span><br/><br/>
+    <span class="reset-body text">E-mail: <a href="mailto:arf92@live.com">arf92@live.com</a></span>
+    <span class="reset-body version">v1.1.0</span>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </footer>
 </body>
 </html>
