@@ -341,6 +341,15 @@
     <script crossorigin="anonymous"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("articles").addEventListener("click", function () {
+          gtag("event", "open_articles");
+        });
+        document.getElementById("articles").addEventListener("auxclick", function () {
+          gtag("event", "open_articles");
+        });
+    </script>
 </footer>
 </body>
 </html>
