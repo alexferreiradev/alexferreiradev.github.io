@@ -164,15 +164,24 @@ temp tcdb
                     classe abstract test integracao
                 configurar para usuario de invillia ter permisao no git
                     nao consigo fazer push no projeto
-            commit all branch 
-                push 
+                commit all branch 
+                    push 
             criar teste de integracao
                 banco 
                     repository
                         insercao de dados
                         busca de dados
-                listar next tarefas 
+                    rest
+                        create certificate
+                            return zip file
+                            json
+            TDD
                 ajustar migrations com tdd
+                    erro
+                        nao roda flyway
+                            ajustar flyway fora do teste de integracao
+                ajustar api 
+            listar next tarefas 
         write sections
             done
                 intro
@@ -189,4 +198,3 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
-
