@@ -173,8 +173,13 @@ temp tcdb
                         busca de dados
                     rest
                         create certificate
+                            202
                             return zip file
-                            json
+                                validate
+                                    size
+                                    unzip 
+                                        size pdfs
+                                        fisrt pdf size
             TDD
                 ajustar migrations com tdd
                     erro
@@ -198,3 +203,4 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
+
