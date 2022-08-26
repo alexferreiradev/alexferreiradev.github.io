@@ -166,26 +166,29 @@ temp tcdb
                     nao consigo fazer push no projeto
                 commit all branch 
                     push 
-            criar teste de integracao
-                banco 
-                    repository
-                        insercao de dados
-                        busca de dados
-                    rest
-                        create certificate
-                            202
-                            return zip file
-                                validate
-                                    size
-                                    unzip 
-                                        size pdfs
-                                        fisrt pdf size
+                criar teste de integracao
+                    banco 
+                        repository
+                            insercao de dados
+                            busca de dados
+                        rest
+                            create certificate
+                                202
+                                400
             TDD
                 ajustar migrations com tdd
                     erro
                         nao roda flyway
                             ajustar flyway fora do teste de integracao
                 ajustar api 
+            melhorias
+                assert
+                    return zip file
+                        validate
+                            size
+                            unzip 
+                                size pdfs
+                                fisrt pdf size
             listar next tarefas 
         write sections
             done
@@ -203,4 +206,3 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
-
