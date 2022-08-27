@@ -123,9 +123,9 @@ temp tcdb
             pesq conteudos
                 done
                     blog que referencia custo
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                     custo de servidor
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                         list sites of servers
                             the lower cost
                         stimate a cost with AWS
@@ -164,10 +164,10 @@ temp tcdb
                     classe abstract test integracao
                 configurar para usuario de invillia ter permisao no git
                     nao consigo fazer push no projeto
-                commit all branch 
-                    push 
+                commit all branch
+                    push
                 criar teste de integracao
-                    banco 
+                    banco
                         repository
                             insercao de dados
                             busca de dados
@@ -178,18 +178,23 @@ temp tcdb
             TDD
                 ajustar migrations com tdd
                     erro
-                        nao roda flyway
-                            ajustar flyway fora do teste de integracao
-                ajustar api 
+                        done
+                            nao roda flyway
+                                ajustar flyway fora do teste de integracao
+                        Hibernate
+                            nao coloca snake case em colunas
+                                ERROR: column "dateended" of relation "event" does not exist
+                                    Posição: 20
+                ajustar api
             melhorias
                 assert
                     return zip file
                         validate
                             size
-                            unzip 
+                            unzip
                                 size pdfs
                                 fisrt pdf size
-            listar next tarefas 
+            listar next tarefas
         write sections
             done
                 intro
