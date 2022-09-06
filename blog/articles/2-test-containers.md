@@ -123,9 +123,9 @@ temp tcdb
             pesq conteudos
                 done
                     blog que referencia custo
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                     custo de servidor
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                         list sites of servers
                             the lower cost
                         stimate a cost with AWS
@@ -148,60 +148,76 @@ temp tcdb
             plan sections
                 list real problems
             review the sections
-        criar projeto de exemplo
-            done
-                criar branch em openCertificate
-                    test-containers-article
-                criar config maven
-                criar docker compose
-                criar lista de tarefas
-                configurar flyway no projeto
-                criar classes de teste
-                    container banco de dados
-                        rodar migrations
-                    initializer containers compartilhado
-                    initializer container local
-                    classe abstract test integracao
-                configurar para usuario de invillia ter permisao no git
-                    nao consigo fazer push no projeto
-                commit all branch
-                    push
-                criar teste de integracao
-                    banco
-                        repository
-                            insercao de dados
-                            busca de dados
-                        rest
-                            create certificate
-                                202
-                                400
-            TDD
-                ajustar migrations com tdd
-                    erro
-                        done
-                            nao roda flyway
-                                ajustar flyway fora do teste de integracao
-                        Hibernate
-                            nao coloca snake case em colunas
-                                ERROR: column "dateended" of relation "event" does not exist
-                                    Posição: 20
-                ajustar api
-            melhorias
-                assert
-                    return zip file
-                        validate
-                            size
-                            unzip
-                                size pdfs
-                                fisrt pdf size
-            listar next tarefas
+            criar projeto de exemplo
+                done
+                    criar branch em openCertificate
+                        test-containers-article
+                    criar config maven
+                    criar docker compose
+                    criar lista de tarefas
+                    configurar flyway no projeto
+                    criar classes de teste
+                        container banco de dados
+                            rodar migrations
+                        initializer containers compartilhado
+                        initializer container local
+                        classe abstract test integracao
+                    configurar para usuario de invillia ter permisao no git
+                        nao consigo fazer push no projeto
+                    commit all branch
+                        push
+                    criar teste de integracao
+                        banco
+                            repository
+                                insercao de dados
+                                busca de dados
+                            rest
+                                create certificate
+                                    202
+                                    400
+                TDD
+                    done
+                        ajustar migrations com tdd
+                            erro
+                                done
+                                    nao roda flyway
+                                        ajustar flyway fora do teste de integracao
+                                    Hibernate
+                                        nao coloca snake case em colunas
+                                            ERROR: column "dateended" of relation "event" does not exist
+                                                Posição: 20
+                                            solucao
+                                                usar @Column para declarar colunas com snake case
+                        ajustar api
+                            rg null 
+                                alterar migration 
+                                    remover not null
+                                        deixar somente no dominio a regra
+                        criar card para open certificate 
+                            ajustar test in maven
+                                tentar 3 dias
+                                    1 dia
+                                    2 dia
+                                    3 dia
+                            assert
+                                return zip file
+                                    validate
+                                        size
+                                        unzip
+                                            size pdfs
+                                            fisrt pdf size
         write sections
             done
                 intro
                 lib
             uso
                 container compartilhado
+                    descrever como usar 
+                    descrever para o que usar 
+                        funcionamento
+                    vantagens
                 container local
+                    vantagens
             conclusao
         lead magnet
             create link to calendly to articles
@@ -211,3 +227,4 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
+
