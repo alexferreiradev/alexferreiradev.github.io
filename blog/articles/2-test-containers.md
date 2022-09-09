@@ -25,7 +25,51 @@ testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
 testImplementation "org.testcontainers:testcontainers:1.17.2"
 testImplementation "org.testcontainers:junit-jupiter:1.17.2"
 ```
-There are two mode to setup containers in your tests, shared container and local container. The fist type is to create and stop the container only when JVM stop and the second is to create a new container to each method test.
+There are two mode to setup containers in your tests, shared container and local container. The fist type is to create and stop the container only when JVM stop and the second is to create a new container to each method test. But in both modes you create a container to your test starting from the creation of a class to your container or setup a library that create a container for you. You can see below a example to create a container class to postgres: 
+```java
+public class CustomPostgresContainer extends PostgreSQLContainer<CustomPostgresContainer> {
+
+   public CustomPostgresContainer() {
+      super(DockerImageName.parse("postgres:13-alpine").asCompatibleSubstituteFor("postgres"));
+      withUsername("postgres");
+      withPassword("<password>");
+      withDatabaseName("<db-name>");
+      withExposedPorts(5432);
+
+      start();
+   }
+}
+```
+After that, you can create a container to your test using this class. Look at a example test using that class:
+
+```java
+
+public class ExampleRestIT extends IntegrationTest {
+
+   private CustomPostgresContainer postgresContainer = new CustomPostgresContainer();
+
+   @Test public void shouldStartingAContainer() {
+      postgresContainer.start();
+
+      Assertions.assertTrue(postgresContainer.isRunning());
+   }
+}
+```
+These scenario is to have the control of the container. There is an anotation that will inform to TestContainers what is the container that need to be started and stoped to each method test. You can see an example below: 
+```java
+@Testcontainers
+public class ExampleRestIT extends IntegrationTest {
+
+   @Container
+   private CustomPostgresContainer postgresContainer = new CustomPostgresContainer();
+
+   @Test public void shouldStartingAContainer() {
+      // postgresContainer.start(); ------ Dont need any more
+
+      Assertions.assertTrue(postgresContainer.isRunning());
+   }
+}
+```
 
 You can follow the quick start from [quick-start2][quick-start1]
 - real use example
