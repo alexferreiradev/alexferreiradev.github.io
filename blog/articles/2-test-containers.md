@@ -71,6 +71,9 @@ public class ExampleRestIT extends IntegrationTest {
 }
 ```
 
+## Using with web platform
+But this is a test without any web platform like [Quarkus] or [Spring]. A setup of TestContainers to Quarkus for example need some new classes. But, before we need to understand ours requirements.
+
 You can follow the quick start from [quick-start2][quick-start1]
 - real use example
 - ref to new article 
@@ -85,6 +88,8 @@ You can follow the quick start from [quick-start2][quick-start1]
 [TestContainers-quickstart]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
 [TestContainer-lib]: https://www.testcontainers.org/quickstart/junit_5_quickstart/#1-add-testcontainers-as-a-test-scoped-dependency
 [quick-start1]:[TestContainers-quickstart]
+[quarkus]:[link]
+[spring]:[link]
 
 ## MM
 temp tcdb
