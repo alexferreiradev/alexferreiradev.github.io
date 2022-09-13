@@ -72,7 +72,23 @@ public class ExampleRestIT extends IntegrationTest {
 ```
 
 ## Using with web platform
-But this is a test without any web platform like [Quarkus] or [Spring]. A setup of TestContainers to Quarkus for example need some new classes. But, before we need to understand ours requirements.
+But this is a test without any web platform like [Quarkus] or [Spring]. A setup of TestContainers to Quarkus for example need some new classes. But, before we need to understand ours requirements. Depend on your scenario, you will need to start and stop a container to each class of test or reuse one container to all tests. This configuration can be done with a class that implements a `QuarkusTestResourceLifecycleManager`. For example the class below:
+
+```java
+public class SharedContainerResource implements QuarkusTestResourceLifecycleManager {
+    protected final static CustomPostgresContainer POSTGRES_CONTAINER = new CustomPostgresContainer();
+
+    @Override
+    public Map<String, String> start() {
+        return POSTGRES_CONTAINER.configureProperties();
+    }
+
+    @Override
+    public void stop() {
+        POSTGRES_CONTAINER.stop();
+    }
+}
+```
 
 You can follow the quick start from [quick-start2][quick-start1]
 - real use example
