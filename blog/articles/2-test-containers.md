@@ -76,7 +76,7 @@ But this is a test without any web platform like [Quarkus] or [Spring]. A setup 
 
 ```java
 public class SharedContainerResource implements QuarkusTestResourceLifecycleManager {
-    protected final static CustomPostgresContainer POSTGRES_CONTAINER = new CustomPostgresContainer();
+    protected CustomPostgresContainer POSTGRES_CONTAINER = new CustomPostgresContainer();
 
     @Override
     public Map<String, String> start() {
@@ -90,7 +90,25 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 }
 ```
 
-With this class you can have the control of the creation and destruction of a container. When Quarkus context start, will create the container and call the method start to get all the properties that need to be replaced, for example, the port to connect to the postgres database. When the quarkus context stopping, call the method stop and we can stop the container if we need a new container to each test class. 
+With this class you can have the control of the creation and destruction of a container. When Quarkus context start, will create the container and call the method start to get all the properties that need to be replaced, for example, the port to connect to the postgres database. When the quarkus context stopping, call the method stop and we can stop the container if we need a new container to each test class. In the case of that you can reuse the container to all test classes, you just remove the stop container and create a static field like these: 
+
+```java
+public class SharedContainerResource implements QuarkusTestResourceLifecycleManager {
+    protected static final CustomPostgresContainer POSTGRES_CONTAINER = new CustomPostgresContainer();
+
+    @Override
+    public Map<String, String> start() {
+        return POSTGRES_CONTAINER.configureProperties();
+    }
+
+    @Override
+    public void stop() {
+        POSTGRES_CONTAINER.stop();
+    }
+}
+```
+
+With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. 
 
 You can follow the quick start from [quick-start2][quick-start1]
 - real use example
