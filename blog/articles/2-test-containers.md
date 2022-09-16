@@ -110,12 +110,10 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 
 With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. 
 
-You can follow the quick start from [quick-start2][quick-start1]
-- real use example
-- ref to new article 
+More details you can find in [quick-start2][quick-start1] from oficial documentation.
 
 ## Conclusion
-- what were discussed
+In this article we show how to create integration tests with containers to simulate any kind of environment. We also show the two modes to setup the containers in your tests and the diferences between them. In addition, we gave examples to use the library testContainers with Quarkus platform.
 - limitations 
 - Others libs examples
 
