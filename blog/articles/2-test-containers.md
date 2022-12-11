@@ -1,6 +1,6 @@
 # Stop suffering with tests, use TestContainers
 
-The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost. According with [cost] the cost to create a server is 2k until 15k. Its is a higher cost depends on the company. More over, the cost might be duplicated when need an envirorment to production and another to staging. The cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms. One developer can install a data base with the version x and another developer install the version y. The first developer can create a test that work in the version x, but don't work in version y. 
+The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost. According with [cost] the cost to create a server is 2k until 15k. Its is a higher cost depends on the company. More over, the cost might be duplicated when need an envirorment to production and another for staging. The cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms. One developer can install a data base with the version x and another developer install the version y. The first developer can create a test that work in the version x, but don't work in version y. 
 
 So, to waste less money and continue increasing the delivery quality, in this article we will show how can use two tools, docker and testContainers to decrease the cost to test systems with Java. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your tests.
 In this article we will show how to use these tools to create your test environment and have a lowest cost. 
@@ -25,7 +25,7 @@ testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
 testImplementation "org.testcontainers:testcontainers:1.17.2"
 testImplementation "org.testcontainers:junit-jupiter:1.17.2"
 ```
-There are two mode to setup containers in your tests, shared container and local container. The fist type is to create and stop the container only when JVM stop and the second is to create a new container to each method test. But in both modes you create a container to your test starting from the creation of a class to your container or setup a library that create a container for you. You can see below a example to create a container class to postgres: 
+There are two mode to setup containers in your tests, shared container and local container. The first type is to create and stop the container only when JVM stop and the second is to create a new container to each method test. But in both modes you create a container to your test starting from the creation of a class to your container or setup a library that create a container for you. You can see below a example to create a container class for postgres: 
 ```java
 public class CustomPostgresContainer extends PostgreSQLContainer<CustomPostgresContainer> {
 
@@ -40,7 +40,12 @@ public class CustomPostgresContainer extends PostgreSQLContainer<CustomPostgresC
    }
 }
 ```
-After that, you can create a container to your test using this class. Look at a example test using that class:
+After that, you can create a container to your test using this class. An observation here is the need of a new dependency that has the class `PostgreSQLContainer`:
+```groovy
+testImplementation 'org.testcontainers:postgresql:1.17.6'
+```
+
+Now look at a example test using that class:
 
 ```java
 
@@ -103,12 +108,13 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 
     @Override
     public void stop() {
-        POSTGRES_CONTAINER.stop();
+        // removed the stop of container. The testContainer library will destroy automatically when JVM stop
     }
 }
 ```
 
 With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. 
+
 
 More details you can find in [quick-start2][quick-start1] from oficial documentation.
 
@@ -208,9 +214,9 @@ temp tcdb
             pesq conteudos
                 done
                     blog que referencia custo
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                     custo de servidor
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
+                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
                         list sites of servers
                             the lower cost
                         stimate a cost with AWS
@@ -299,13 +305,21 @@ temp tcdb
                 done
                     configuração de libs
                 container compartilhado
-                    descrever como usar
-                    descrever para o que usar
-                        funcionamento
+                    done
+                        descrever como usar
+                        descrever para o que usar
+                            funcionamento
+                        ajustar codigo stop
                     vantagens
+                        tempo de criacao de container e configuracao de quarkus
                 container local
-                    vantagens
+                    cenário de uso
             conclusao
+                done
+                    intro
+                escrever o que nao foi coberto pelo artigo
+                Libs similares
+                uso de spring e outras plataformas
         lead magnet
             create link to calendly to articles
                 a way to capture the email and create network
