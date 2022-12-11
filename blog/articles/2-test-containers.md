@@ -115,7 +115,6 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 
 With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. 
 
-
 More details you can find in [quick-start2][quick-start1] from oficial documentation.
 
 ## Conclusion
