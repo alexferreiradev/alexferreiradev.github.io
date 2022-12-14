@@ -95,7 +95,7 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 }
 ```
 
-With this class you can have the control of the creation and destruction of a container. When Quarkus context start, will create the container and call the method start to get all the properties that need to be replaced, for example, the port to connect to the postgres database. When the quarkus context stopping, call the method stop and we can stop the container if we need a new container to each test class. In the case of that you can reuse the container to all test classes, you just remove the stop container and create a static field like these: 
+With this class you can have the control of the creation and destruction of a container. When Quarkus context start, it will create the container and call the method start to get all the properties that need to be replaced, for example, the port to connect to the postgres database. When the quarkus context stopping, call the method stop and we can stop the container if we need a new container to each test class. In the case of that you can reuse the container to all test classes, you just remove the stop container and create a static field like these: 
 
 ```java
 public class SharedContainerResource implements QuarkusTestResourceLifecycleManager {
@@ -113,7 +113,7 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 }
 ```
 
-With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. 
+With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. This feature is recommended to scenarios that you have tests that dont 
 
 More details you can find in [quick-start2][quick-start1] from oficial documentation.
 
@@ -319,6 +319,8 @@ temp tcdb
                 escrever o que nao foi coberto pelo artigo
                 Libs similares
                 uso de spring e outras plataformas
+            correcao de links no texto
+                revisar todos links 
         lead magnet
             create link to calendly to articles
                 a way to capture the email and create network
