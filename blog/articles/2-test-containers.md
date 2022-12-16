@@ -303,23 +303,23 @@ temp tcdb
             uso
                 done
                     configuração de libs
-                container compartilhado
-                    done
-                        descrever como usar
-                        descrever para o que usar
-                            funcionamento
-                        ajustar codigo stop
-                        recomendacao
-                        vantagens
-                            tempo de criacao de container e configuracao de quarkus
-                container local
-                    cenário de uso
+                    container compartilhado
+                        done
+                            descrever como usar
+                            descrever para o que usar
+                                funcionamento
+                            ajustar codigo stop
+                            recomendacao
+                            vantagens
+                                tempo de criacao de container e configuracao de quarkus
+                    container local
+                        cenário de uso
             conclusao
                 done
                     intro
                 escrever o que nao foi coberto pelo artigo
-                Libs similares
                 uso de spring e outras plataformas
+                Libs similares
             correcao de links no texto
                 revisar todos links
         lead magnet
@@ -330,3 +330,4 @@ temp tcdb
             plan code
             plan the conclusion
             plan cronograma
+
