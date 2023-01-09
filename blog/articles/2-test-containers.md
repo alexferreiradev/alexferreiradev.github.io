@@ -1,6 +1,6 @@
 # Stop suffering with tests, use TestContainers
 
-The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost. According with [cost] the cost to create a server is 2k until 15k. Its is a higher cost depends on the company. More over, the cost might be duplicated when need an envirorment to production and another for staging. The cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms. One developer can install a data base with the version x and another developer install the version y. The first developer can create a test that work in the version x, but don't work in version y. 
+The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost. According with [cost] the to create a server is 2k until 15k. Its is a higher cost depends on the company. More over, the cost might be duplicated when need an envirorment to production and another for staging. The cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms. One developer can install a data base with the version x and another developer install the version y. The first developer can create a test that work in the version x, but don't work in version y. 
 
 So, to waste less money and continue increasing the delivery quality, in this article we will show how can use two tools, docker and testContainers to decrease the cost to test systems with Java. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your tests.
 In this article we will show how to use these tools to create your test environment and have a lowest cost. 
@@ -13,10 +13,10 @@ In this article we will show how to use these tools to create your test environm
 
 ## Creating infrastructure with Docker
 
-All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The Docker is a tool that can help the dev to run each dependency in containers. More about docker can be found here: [Docker Official](https://docs.docker.com/)
+All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The Docker is a tool that can help the dev to run each dependency in containers. More about docker can be found here: [Docker Official](https://docs.docker.com/).
 
 ## Provisioning with TestContainers library
-The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. More information can be found here: [TestContainers](https://www.testcontainers.org/quickstart/junit_5_quickstart/)
+The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. More information can be found here: [TestContainers](https://www.testcontainers.org/quickstart/junit_5_quickstart/).
 
 ## Using Test Containers
 First of all, you need to add the library in your dependency management. In gradle you can do that:
@@ -115,17 +115,14 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 
 With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. This feature is recommended to scenarios that you have tests that is independents and dont need a new infra structure, like a clean database. Using this mode you can waste less time to run the tests than using a local container.
 
-More details you can find in [quick-start2][quick-start1] from oficial documentation.
+More details you can find in [quick-start] from oficial documentation.
 
 ## Conclusion
 In this article we show how to create integration tests with containers to simulate any kind of environment. We also show the two modes to setup the containers in your tests and the diferences between them. In addition, we gave examples to use the library testContainers with Quarkus platform. However, in this article we did not cover how to use the testContainers with other web platform like Spring. In Addition, there are more libraries that integrate with docker in another languages.
 
 
 [cost]: https://www.servermania.com/kb/articles/how-much-does-a-typical-home-server-cost/
-[TestContainers-quickstart]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
-[TestContainer-lib]: https://www.testcontainers.org/quickstart/junit_5_quickstart/#1-add-testcontainers-as-a-test-scoped-dependency
-[quick-start1]:[TestContainers-quickstart]
-[quarkus]:[link]
+[quick-start]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
 [spring]:[link]
 
 ## MM
