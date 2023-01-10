@@ -118,7 +118,9 @@ With that configuration, we can create a container to the context and in the end
 More details you can find in [quick-start] from oficial documentation.
 
 ## Conclusion
-In this article we show how to create integration tests with containers to simulate any kind of environment. We also show the two modes to setup the containers in your tests and the diferences between them. In addition, we gave examples to use the library testContainers with Quarkus platform. However, in this article we did not cover how to use the testContainers with other web platform like Spring. In Addition, there are more libraries that integrate with docker in another languages.
+In this article we show how to create integration tests with containers to simulate any kind of environment. We also show the two modes to setup the containers in your tests and the diferences between them. In addition, we gave examples to use the library testContainers with Quarkus platform. 
+
+However, in this article we did not cover how to use the testContainers with other web platform like Spring. In Addition, there are more libraries that integrate with docker in another languages. In the [testContainers's github account](https://github.com/testcontainers) there are a lot of repositories that the community create to share binds to anothers languages.
 
 
 [cost]: https://www.servermania.com/kb/articles/how-much-does-a-typical-home-server-cost/
@@ -295,30 +297,27 @@ temp tcdb
             done
                 intro
                 lib
-            uso
-                done
-                    configuração de libs
-                    container compartilhado
-                        done
-                            descrever como usar
-                            descrever para o que usar
-                                funcionamento
-                            ajustar codigo stop
-                            recomendacao
-                            vantagens
-                                tempo de criacao de container e configuracao de quarkus
-                    container local
-                        cenário de uso
-            conclusao
-                done
-                    intro
-                    escrever o que nao foi coberto pelo artigo
-                    uso de spring e outras plataformas
-                Libs similares
-                    pesquisar outras
-                        nao encontrei ainda
-                        links encontrados
-                            <https://github.com/testcontainers>
+                uso
+                    done
+                        configuração de libs
+                        container compartilhado
+                            done
+                                descrever como usar
+                                descrever para o que usar
+                                    funcionamento
+                                ajustar codigo stop
+                                recomendacao
+                                vantagens
+                                    tempo de criacao de container e configuracao de quarkus
+                        container local
+                            cenário de uso
+                conclusao
+                    done
+                        intro
+                        escrever o que nao foi coberto pelo artigo
+                        uso de spring e outras plataformas
+                        Libs similares
+                            pesquisar outras
             correcao de links no texto
                 revisar todos links
         lead magnet
