@@ -1,16 +1,16 @@
 # Stop suffering with tests, use TestContainers
 
-The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost. According with [[1],[2]], the to create a server is 2k until 15k. Its is a higher cost depends on the company. More over, the cost might be duplicated when need an envirorment to production and another for staging. The cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms. One developer can install a data base with the _version x_ and another developer install the version _y_. The first developer can create a test that work in the _version x_, but don't work in _version y_. 
+The devOps help us a lot, but just a big infrastructure don't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments have high cost. According with [[1],[2]], the to create a server is 2k until 15k. Its is a higher cost depends on the company. More over, the cost might be duplicated when need an envirorment to production and another for staging. The cost to test can increase a lot with a two envirorments. In addition, a developer team can lead with the problem of different versions of platforms. One developer can install a data base with the _version x_ and another developer install the version _y_. The first developer can create a test that work in the _version x_, but don't work in _version y_.
 
 So, to waste less money and continue increasing the delivery quality, in this article we will show how can use two tools, docker and testContainers to decrease the cost to test systems with Java. The docker can be used to provisioning the infrastructure to yours dependencies and the testContainers is a library that permit you to create differents scenarios to your tests.
 In this article we will show how to use these tools to create your test environment and have a lowest cost.
 
 ## Creating infrastructure with Docker
 
-All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The Docker is a tool that can help the dev to run each dependency in containers. More about docker can be found here: [Docker Official](https://docs.docker.com/).
+All softwares need some infra structure like database or a message broker. The basic proccess to a developer test the software in development stage is manually creating the envirorment in your work station. The Docker is a tool that can help the dev to run each dependency in containers. More about docker can be found at [Docker Official].
 
 ## Provisioning with TestContainers library
-The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. More information can be found here: [TestContainers](https://www.testcontainers.org/quickstart/junit_5_quickstart/).
+The library `TestContainers` make it easy creating all the envirorment to your tests in the start of test platform. It permit you to create any type of container in programatic way. You can set the ports, the networks, the version of the containers and can set the correct configuration to each test. More information can be found at [TestContainers quick start].
 
 ## Using Test Containers
 First of all, you need to add the library in your dependency management. In gradle you can do that:
@@ -119,211 +119,10 @@ However, in this article we did not cover how to use the testContainers with oth
 
 [1]: https://www.servermania.com/kb/articles/how-much-does-a-typical-home-server-cost/
 [2]: [https://blog.unimake.com.br/gemini/7-despesas-que-sua-empresa-vai-ter-com-um-servidor-de-backup-interno/]
+[Docker Official]: https://docs.docker.com/
+[TestContainers quick start]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
 [quick-start]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
 [spring]:[link]
 
 ## MM
-temp tcdb
-    Problema
-        dores
-            construção de ambiente grande para testes integracao
-            muita configuração para rodar testes de integracao
-            ambiente diferente para cada dev
-            teste dependente de plataforma
-            custo alto para ambiente de QA
-            subir ambiente manualmente
-            equipes com stack de tecnologias engessadas
-                devido alto custo de montar diferentes arquiteturas de testes
-        versao de plataformas
-            diferentes versoes na equipe de devs
-        configuracoes extras
-            repassar script para cada dev
-        custo para testar
-            criar ambiente para pipeline de testes
-                aumenta o custo homologacao
-    publico
-        dev junior
-        dev pleno
-    AIDA
-        action
-        des
-        i
-        A
-    sessões do artigo
-        intro
-            relevancia para problema
-                dados
-            problema
-                alto custo para ambiente de testes ou stg
-                inflexibilidade de ambiente stg
-                diferentes ambientes entre a equipe
-            Intro de solucao
-                Existencia de libraries
-                docker
-                    oq resolve
-                test containers
-                    oq resolve
-        lib test containers
-            funcionalidades
-                data acess layer intergration tests
-                    implantar DB para seus testes
-                    manter mesma versao
-                application integration tests
-                    toda aplicação com dependencias
-                    tempo de vida curto
-                        somente o teste
-                ui acceptances tests
-                    teste de interfaces com containers de browsers como selenium
-                much more
-                    qualquer container que você criar
-            background
-                suportado
-                    jUnit4
-                    junit5
-                    spock
-        uso
-            configuração
-            examples de funcao
-                local
-                compartilhado
-            ref ao artigo de como usar
-        conclusao
-            exemplos de outras libs similares
-            limitações
-    titulo
-    tasks
-        done
-            criar branch
-            criar post .md
-            iniciar 5 minutes
-            plan
-                planejar problema
-                decidir publico
-                plan sections
-            criar sections
-            think about intro
-            pesq conteudos
-                done
-                    blog que referencia custo
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
-                    custo de servidor
-                        <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>> <https://www.servermania.com/kb/articles/how-much-does-a-server-cost-for-a-small-business/>>
-                        list sites of servers
-                            the lower cost
-                        stimate a cost with AWS
-                    noticia sobre custo
-                        pesq e ver tem tem
-                            senao deixa soh custo estimado de server mania
-                    custo de ambiente
-                    listar problemas de nao usar lib
-                    custo de montar ambiente stg
-                        replicar prd
-                    custo operacional
-                        ter equipe dedicada
-                    total de trabalhos remotos
-                    libs similares a testContainers
-            extract info from oficial site
-                done
-                    funcionalidades
-                    requisitos
-            list main features
-            plan sections
-                list real problems
-            review the sections
-            criar projeto de exemplo
-                done
-                    criar branch em openCertificate
-                        test-containers-article
-                    criar config maven
-                    criar docker compose
-                    criar lista de tarefas
-                    configurar flyway no projeto
-                    criar classes de teste
-                        container banco de dados
-                            rodar migrations
-                        initializer containers compartilhado
-                        initializer container local
-                        classe abstract test integracao
-                    configurar para usuario de invillia ter permisao no git
-                        nao consigo fazer push no projeto
-                    commit all branch
-                        push
-                    criar teste de integracao
-                        banco
-                            repository
-                                insercao de dados
-                                busca de dados
-                            rest
-                                create certificate
-                                    202
-                                    400
-                TDD
-                    done
-                        ajustar migrations com tdd
-                            erro
-                                done
-                                    nao roda flyway
-                                        ajustar flyway fora do teste de integracao
-                                    Hibernate
-                                        nao coloca snake case em colunas
-                                            ERROR: column "dateended" of relation "event" does not exist
-                                                Posição: 20
-                                            solucao
-                                                usar @Column para declarar colunas com snake case
-                        ajustar api
-                            rg null
-                                alterar migration
-                                    remover not null
-                                        deixar somente no dominio a regra
-                        criar card para open certificate
-                            ajustar test in maven
-                                tentar 3 dias
-                                    1 dia
-                                    2 dia
-                                    3 dia
-                            assert
-                                return zip file
-                                    validate
-                                        size
-                                        unzip
-                                            size pdfs
-                                            fisrt pdf size
-        write sections
-            done
-                intro
-                lib
-                uso
-                    done
-                        configuração de libs
-                        container compartilhado
-                            done
-                                descrever como usar
-                                descrever para o que usar
-                                    funcionamento
-                                ajustar codigo stop
-                                recomendacao
-                                vantagens
-                                    tempo de criacao de container e configuracao de quarkus
-                        container local
-                            cenário de uso
-                conclusao
-                    done
-                        intro
-                        escrever o que nao foi coberto pelo artigo
-                        uso de spring e outras plataformas
-                        Libs similares
-                            pesquisar outras
-            correcao de links no texto
-                revisar todos links
-                    done
-                    intro
-                    uso
-                    conclusao
-        lead magnet
-            create link to calendly to articles
-                a way to capture the email and create network
-            put link to calendly in article
-        next plans
-            plan code
-            plan the conclusion
-            plan cronograma
+Em arquivo separado (mm)[./plan.txt]
