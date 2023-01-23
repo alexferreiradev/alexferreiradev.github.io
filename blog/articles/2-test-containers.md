@@ -109,7 +109,7 @@ public class SharedContainerResource implements QuarkusTestResourceLifecycleMana
 
 With that configuration, we can create a container to the context and in the end of execution, the testContainer library will stop automatically the container. This feature is recommended to scenarios that you have tests that is independents and dont need a new infra structure, like a clean database. Using this mode you can waste less time to run the tests than using a local container.
 
-More details you can find in [quick-start] from oficial documentation.
+More details you can find in [TestContainers quick start] from oficial documentation.
 
 ## Conclusion
 In this article we show how to create integration tests with containers to simulate any kind of environment. We also show the two modes to setup the containers in your tests and the diferences between them. In addition, we gave examples to use the library testContainers with Quarkus platform. 
@@ -121,8 +121,8 @@ However, in this article we did not cover how to use the testContainers with oth
 [2]: [https://blog.unimake.com.br/gemini/7-despesas-que-sua-empresa-vai-ter-com-um-servidor-de-backup-interno/]
 [Docker Official]: https://docs.docker.com/
 [TestContainers quick start]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
-[quick-start]: https://www.testcontainers.org/quickstart/junit_5_quickstart/
-[spring]:[link]
+[Spring]:[https://spring.io/quickstart]
+[Quarkus]:[https://quarkus.io/get-started/]
 
 ## MM
 Em arquivo separado (mm)[./plan.txt]
