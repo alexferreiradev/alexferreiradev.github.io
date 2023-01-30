@@ -1,13 +1,28 @@
 # Stop suffering with tests, use TestContainers
 
-DevOps help us a lot, but only a big infrastructure doesn't resolve the problem with pipelines. The pipeline creation is simple, but the server to run the environments has a high cost. According to [[1],[2]], the cost to mantain a server is 2k to 15k. It is a higher cost depending on the company. Moreover, the cost duplicates when need an environment for production and another for staging. The cost to test can increase a lot with two environments. Also, a developer team can lead with the problem of different versions of platforms. One developer can install a database with _version x_ and another developer install version _y_. The first developer can create a test that works in the _version x_, but doesn't work in _version y_.
+Developers need to lead with two or more system during the work day. The quality from these systems depends on the integration and unit tests. Its require a pipeline and a big infrastructure. The pipeline run tests in a server similar to production server, called staging. According to [[1],[2]], the cost to mantain a server is 2k to 15k in production. It is a high cost depending on the company. The cost duplicates when needs a environment for production and another for staging. But a pipiline that run tests in staging environment can result in a lot of false positive errors when a dependent system is down or a team is deploying a new version. 
 
-So, to waste less money and continue increasing the delivery quality. In this article, we will show how can use two tools, docker and TestContainers to decrease the cost to test systems with Java. Use docker to provide the infrastructure to your dependencies and the TestContainers is a library that permits you to create different scenarios for your tests.
-In this article, we will show how to use these tools to create your test environment and have the lowest cost.
+Also, a developer team can lead with anothers problems, the high platforms amout to install, the difference between platforms's versions per developer, the difficult to update the platform version and the difference between platforms's versions in production and developer environment.
+
+A rest api system need at least one database and a message broker system. But a real market system need an cache service, storage system an the list of platforms can increse a lot according the market requirements. So, to run locally the system, a developer need to install all this platforms. The number can increase exponentialy when has more systems. The developer need to install different versions to each platform to each system.
+
+One developer can install a platform with _version x_ and another developer install _version z_. The first developer can create a test that works in the _version x_, but doesn't work in _version z_. So, the second developer can not run the tests and require help to discovery the error because of the difference in the versions.
+
+The problem increase when a bug happens in production and don't happens locally because of difference in the versions. In addition, when a new developer try to set up the developer environment, the code clonned doesn't have the version of the platforms to the tests or run the system locally and install the lasted version available.    
+
+Problems to dev like me:
+- manage diferrent platforms: database, cache
+- diferent platforms versions in the team
+- updating infra version
+- different version between production and stg
+
+This article is to help developers to waste less money and to continue increasing the system delivery quality. We will show how can use two tools, Docker and TestContainers to decrease the cost to test systems with Java. Use Docker to provide the infrastructure to your dependencies and the TestContainers is a library that permits you to create different scenarios for your tests. 
+
+Therefore, the reader will learn how to use these tools to create your test environment and have the lowest cost.
 
 ## Creating infrastructure with Docker
 
-All software needs some infrastructure like a database or a message broker. The basic process for a developer to test the software in the development stage is manually creating the environment in your workstation. Docker is a tool that can help the developer to run each dependency in containers. Find more about docker at [Docker Official].
+All software needs some infrastructure like a database or a message broker. The basic process for a developer to test the software in the development stage is manually creating the environment in your workstation. Docker is a tool that can help the developer to run each dependency in containers. Find more about Docker at [Docker Official].
 
 ## Provisioning with TestContainers library
 The library `TestContainers` make it easy to create all the environments for your tests at the start of the test platform. It permits you to create any type of container programmatically. You can set the ports, the networks, version of the containers and can set the correct configuration for each test. Find more information at [TestContainers quick start].
@@ -114,7 +129,7 @@ More details you can find in [TestContainers quick start] from the official docu
 ## Conclusion
 In this article, we show how to create integration tests with containers to simulate any kind of environment. We also show the two modes of setup the containers in your tests and the differences between them. Also, we gave examples to use the library TestContainers with the Quarkus platform.
 
-However, in this article, we did not cover how to use the TestContainers with other web platforms like Spring. In Addition, more libraries integrate with docker in other languages. In the [TestContainers's github account] there are a lot of repositories that the community created to share binds to other languages.
+However, in this article, we did not cover how to use the TestContainers with other web platforms like Spring. In Addition, more libraries integrate with Docker in other languages. In the [TestContainers's github account] there are a lot of repositories that the community created to share binds to other languages.
 
 If you like this content and want to talk more about a problem that you are facing in your day aligned with tests, you should book some time in [my calendly], it will be a pleasure to help you solve your problem.
 
