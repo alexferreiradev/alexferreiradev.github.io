@@ -131,7 +131,7 @@ In this article, we show how to create integration tests with containers to simu
 
 However, in this article, we did not cover how to use the TestContainers with other web platforms like Spring. In Addition, more libraries integrate with Docker in other languages. In the [TestContainers's github account] there are a lot of repositories that the community created to share binds to other languages.
 
-If you like this content and want to talk more about a problem that you are facing in your day aligned with tests, you should book some time in [my calendly], it will be a pleasure to help you solve your problem.
+If you like this content and want to talk more about a problem that you are facing in your day aligned with tests, you have a special chance to book on [my calendly] in this week, it will be a pleasure to help you solve your problem.
 
 
 [1]: https://www.servermania.com/kb/articles/how-much-does-a-typical-home-server-cost/
