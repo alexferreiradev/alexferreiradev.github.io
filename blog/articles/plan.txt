@@ -1,0 +1,22 @@
+temp tcdb
+    problem
+    public
+    sections
+    title
+    tasks
+        done
+            create branch from develop
+            create a file with the mm
+        add links to articles in readme
+        add links to articles in my linkedIn
+        add links to articles in my web site
+        merge to post history
+        plan intro
+        plan sections
+        create codes to article
+        review
+        publish
+        plan how to merge to develop
+            squash ?
+            hold commit history ?
+            create a branch to post history ?
