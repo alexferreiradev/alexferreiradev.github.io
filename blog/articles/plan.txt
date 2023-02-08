@@ -1,5 +1,8 @@
 temp tcdb
     problem
+        use testContainers with spring platform
+            reuse container
+            replace properties
     public
     sections
     title
@@ -7,11 +10,13 @@ temp tcdb
         done
             create branch from develop
             create a file with the mm
-        add links to articles in readme
-        add links to articles in my linkedIn
-        add links to articles in my web site
-        merge to post history
+        old tasks
+            add links to articles in readme
+            add links to articles in my linkedIn
+            add links to articles in my web site
+            merge to post history
         plan intro
+            list problems
         plan sections
         create codes to article
         review
