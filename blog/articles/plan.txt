@@ -10,16 +10,15 @@ temp tcdb
         done
             create branch from develop
             create a file with the mm
-        old tasks
-            done
-                add links to articles in my web site
-            add links to articles in my linkedIn
-            add links to articles in readme
-            merge to post history
-            add version section in published article
-                important to link repo
-                reproduce
-                call to action to reproduce or study about
+            old tasks
+                done
+                    add links to articles in my web site
+                    add links to articles in my linkedIn
+                    add links to articles in readme
+                    add version section in published article
+                        important to link repo
+                        reproduce
+                        call to action to reproduce or study about
         plan intro
             list problems
         plan sections
@@ -30,3 +29,4 @@ temp tcdb
             squash ?
             hold commit history ?
             create a branch to post history ?
+            merge to post history
