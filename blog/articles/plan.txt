@@ -2,9 +2,21 @@ temp tcdb
     problem
         use testContainers with spring platform
             reuse container
+                tempo de rodar pipeline
             replace properties
+            configuracao spring
     public
+        java dev junior com spring
     sections
+        intro
+            pesq refs
+                tempo médio de pipeline
+                    aceitavel
+                    tempo gasto por dev
+            conceitos
+                pipeline
+                    tempo médio
+                container
     title
     tasks
         done
@@ -20,7 +32,11 @@ temp tcdb
                         reproduce
                         call to action to reproduce or study about
         plan intro
-            list problems
+            done
+                list problems
+            create the paragraphs idea
+            search refs
+            write 1 paragraph
         plan sections
         create codes to article
         review
