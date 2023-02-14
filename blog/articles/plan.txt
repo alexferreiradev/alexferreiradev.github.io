@@ -13,11 +13,40 @@ temp tcdb
                 tempo médio de pipeline
                     aceitavel
                     tempo gasto por dev
+                money for web systems
+                    2023
+                    2024
+                    estimates
             conceitos
                 pipeline
                     tempo médio
                 container
+            paragraphs
+                intro
+                    Total money web systems
+                    requirements to dev with web systems
+                    Spring framework
+                    Total of use Spring
+                        most used framework
+                problems
+                    Problems not using testContainers
+                        link for prev article
+                    basic configuration with Spring
+                        solve the problem
+                        new problem
+                            pipeline time is bigger
+                conclusion
+                    solution by the article
+                        reuse container
+                        reuse Spring context
+                        replace properties
+                        configuracao spring
+        IntegrationTest with TestContainer
+        Reusable Container
+        Conclusion
     title
+        Stop waitting infinity pipelines, hold containers with Spring
+        Stop waitting infinity pipelines, execute single container for all tests
     tasks
         done
             create branch from develop
@@ -34,10 +63,12 @@ temp tcdb
         plan intro
             done
                 list problems
-            create the paragraphs idea
-            search refs
+                create the paragraphs idea
             write 1 paragraph
+            search refs
         plan sections
+            done
+            plan ideas
         create codes to article
         review
         publish
