@@ -1,6 +1,6 @@
 # Stop suffering with tests, use TestContainers and Spring
 
-Intro 
+One of the activities that a developer lead today is deploy the application for production. They need to create a pipeline to run a lot of jobs to garantee the quality and deploy for staging and next for production. The set of jobs for quality is for run the automated tests 
 
 This article is to help developers
 
