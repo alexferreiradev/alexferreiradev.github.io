@@ -13,11 +13,11 @@ temp tcdb
                 tempo médio de pipeline
                     aceitavel
                     tempo gasto por dev
-                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
-                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>>
-                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
+                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
+                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
+                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
                     solution
-                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
+                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
                 money for web systems
                     2023
                     2024
@@ -65,6 +65,17 @@ temp tcdb
                         important to link repo
                         reproduce
                         call to action to reproduce or study about
+        plan code with spring
+            reproduce the problems
+                one container per test
+            a branch for the solution
+                static container initializer
+        create the code with spring
+            branch with problem
+                test container configured in an abstract class
+                integration test
+            branch with the solution
+                initializer from spring with static
         plan intro
             done
                 list problems
