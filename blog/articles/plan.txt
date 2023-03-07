@@ -13,11 +13,11 @@ temp tcdb
                 tempo médio de pipeline
                     aceitavel
                     tempo gasto por dev
-                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
-                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
-                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
+                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
+                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
+                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
                     solution
-                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
+                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
                 money for web systems
                     2023
                     2024
@@ -66,8 +66,13 @@ temp tcdb
                         reproduce
                         call to action to reproduce or study about
         plan code with spring
+            done
+                create branch for the project
+                    test tech
+                        spring api
             reproduce the problems
                 one container per test
+                create a branch for the problem
             a branch for the solution
                 static container initializer
         create the code with spring
