@@ -13,11 +13,11 @@ temp tcdb
                 tempo médio de pipeline
                     aceitavel
                     tempo gasto por dev
-                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
-                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
-                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
+                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
+                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
+                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
                     solution
-                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
+                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
                 money for web systems
                     2023
                     2024
@@ -65,52 +65,60 @@ temp tcdb
                         important to link repo
                         reproduce
                         call to action to reproduce or study about
-        plan code with spring
-            done
-                create branch for the project
-                    test tech
-                        spring api
-                configure project localy in idea
-                create integration test
-                create utils classes for test containers
-                    done
-                        add initializer
-                        add lib to testcontainer
-                        add postgres container
-                create a test that pass
-                    done
-                        create tasks
-                        creaate a integrationtest
-                        configure database for tests
-                        create a integration test
-                            just properties from Spring
-                            add some repo test
-                        make pass test
-                            done
-                                add mongo container
-                                add next deps
-                                configure properties
-                                tdd tests
-                                    configure mongo container
-                                    configure postgres container
-            reproduce the problems
-                one container per test
-                    dirtie context ?
-                        qual a necessidade ?
-                        se utilizar ele, porq manter o container static ?
-                    MockBean
-                    MockkBean
-                        somente no kotlin ?
-                            que repete a chamada para initializer ?
-                create a branch for the problem
-            a branch for the solution
-                static container initializer
-        create the code with spring
-            branch with problem
-                test container configured in an abstract class
-                integration test
-            branch with the solution
-                initializer from spring with static
+            plan code with spring
+                done
+                    create branch for the project
+                        test tech
+                            spring api
+                    configure project localy in idea
+                    create integration test
+                    create utils classes for test containers
+                        done
+                            add initializer
+                            add lib to testcontainer
+                            add postgres container
+                    create a test that pass
+                        done
+                            create tasks
+                            creaate a integrationtest
+                            configure database for tests
+                            create a integration test
+                                just properties from Spring
+                                add some repo test
+                            make pass test
+                                done
+                                    add mongo container
+                                    add next deps
+                                    configure properties
+                                    tdd tests
+                                        configure mongo container
+                                        configure postgres container
+                    reproduce the problems
+                        one container per test
+                            dirtie context ?
+                                qual a necessidade ?
+                                    uso para quando tem caches
+                                        poderia ser limpado o cache antes do metodo
+                                    uso de banco limpo
+                                        poderia ser limpado antes do teste
+                                            Correct. Deleting records is still a slow operation. When you have a good amount to test data, the @DirtiesContext can sometimes becomes faster than deleting the records one by one. Also, there's referential integrity between tables that enforces you to follow a series of deletes to first delete records from child tables and go up.
+                                se utilizar ele, porq manter o container static ?
+                            MockBean
+                            MockkBean
+                                somente no kotlin ?
+                                    que repete a chamada para initializer ?
+                        create a branch for the problem
+                        conclusion
+                            nao tem problema
+                            foi o dirtieContext
+                    a branch for the solution
+                        static container initializer
+            create the code with spring
+                branch with problem
+                    test container configured in an abstract class
+                    integration test
+                branch with the solution
+                    initializer from spring with static
         plan intro
             done
                 list problems
