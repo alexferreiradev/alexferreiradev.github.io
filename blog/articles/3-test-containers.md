@@ -2,9 +2,9 @@
 
 One of the activities that a developer lead today is deploy the application for production. They need to create a pipeline to run a lot of jobs to garantee the quality and deploy for staging and next for production. The set of jobs for quality is for run the automated tests 
 
-This article is to help developers
+This article is to help backend java developers to create automated test using Spring and the Testcontainers library. If you want to use Quarkus, see this [article for quarkus]. 
 
-link to first article
+First we will show how to create the base classes for our tests, next we will create the containers 
 
 ## Using a web platform Spring
 
