@@ -13,11 +13,11 @@ temp tcdb
                 tempo médio de pipeline
                     aceitavel
                     tempo gasto por dev
-                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
-                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
-                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
+                        <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>> <https://medium.com/loblaw-digital/improving-pipeline-performance-process-memory-allocation-and-dag-cf810c1a5ead>>
+                        <https://semaphoreci.com/blog/cicd-pipeline> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>> <https://semaphoreci.com/blog/cicd-pipeline>>
+                        <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>> <https://semaphoreci.com/blog/2017/03/02/what-is-proper-continuous-integration.html>>
                     solution
-                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
+                        <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>> <https://docs.gitlab.com/ee/ci/pipelines/pipeline_efficiency.html>>
                 money for web systems
                     2023
                     2024
@@ -47,7 +47,14 @@ temp tcdb
                         replace properties
                         configuracao spring
         IntegrationTest with TestContainer
-        Reusable Container
+            docker
+            docker compose
+            test containers
+                copy from prev article
+            container class
+            base class
+                Reusable Container
+            integration test example
         Conclusion
     title
         Stop waitting infinity pipelines, hold containers with Spring
@@ -138,24 +145,27 @@ temp tcdb
                     search refs
         plan sections
             done
-            plan ideas
-                req
-                    Spring 3.6
-                    Teste containers x >
-                    Java 11+
-                containers
-                    each platform need one container
-                        data base
-                        cache
-                        message broker
-                base classes
-                    platform container
-                    test base class
-                        configure spring vars
-                        configure static containers
-                test for database
-                test for kafka
-                test for redis
+                plan ideas
+                    req
+                        Spring 3.6
+                        Teste containers x >
+                        Java 11+
+                    containers
+                        each platform need one container
+                            data base
+                            cache
+                            message broker
+                    base classes
+                        platform container
+                        test base class
+                            configure spring vars
+                            configure static containers
+                    test for database
+                    test for kafka
+                    test for redis
+            plan first sect
+            plan containers sec
+            plan base sec
         create codes to article
         review the references/links
         review

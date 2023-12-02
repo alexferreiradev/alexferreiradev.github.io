@@ -8,6 +8,7 @@ First we will show how to create the base classes for our tests, next we will cr
 
 ## Using a web platform Spring
 
+A web system need some platforms to work. A database is the first thing, another can be a cache and many others platform types are used. A backend developer need to set up all these platforms to test the system locally. The fasted way use the docker to run a container to each platform. The docker compose is used to run all the containers to run the web system in seconds. However, when the developer need to create integration tests, the docker compose is not enough.   
 
 ## Conclusion
 In this article, we show how to .
