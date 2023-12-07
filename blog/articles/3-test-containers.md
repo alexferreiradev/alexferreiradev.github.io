@@ -16,14 +16,43 @@ All software needs some infrastructure like a database or a message broker. The 
 The library `TestContainers` make it easy to create all the environments for your tests at the start of the test platform. It permits you to create any type of container programmatically. You can set the ports, the networks, version of the containers and can set the correct configuration for each test. Find more information at [TestContainers quick start].
 
 ### Creating a integration test
-The integration test is a test that runs the application with all the dependencies. The test can be a simple test that runs a method or a test that runs a complete flow of the application.
+The integration test is a test that runs the application with all the dependencies. The test can be a simple test that runs a method or a test that runs a complete flow of the application. So, the developer need to create a test that use the web platform to simulate the real environment. The TestContainers library can help the developer to create the environment for the test. The first step is to create a base class to create the containers.
 
 #### Container class
+The container class is a class that extends the `GenericContainer` class from the TestContainers library. The class need to have a constructor that receive the image name and the version of the container. Each platform that the application need, databases, message broker and others need a container class. There are some container class in the TestContainer library, but if you need a specific configuration, you need to create a new class.
 
 #### Base test class
+After created the containers classes, you can create a base class to your integration tests. In this case you create a class to create the containers and replace the connection configuration for each platform that you need in your application. For example, below you can see a example java class for Spring: 
+
+```java
+@SpringBootTest
+@ActiveProfiles("test")
+public class IntegrationTest {
+    
+        @Container
+        public static final PostgreSQLContainer<?> POSTGRES_CONTAINER = new PostgreSQLContainer<>("postgres:13.2");
+    
+        @Container
+        public static final RedisContainer<?> REDIS_CONTAINER = new RedisContainer<>("redis:6.2.1");
+    
+        @DynamicPropertySource
+        static void postgresProperties(DynamicPropertyRegistry registry) {
+            registry.add("spring.datasource.url", POSTGRES_CONTAINER::getJdbcUrl);
+            registry.add("spring.datasource.username", POSTGRES_CONTAINER::getUsername);
+            registry.add("spring.datasource.password", POSTGRES_CONTAINER::getPassword);
+        }
+    
+        @DynamicPropertySource
+        static void redisProperties(DynamicPropertyRegistry registry) {
+            registry.add("spring.redis.host", REDIS_CONTAINER::getHost);
+            registry.add("spring.redis.port", REDIS_CONTAINER::getFirstMappedPort);
+        }
+}
+
+```
 
 ### Environment
-copy from past article
+
 
 ## Conclusion
 In this article, we show how to .
