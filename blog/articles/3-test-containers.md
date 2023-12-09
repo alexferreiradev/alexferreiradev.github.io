@@ -18,6 +18,13 @@ The library `TestContainers` make it easy to create all the environments for you
 ### Creating a integration test
 The integration test is a test that runs the application with all the dependencies. The test can be a simple test that runs a method or a test that runs a complete flow of the application. So, the developer need to create a test that use the web platform to simulate the real environment. The TestContainers library can help the developer to create the environment for the test. The first step is to create a base class to create the containers.
 
+First of all, you need to add the library to your dependency management. In Gradle you can do that:
+```groovy
+testImplementation "org.junit.jupiter:junit-jupiter:5.8.1"
+testImplementation "org.testcontainers:testcontainers:1.17.2"
+testImplementation "org.testcontainers:junit-jupiter:1.17.2"
+```
+
 #### Container class
 The container class is a class that extends the `GenericContainer` class from the TestContainers library. The class need to have a constructor that receive the image name and the version of the container. Each platform that the application need, databases, message broker and others need a container class. There are some container class in the TestContainer library, but if you need a specific configuration, you need to create a new class.
 
@@ -52,7 +59,10 @@ public class IntegrationTest {
 ```
 
 ### Environment
-
+The example used in this tutorial is hosted by [Github](https://github.com/alexferreiradev/tecnologias_java). The versions used are following:
+* Junit: 5
+* TestContainers: 1.17.2
+* Java 11
 
 ## Conclusion
 In this article, we show how to .
