@@ -58,6 +58,29 @@ public class IntegrationTest {
 
 ```
 
+The example above show how to create a base class to replace the connection configuration for a database and redis cache platforms for example. So, you need to configure in this class each platfrom that your application use. 
+
+A important thing to notice is the static container field. The TestContainers library create the container and when is a statis field, the container is re-used by all the tests. So, with this configuration, the containers are created only one time for all the tests, a singleton container.
+
+After that, you can create your integration test class. The example below show how to create a integration test class for a Spring application:
+
+```java
+public class UserRepositoryIT extends IntegrationTest {
+    
+    @Autowired
+    private UserRepository userRepository;
+    
+    @Test
+    public void shouldCreateUser() {
+        User user = new User("Alex");
+        userRepository.save(user);
+        assertThat(userRepository.findById(user.getId())).isPresent();
+    }
+}
+```
+
+You run this test and you will see the containers created by TestContainers library, the spring will replace the connection configuration for the database and the cache and will create the repository bean using the correct database connection.
+
 ### Environment
 The example used in this tutorial is hosted by [Github](https://github.com/alexferreiradev/tecnologias_java). The versions used are following:
 * Junit: 5
