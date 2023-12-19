@@ -1,10 +1,6 @@
 # Stop suffering with tests, use TestContainers and Spring
 
-One of the activities that a developer lead today is deploy the application for production. They need to create a pipeline to run a lot of jobs to garantee the quality and deploy for staging and next for production. The set of jobs for quality is for run the automated tests 
-
-This article is to help backend java developers to create automated test using Spring and the Testcontainers library. If you want to use Quarkus, see this [article for quarkus]. 
-
-First we will show how to create the base classes for our tests, next we will create the containers and finally create a integration test.
+A developer lead with a lot of activities, one of them is deploy an application for production. They need to ensure the quality to deploy in production.  They create a pipeline to run a set of automated tests to hold the quality. This article helps java developers to create automated test. So you will learn how to create integration tests using Spring. If you want to use Quarkus, see this [article for quarkus]. First we will show how to create the base classes for our tests. Next, we will show how to run an application using platforms managed by a library. Finally, we will create a integration test example.
 
 ## Using a web platform Spring
 A web system need some platforms to work. A database is the first thing, another can be a cache and many others platform types are used. A backend developer need to set up all these platforms to test the system locally. The fasted way use the docker to run a container to each platform. The docker compose is used to run all the containers to run the web system in seconds. However , when the developer need to create integration tests, the docker compose is not enough.   
