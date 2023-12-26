@@ -1,6 +1,6 @@
 # Stop suffering with tests, use TestContainers and Spring
 
-A developer deals with a lot of activities, one of which is deploying a production application. They need to ensure the quality to deploy in production.  They create a pipeline to run a set of automated tests to hold the quality. This article helps Java developers to create automated tests. So you will learn how to create integration tests using Spring. If you want to use Quarkus, see this [article for Quarkus]. First, we will show how to create the base classes for our tests. Next, we will show how to run an application using platforms managed by a library. Finally, we will create an integration test example.
+A developer deals with a lot of activities by day. One of which is deploying a production application. They need to ensure the quality to deploy in production. They create a pipeline to run a set of automated tests to hold the quality. This article helps Java developers create automated tests. So you will learn how to create integration tests using Spring. If you want to use Quarkus, see this [article for Quarkus]. First, we will show how to create the base classes for our tests. Next, we will show how to run an application using platforms managed by a library. Finally, we will create an integration test example.
 
 ## Using a web platform Spring
 
@@ -28,7 +28,7 @@ The container class is a class that extends the `GenericContainer` class. This c
 The integration test is a test that runs the application with all the dependencies. The test can be a simple test that runs a method or a test that runs a complete flow of the application. So, the developer needs to create a test that uses the web platform to simulate the real environment. After creating the container classes, you can create a base integration class. You will use this class to set up all your test changes in one place.
 
 #### Base test class
-After creating the container classes, you can create a base class for your integration tests. In this case, you create a class to create the containers and replace the connection configuration for each platform that you need in your application. For example, below you can see an example java class for Spring:
+A base class will create all the containers and set up the connection configurations. For example, you can see below a Java class example for Spring:
 
 ```java
 @SpringBootTest
@@ -57,11 +57,7 @@ public class IntegrationTest {
 
 ```
 
-The example above shows how to create a base class to replace the connection configuration for a database and Redis cache platforms for example. So, you need to configure in this class each platform that your application uses.
-
-An important thing to notice is the static container field. The TestContainers library creates the container and when there is a static field, the container is re-used by all the tests. So, with this configuration, the containers are created only one time for all the tests, a singleton container.
-
-After that, you can create your integration test class. The example below shows how to create an integration test class for a Spring application:
+You need to configure in this class each platform that your application uses. You configure a database and Redis cache platforms for example. An important thing to notice is the static container field. The TestContainers library uses the same container for all the tests. The library creates a singleton container. After that, you can create your integration test class. The example below shows how to create an integration test class for a Spring application:
 
 ```java
 public class UserRepositoryIT extends IntegrationTest {
@@ -78,10 +74,10 @@ public class UserRepositoryIT extends IntegrationTest {
 }
 ```
 
-You run this test and you will see the containers created by the TestContainers library, the spring will replace the connection configuration for the database and the cache and will create the repository bean using the correct database connection.
+You will see the containers created by the TestContainers after running the tests. The Spring will replace the connection configuration for the database. After, Spring will create the repository bean using the correct database connection. So, the test can use the repository to assert the result for each scenario.
 
 ### Environment
-The example used in this tutorial is hosted by [Github](https://github.com/alexferreiradev/tecnologias_java/tree/international-career-day-23/Spring/sample-api/src/test/java/dev/alexferreira/sampleapi/infrastructure/kafka). The versions used are following:
+[Github](https://github.com/alexferreiradev/tecnologias_java/tree/international-career-day-23/Spring/sample-api/src/test/java/dev/alexferreira/sampleapi/infrastructure/kafka) host this example. The versions used are the following:
 * Junit: 5
 * TestContainers: 1.17.6
 * Java 11
