@@ -1,4 +1,4 @@
-# Stop suffering with tests, use TestContainers and Spring
+# High System quality with Spring integration tests
 
 A developer deals with a lot of activities by day. One of which is deploying a production application. They need to ensure the quality to deploy in production. They create a pipeline to run a set of automated tests to hold the quality. This article helps Java developers create automated tests. So you will learn how to create integration tests using Spring. If you want to use Quarkus, see this [article for Quarkus]. First, we will show how to create the base classes for our tests. Next, we will show how to run an application using platforms managed by a library. Finally, we will create an integration test example.
 
