@@ -1,0 +1,10 @@
+temp tcdb
+    goal
+        what spring version is compatiible with testContainers
+    topics
+    tasks
+        done
+        plan goal
+        create branch in last spring branch
+        configure files to be dynamic
+        create table to versions
