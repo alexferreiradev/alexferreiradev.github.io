@@ -2,9 +2,31 @@ temp tcdb
     goal
         what spring version is compatiible with testContainers
     topics
+        sections
+            intro
+            table
+            args to each version
     tasks
         done
-        plan goal
+            plan goal
+            plan sections
+            plan
         create branch in last spring branch
         configure files to be dynamic
+            to change the version easly
+                as Spring as testContainers
+        create tests
+        run for spring version 1
+            testContainers 1.17.6
+            last
+        doc version 1 expirement
+        run for spring version 2
+            testContainers 1.17.6
+            last
+        doc version 2 expirement
+        run for spring version 3
+            testContainers 1.17.6
+            last
+        doc version 3 expirement
+        resume documentations
         create table to versions
