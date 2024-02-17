@@ -11,10 +11,15 @@ temp tcdb
             plan goal
             plan sections
             plan
-        create branch in last spring branch
+            create branch in last spring branch
         configure files to be dynamic
+            create make script to run all tests
+            run all tests
             to change the version easly
                 as Spring as testContainers
+                in gradle
+            change to
+                old spring version
         create tests
         run for spring version 1
             testContainers 1.17.6
