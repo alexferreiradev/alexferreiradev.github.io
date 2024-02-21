@@ -21,8 +21,10 @@ temp tcdb
                 13
                     done
                         res handler
-                    create auth
+                        create auth
                     user repo
+                        nao esta lancando duplicated no mongo
+                            estudar como fazer
                     inquilinoConsumerIT
                     sample application
                     inq res
