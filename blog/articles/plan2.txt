@@ -13,8 +13,22 @@ temp tcdb
             plan
             create branch in last spring branch
         configure files to be dynamic
-            create make script to run all tests
-            run all tests
+            done
+                create make script to run all tests
+                run all tests
+                use gradle test
+            fix tests
+                13
+                    done
+                        res handler
+                    create auth
+                    user repo
+                    inquilinoConsumerIT
+                    sample application
+                    inq res
+                    lights
+                        auth res
+                        inq res
             to change the version easly
                 as Spring as testContainers
                 in gradle
