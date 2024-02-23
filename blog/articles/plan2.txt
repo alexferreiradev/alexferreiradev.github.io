@@ -22,15 +22,18 @@ temp tcdb
                     done
                         res handler
                         create auth
+                        inq res
+                        lights
+                            auth res
+                            inq res
                     user repo
                         nao esta lancando duplicated no mongo
                             estudar como fazer
                     inquilinoConsumerIT
+                        not call the usecase
                     sample application
-                    inq res
-                    lights
-                        auth res
-                        inq res
+                        not loading property
+                        not injectiong evn
             to change the version easly
                 as Spring as testContainers
                 in gradle
