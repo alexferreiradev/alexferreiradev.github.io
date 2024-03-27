@@ -12,6 +12,9 @@ temp tcdb
             plan sections
             plan
             create branch in last spring branch
+                project
+                    sample-api
+                article-spring-versions
         configure files to be dynamic
             done
                 create make script to run all tests
@@ -26,9 +29,16 @@ temp tcdb
                         lights
                             auth res
                             inq res
-                    user repo
-                        nao esta lancando duplicated no mongo
-                            estudar como fazer
+                        user repository
+                            nao esta lancando duplicated no mongo
+                                estudar como fazer
+                                    site oficial
+                                    baeldung
+                                solucao
+                                    precisa de criar os index
+                                        spring.data.mongodb.auto-index-creation=true
+                    commit user repo
+                        note vostro
                     inquilinoConsumerIT
                         not call the usecase
                     sample application
