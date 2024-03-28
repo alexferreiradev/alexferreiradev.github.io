@@ -37,10 +37,18 @@ temp tcdb
                                 solucao
                                     precisa de criar os index
                                         spring.data.mongodb.auto-index-creation=true
-                    commit user repo
-                        note vostro
+                        commit user repo
+                            note vostro
                     inquilinoConsumerIT
                         not call the usecase
+                            listen not call usecase
+                                debug
+                                    kafka is running
+                                    olhar com kafka-ui
+                                        tem topico
+                                        tem msg
+                                        erro é no consumer ?
+                                        erro somente no teste  ?
                     sample application
                         not loading property
                         not injectiong evn
