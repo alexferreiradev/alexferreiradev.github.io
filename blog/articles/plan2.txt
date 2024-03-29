@@ -40,18 +40,25 @@ temp tcdb
                         commit user repo
                             note vostro
                     inquilinoConsumerIT
-                        not call the usecase
-                            listen not call usecase
-                                debug
-                                    kafka is running
-                                    olhar com kafka-ui
-                                        tem topico
-                                        tem msg
-                                        erro é no consumer ?
-                                        erro somente no teste  ?
+                        done
+                            not call the usecase
+                                listen not call usecase
+                                    debug
+                                        kafka is running
+                                        olhar com kafka-ui
+                                            tem topico
+                                            tem msg
+                                            erro é no consumer ?
+                                            erro somente no teste  ?
+                        commit 
+                        add config para criar topico 
+                            criar topico auto 
                     sample application
                         not loading property
                         not injectiong evn
+                        debug
+                        a change can be ignore this test
+                            just skip for finish the article
             to change the version easly
                 as Spring as testContainers
                 in gradle
