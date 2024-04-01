@@ -20,48 +20,72 @@ temp tcdb
                 create make script to run all tests
                 run all tests
                 use gradle test
-            fix tests
-                13
-                    done
-                        res handler
-                        create auth
-                        inq res
-                        lights
-                            auth res
-                            inq res
-                        user repository
-                            nao esta lancando duplicated no mongo
-                                estudar como fazer
-                                    site oficial
-                                    baeldung
-                                solucao
-                                    precisa de criar os index
-                                        spring.data.mongodb.auto-index-creation=true
-                        commit user repo
-                            note vostro
-                    inquilinoConsumerIT
+                fix tests
+                    13
                         done
-                            not call the usecase
-                                listen not call usecase
-                                    debug
-                                        kafka is running
-                                        olhar com kafka-ui
-                                            tem topico
-                                            tem msg
-                                            erro é no consumer ?
-                                            erro somente no teste  ?
-                        commit 
-                        add config para criar topico 
-                            criar topico auto 
-                    sample application
-                        not loading property
-                        not injectiong evn
-                        debug
-                        a change can be ignore this test
-                            just skip for finish the article
+                            res handler
+                            create auth
+                            inq res
+                            lights
+                                auth res
+                                inq res
+                            user repository
+                                nao esta lancando duplicated no mongo
+                                    estudar como fazer
+                                        site oficial
+                                        baeldung
+                                    solucao
+                                        precisa de criar os index
+                                            spring.data.mongodb.auto-index-creation=true
+                            commit user repo
+                                note vostro
+                            inquilinoConsumerIT
+                                done
+                                    not call the usecase
+                                        listen not call usecase
+                                            debug
+                                                kafka is running
+                                                olhar com kafka-ui
+                                                    tem topico
+                                                    tem msg
+                                                    erro é no consumer ?
+                                                    erro somente no teste  ?
+                                    commit
+                                    add config para criar topico
+                                        criar topico auto
+                                        nao podemos, pois em prd nao teria
+                            sample application
+                                not loading property
+                                not injectiong evn
+                                debug
+                                a change can be ignore this test
+                                    just skip for finish the article
             to change the version easly
-                as Spring as testContainers
-                in gradle
+                done
+                plan
+                    what is the best way to put dynamic versions ?
+                        gradle properties ?
+                        sys env ?
+                    how many versions we will cover
+                        test container
+                            1.19
+                            18
+                            17
+                            16
+                            15
+                        springboot
+                            3.2
+                            2.6
+                            1.5
+                        spring context
+                            3.2.18.RELEASE
+                            5.2
+                            5.3
+                            6
+                            6.1
+                change
+                    as Spring as testContainers
+                    in gradle
             change to
                 old spring version
         create tests
