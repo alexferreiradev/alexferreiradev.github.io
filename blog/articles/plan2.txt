@@ -60,46 +60,63 @@ temp tcdb
                                 debug
                                 a change can be ignore this test
                                     just skip for finish the article
-            to change the version easly
-                done
-                plan
-                    what is the best way to put dynamic versions ?
-                        gradle properties ?
-                        sys env ?
-                    how many versions we will cover
-                        test container
-                            1.19
-                            18
-                            17
-                            16
-                            15
-                        springboot
-                            3.2
-                            2.6
-                            1.5
-                        spring context
-                            3.2.18.RELEASE
-                            5.2
-                            5.3
-                            6
-                            6.1
-                change
-                    as Spring as testContainers
-                    in gradle
-            change to
-                old spring version
-        create tests
-        run for spring version 1
-            testContainers 1.17.6
-            last
-        doc version 1 expirement
-        run for spring version 2
-            testContainers 1.17.6
-            last
-        doc version 2 expirement
-        run for spring version 3
-            testContainers 1.17.6
-            last
-        doc version 3 expirement
+                to change the version easly
+                    done
+                    plan
+                        what is the best way to put dynamic versions ?
+                            gradle properties ?
+                            sys env ?
+                        how many versions we will cover
+                            test container
+                                1.19
+                                18
+                                17
+                                16
+                                15
+                            springboot
+                                3.2
+                                2.6
+                                1.5
+                            spring context
+                                3.2.18.RELEASE
+                                5.2
+                                5.3
+                                6
+                                6.1
+                    change
+                        as Spring as testContainers
+                        in gradle
+                    we used gradle properties
+                        with interpolação
+                            ${propertyName}
+            commit
+        fix test
+            resource
+            ignore
+                sample api
+                base producer
+        run tests task
+            test container
+                1.19
+                18
+                17
+                16
+                15
+            springboot
+                3.2
+                2.6
+                1.5
+            spring context
+                3.2.18.RELEASE
+                5.2
+                5.3
+                6
+                6.1
+            doc version 1 expirement
+            doc version 2 expirement
+            doc version 3 expirement
+        change to
+            old spring project
+            create tests
         resume documentations
         create table to versions
