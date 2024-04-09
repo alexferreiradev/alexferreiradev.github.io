@@ -107,6 +107,9 @@ temp tcdb
                     ambos testes passam via idea
                 parece que o erro foi o consumer nao ter sido sobrescribed e jah ter chamado o poll dele
                     talvez colocar um listener o start
+                    listener nao esta sendo chamado
+                        talvez almentar tempo de mock
+                            ver se rebalance esta ocorrendo e quanto tempo leva o rebalance
         run tests task
             test container
                 1.19
