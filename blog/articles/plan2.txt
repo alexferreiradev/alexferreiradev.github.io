@@ -95,21 +95,23 @@ temp tcdb
                     sample api
                     base producer
                 resource
-        teste de consumer falhando
-            quando roda tudo junto com test task
-                passa normal rodando separado
-                talvez colocar um dirty context
-                debugar e ver qual o log do tests
-            debug
-                done
-                    add nome de topico
-                        era a falta de dar nome ao topico
-                    ambos testes passam via idea
-                parece que o erro foi o consumer nao ter sido sobrescribed e jah ter chamado o poll dele
-                    talvez colocar um listener o start
-                    listener nao esta sendo chamado
-                        talvez almentar tempo de mock
-                            ver se rebalance esta ocorrendo e quanto tempo leva o rebalance
+            teste de consumer falhando
+                quando roda tudo junto com test task
+                    passa normal rodando separado
+                    talvez colocar um dirty context
+                    debugar e ver qual o log do tests
+                debug
+                    done
+                        add nome de topico
+                            era a falta de dar nome ao topico
+                        ambos testes passam via idea
+                    parece que o erro foi o consumer nao ter sido sobrescribed e jah ter chamado o poll dele
+                        talvez colocar um listener o start
+                        listener nao esta sendo chamado
+                            talvez almentar tempo de mock
+                                ver se rebalance esta ocorrendo e quanto tempo leva o rebalance
+                        aumentamos o timeout e funfoou
+                            60_000
         run tests task
             test container
                 1.19
