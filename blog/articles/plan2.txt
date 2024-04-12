@@ -112,6 +112,11 @@ temp tcdb
                                 ver se rebalance esta ocorrendo e quanto tempo leva o rebalance
                         aumentamos o timeout e funfoou
                             60_000
+                    solucao
+                        erro era a forma de fazer assing do consumer
+                            subscription usa rebalance do consumer group
+                            assign nao usa consumer group
+                        usamos assign e parou de fazer rebalance e testes passaram
         run tests task
             test container
                 1.19
@@ -119,10 +124,20 @@ temp tcdb
                 17
                 16
                 15
+                    precisa add lib manual
+                        jetbrains
+                    nao tem
+                        setHostAccessible
             springboot
                 3.2
                 2.6
+                2.5
                 1.5
+                    nao tem boot-devtools
+                        developmentOnly 'org.springframework.boot:spring-boot-devtools'
+                    kafka
+                        groupId
+                            nao tem
             spring context
                 3.2.18.RELEASE
                 5.2
