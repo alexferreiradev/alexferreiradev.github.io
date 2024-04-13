@@ -117,6 +117,11 @@ temp tcdb
                             subscription usa rebalance do consumer group
                             assign nao usa consumer group
                         usamos assign e parou de fazer rebalance e testes passaram
+            try to fix the error in resource IT
+                done
+                    disabled
+                    there are errors from mock mvc
+                        may be configured wrong way
         run tests task
             test container
                 1.19
