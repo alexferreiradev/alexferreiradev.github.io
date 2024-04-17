@@ -6,6 +6,32 @@ temp tcdb
             intro
             table
             args to each version
+        versions
+            test container
+                1.19
+                18
+                17
+                16
+                15
+                    precisa add lib manual
+                        jetbrains
+                    nao tem
+                        setHostAccessible
+            springboot
+                3.2
+                2.6
+                2.5
+                1.5
+                    nao tem boot-devtools
+                        developmentOnly 'org.springframework.boot:spring-boot-devtools'
+                    kafka
+                        groupId
+                            nao tem
+                    nao tem
+                        jupiter api
+                            junit 5
+                        DynamicPropertyRegistry
+                        TestPropertyValues
     tasks
         done
             plan goal
@@ -123,37 +149,20 @@ temp tcdb
                     there are errors from mock mvc
                         may be configured wrong way
         run tests task
-            test container
-                1.19
-                18
-                17
-                16
-                15
-                    precisa add lib manual
-                        jetbrains
-                    nao tem
-                        setHostAccessible
-            springboot
-                3.2
-                2.6
-                2.5
-                1.5
-                    nao tem boot-devtools
-                        developmentOnly 'org.springframework.boot:spring-boot-devtools'
-                    kafka
-                        groupId
-                            nao tem
-            spring context
-                3.2.18.RELEASE
-                5.2
-                5.3
-                6
-                6.1
-            doc version 1 expirement
-            doc version 2 expirement
-            doc version 3 expirement
+            done
+                run olds versions
+            run version intermediate
+            list all break changes
+            plan article if have some relevance
         change to
             old spring project
             create tests
         resume documentations
         create table to versions
+        next article
+            sem spring boot. spring context
+                3.2.18.RELEASE
+                5.2
+                5.3
+                6
+                6.1
