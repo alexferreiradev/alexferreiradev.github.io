@@ -151,6 +151,7 @@ temp tcdb
         run tests task
             done
                 run olds versions
+                create makefile to increase the velocity of runs
             run version intermediate
             list all break changes
             plan article if have some relevance
