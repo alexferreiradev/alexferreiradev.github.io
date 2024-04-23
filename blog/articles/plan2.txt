@@ -11,7 +11,7 @@ temp tcdb
                 1.19
                 18
                 17
-                16
+                16..3
                 15
                     precisa add lib manual
                         jetbrains
@@ -20,7 +20,19 @@ temp tcdb
             springboot
                 3.2
                 2.6
-                2.5
+                2.5.6
+                    TestEngine with ID 'junit-jupiter'
+                        devido libs adicionadas manualmente
+                        refazer teste sem as libs
+                            ver se roda os testes
+                            jupiter
+                            na versao 15 do test containers
+                                nao rodou
+                                na 16 sem as libs rodou
+                            ver se as libs foram adicionadas no testcontainers ou spring
+                                acho que testcontainers mesmo
+                                passou com spring 2.5.6
+                                mas nao passou com test 15
                 1.5
                     nao tem boot-devtools
                         developmentOnly 'org.springframework.boot:spring-boot-devtools'
