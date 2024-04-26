@@ -12,6 +12,7 @@ temp tcdb
                 18
                 17
                 16..3
+                    passou tudo
                 15
                     precisa add lib manual
                         jetbrains
@@ -33,6 +34,7 @@ temp tcdb
                                 acho que testcontainers mesmo
                                 passou com spring 2.5.6
                                 mas nao passou com test 15
+                    passou
                 1.5
                     nao tem boot-devtools
                         developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -164,7 +166,7 @@ temp tcdb
             done
                 run olds versions
                 create makefile to increase the velocity of runs
-            run version intermediate
+                run version intermediate
             list all break changes
             plan article if have some relevance
         change to
