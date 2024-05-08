@@ -9,8 +9,11 @@ temp tcdb
         versions
             test container
                 1.19
+                    passou tudo
                 18
+                    passou tudo
                 17
+                    passou tudo
                 16..3
                     passou tudo
                 15
@@ -21,6 +24,20 @@ temp tcdb
             springboot
                 3.2
                 2.6
+                    test container
+                        1.19
+                            passou tudo
+                        18
+                            passou tudo
+                        17
+                            passou tudo
+                        16..3
+                            passou tudo
+                        15
+                            precisa add lib manual
+                                jetbrains
+                            nao tem
+                                setHostAccessible
                 2.5.6
                     TestEngine with ID 'junit-jupiter'
                         devido libs adicionadas manualmente
@@ -167,6 +184,8 @@ temp tcdb
                 run olds versions
                 create makefile to increase the velocity of runs
                 run version intermediate
+            run to each spring version
+                with lastest testcontainers version
             list all break changes
             plan article if have some relevance
         change to
