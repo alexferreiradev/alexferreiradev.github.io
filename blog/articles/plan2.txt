@@ -179,19 +179,38 @@ temp tcdb
                     disabled
                     there are errors from mock mvc
                         may be configured wrong way
-        run tests task
-            done
-                run olds versions
-                create makefile to increase the velocity of runs
-                run version intermediate
-            run to each spring version
-                with lastest testcontainers version
-            list all break changes
-            plan article if have some relevance
+            run tests task
+                done
+                    run olds versions
+                    create makefile to increase the velocity of runs
+                    run version intermediate
+                    run to each spring version
+                        with lastest testcontainers version
+                    list all break changes
+                    plan article if have some relevance
+                        dont have any relevance
+                            all versions change lettle
         change to
             old spring project
-            create tests
-        resume documentations
+                just spring core
+                    version 2
+                        plan change
+                            what changed from spring boot ?
+                                what is the diference ?
+                                what do I need to do to work with same project ?
+                            do I need to remove some feature because of limitation of spring core ?
+                            what is the lasted version ?
+                            what is the version from old job ?
+                        tasks
+                            create branch
+                            answer the questions
+                            create a poc with spring core
+                                how to create a bean
+                                how to inject a bean
+                                how to create integrated tests
+                                how to set the context in tests
+                            change the user system
+                            change the auth system
         create table to versions
         next article
             sem spring boot. spring context
