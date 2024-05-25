@@ -207,16 +207,27 @@ temp tcdb
                                         spring test
                                     mapear cada servlet manualmente em web.xml
                                     configurar component scan por xml + anotation
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
                                 what do I need to do to work with same project ?
+                                    create web.xml
+                                    change the libs
+                                    change java version
                             do I need to remove some feature because of limitation of spring core ?
                             what is the lasted version ?
                             what is the version from old job ?
                         tasks
-                            answer the questions
-                                doc oficial
-                                    <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>
-                            create branch
+                            done
+                                create branch
+                                answer the questions
+                                    doc oficial
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
+                            configure libs
+                                erro de version
+                                java version
+                                    run in terminal
+                            list all codes not compilling
+                                comment all
+                            change code to compile
                             create a poc with spring core
                                 how to create a bean
                                 how to inject a bean
