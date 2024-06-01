@@ -1,0 +1,13 @@
+temp tcdb
+    topics
+        publico
+            estudantes
+            universitarios
+            geeks
+            devs
+        desafios publico
+            libs para versao atual de serviços legados
+            criar testes de integracao
+    tasks
+        done
+        plan tasks
