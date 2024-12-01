@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Sessão de palestras com CPGO4 e Join community
+- Pagina Home com adição de cs na introdução 
 
 ### Removed
 

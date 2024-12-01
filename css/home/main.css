@@ -40,6 +40,17 @@ body {
 	color: white;
 }
 
+.profile-paragraph {
+	font-size: 1em;
+	font-style: normal;
+	font-weight: bold;
+	color: white;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 3em;
+	padding-top: 2em;
+}
+
 .section-title {
 	text-align: center;
 	justify-content: center;
