@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -  Artigo Spring com TestContainers
 
 ### Changed
+- Sessão de palestras com CPGO4 e Join community
 
 ### Removed
 
