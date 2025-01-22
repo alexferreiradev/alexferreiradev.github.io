@@ -194,6 +194,12 @@ temp tcdb
             old spring project
                 just spring core
                     version 2
+                        projeto
+                            Sample api
+                                portaria eletronica
+                            branch
+                                spring-core
+                                spring-versions
                         plan change
                             what changed from spring boot ?
                                 what is the diference ?
@@ -207,7 +213,7 @@ temp tcdb
                                         spring test
                                     mapear cada servlet manualmente em web.xml
                                     configurar component scan por xml + anotation
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
                                 what do I need to do to work with same project ?
                                     create web.xml
                                     change the libs
@@ -220,7 +226,7 @@ temp tcdb
                                 create branch
                                 answer the questions
                                     doc oficial
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
                                 configure libs
                                     erro de version
                                     java version
@@ -248,7 +254,17 @@ temp tcdb
                                             request mappping with method
                                         advice
                                 mongo repo
+                                    done
+                                        add lib spring-data-mongo
+                                    recriar BaseRepository sem anotations spring boot
+                                        anotacoes
+                                            DataMongoTest
+                                            AutoConfigureDataJpa
+                                            AutoConfigureTestDatabase
+                                    resolver problema de dependencias
+                                        orm
                                 repository
+                                    add lib de spring-jpa
                                 spring data
                                 configuration
                                     configuration properties
