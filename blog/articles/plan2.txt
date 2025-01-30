@@ -200,6 +200,26 @@ temp tcdb
                             branch
                                 spring-core
                                 spring-versions
+                            spring core versions
+                                2
+                                    contextConfiguration
+                                        desde da 2
+                                3.2.18.RELEASE
+                                    goiania usando
+                                    contextConfiguration
+                                        desde da 2
+                                    ActiveProfiles
+                                4
+                                    tem algumas anotations de testes
+                                        Dirties
+                                        bootstrap with
+                                        TestPropertySource
+                                5
+                                    entrou junit5
+                                    Dynamic Property source
+                                6
+                                    entrou MockBean
+                                    Import
                         plan change
                             what changed from spring boot ?
                                 what is the diference ?
@@ -213,7 +233,7 @@ temp tcdb
                                         spring test
                                     mapear cada servlet manualmente em web.xml
                                     configurar component scan por xml + anotation
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
                                     libs
                                         javax-persistence-api
                                         controller advice
@@ -237,7 +257,7 @@ temp tcdb
                                 create branch
                                 answer the questions
                                     doc oficial
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
                                 configure libs
                                     erro de version
                                     java version
@@ -279,9 +299,18 @@ temp tcdb
                                     done
                                         mockito
                                             add lib
+                                    mudar para versao 5
+                                        tem quase tudo de testes
+                                            java 11
+                                            junit 5
+                                            jpa 2
+                                        ai alteramos para 3 aos poucos
+                                            migracao para junit4
+                                            migracao para java 8
+                                                talvez, testar com 11
                                     configuration
                                         configuration properties
-                                            <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>
+                                            <https://docs.spring.io/spring-framework/reference/core/beans/environment.html> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>>
                                         create appConfig
                                             create with componentScan
                                             replace spring application
@@ -309,7 +338,7 @@ temp tcdb
         create table to versions
         next article
             sem spring boot. spring context
-                3.2.18.RELEASE
+                3.2.18.RELEASE -- pessoal de goiania
                 5.2
                 5.3
                 6
