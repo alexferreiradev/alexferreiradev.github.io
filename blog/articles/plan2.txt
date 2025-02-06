@@ -243,7 +243,7 @@ temp tcdb
                                         spring test
                                     mapear cada servlet manualmente em web.xml
                                     configurar component scan por xml + anotation
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
                                     libs
                                         javax-persistence-api
                                         controller advice
@@ -267,7 +267,7 @@ temp tcdb
                                 create branch
                                 answer the questions
                                     doc oficial
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
+                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
                                 configure libs
                                     erro de version
                                     java version
@@ -333,33 +333,43 @@ temp tcdb
                                                         como ativar property source nos testes
                                                             ativei com holder
                                                         como ativar para criar objeto com properties anotado
-                                    repository
-                                        done
-                                            baseIT usava autoconfigure de database
-                                                recriar BaseRepository sem anotations spring boot
-                                                    anotacoes
-                                                        DataMongoTest
-                                                        AutoConfigureDataJpa
-                                                        AutoConfigureTestDatabase
-                                        error
-                                            config de data source
-                                                configurar JPA manualmente
-                                                    configurar dataSource manualmente como bean
-                                                        em RepositoryConfiguration
-                                                        add hibernate como deps
-                                                    configurar entiyManagerFactory
-                                                    criar persistence unit em xml
-                                                    nao precisou, da para usar java code no configuration
-                                                configuracao de container para testes
-                                                    variavel de env
-                                                        resolveu
-                                                configuracao de hibernate com jpa
-                                                    erro
-                                                        dialeto nao configurado
-                                                            talvez usar uma config de banco, ou verificar dados do banco
-                                            repository nao criado
-                                                spring boot gera os repository para nos
-                                                teremos que criar os repository na mao
+                                        repository
+                                            done
+                                                baseIT usava autoconfigure de database
+                                                    recriar BaseRepository sem anotations spring boot
+                                                        anotacoes
+                                                            DataMongoTest
+                                                            AutoConfigureDataJpa
+                                                            AutoConfigureTestDatabase
+                                                error
+                                                    config de data source
+                                                        configurar JPA manualmente
+                                                            configurar dataSource manualmente como bean
+                                                                em RepositoryConfiguration
+                                                                add hibernate como deps
+                                                            configurar entiyManagerFactory
+                                                            criar persistence unit em xml
+                                                            nao precisou, da para usar java code no configuration
+                                                        configuracao de container para testes
+                                                            variavel de env
+                                                                resolveu
+                                                        configuracao de hibernate com jpa
+                                                            erro
+                                                                dialeto nao configurado
+                                                                    talvez usar uma config de banco, ou verificar dados do banco
+                                                    repository nao criado
+                                                        Anotation RepositoryDefinition necessario
+                                                            seta o domain e o idClass
+                                    document all changes that i need
+                                    commit repository changes
+                                    Web
+                                        controllers
+                                            Inquilino
+                                    Message
+                                        rabbit
+                                        kafka
+                                    storage
+                                        azure
                                     configuration
                                         create appConfig
                                             create with componentScan
@@ -368,7 +378,7 @@ temp tcdb
                                         create a reader properties and send to object
                                             bean for mock bean
                                             configuration properties
-                                                <https://docs.spring.io/spring-framework/reference/core/beans/environment.html> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>>
+                                                <https://docs.spring.io/spring-framework/reference/core/beans/environment.html> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>> <https://docs.spring.io/spring-framework/reference/core/beans/environment.html>>
                                         tem lib ?
                                         nao tem suporte ?
                                             pega pelo system env ?
