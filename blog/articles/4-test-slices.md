@@ -2,6 +2,10 @@
 
 Intro
 
+## Slices tests on Spring Boot
+
+Tests are one part of development that is dificult for a lot of developers. The developers need to know the library to run the tests, the framework web that are using to mock the dependencies for each infra structure and others behaviors to each platform. So the developers tendem to skip the test fase.  
+
 ## Using a web platform Spring
 
 A web system needs some platforms to work. A database is the first and the second can be a cache. A back-end developer needs to set up all these platforms to test the local system. The fastest way use the docker to run a container to each platform. Using docker compose you can run all the containers by one command. So, using docker and docker compose you can run the web system in seconds. But, when the developer needs to create integration tests, the docker-compose is not enough. In this article, we will show how to create containers for tests using a library.

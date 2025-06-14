@@ -69,7 +69,87 @@ temp tcdb - use atalho alt + home
                 5
                 3
                 2
-    tasks
+    tasks escrita
+        plans
+            idea
+                problems that slice test solve
+                    lazy pipelines
+                    lazy local tests
+                    lazy development
+                    dev preguiça de rodar testes de integracao
+                background behind slices tests
+                    problems
+                framework that solve
+                slices tests
+                first version of spring
+            topics
+                intro
+                    problems
+                history
+                    ofcial docs
+                        <https://docs.spring.io/spring-boot/docs/1.4.x/reference/htmlsingle/#boot-features-testing-spring-boot-applications-testing-autoconfigured-tests>
+                        <https://docs.spring.io/spring-boot/appendix/test-auto-configuration/slices.html>
+                    first version of spring
+                        boot
+                            1.4
+                                mvc
+                framework
+                    spring
+                        web framework
+                        example of tests
+                    spring-boot
+                        facilitar e aumentar produtividade uso do spring
+                    spring-test
+                        anotations
+                    spring-boot-tests
+                        slices
+                Types
+                    controller
+                    database
+                    amqp
+                future
+                    test-enabler
+        done
+            listar tarefas
+            listar assuntos de artigo
+                de pocs
+                    Component tests with Spring
+                        jah foi o ultimo
+                    tests slices
+                        exemplo Controller
+                            webMcv
+                        custom
+                            uma para cada base test ?
+                                rabbit
+                                kafka
+                                flex remoting
+                    lib enabler ?
+            plan topicos
+            search if there are some introduction to slice tests in oficial docs
+                not have
+            search on release notes if there are some intro for slices
+                ver nome de alguma anotation
+                    <https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html#testing.spring-boot-applications.autoconfigured-jdbc>
+                buscar no repo
+                    <https://github.com/spring-projects/spring-framework>
+            search about first version that are slice tests
+            write first topic
+        write the causes that slice was created
+        write the spring boot library
+        the version that started
+        each version add more slice tests
+        finish the slice paragraph
+        plan framework paragraph
+        write intro framework paragraph
+        plan next tasks
+        next article
+            sem spring boot. spring context
+                3.2.18.RELEASE -- pessoal de goiania
+                5.2
+                5.3
+                6
+                6.1
+    tasks poc
         done
             plan goal
             plan sections
@@ -196,736 +276,820 @@ temp tcdb - use atalho alt + home
                     plan article if have some relevance
                         dont have any relevance
                             all versions change lettle
-        change to
-            old spring project
-                just spring core
-                    version 6
-                        projeto
-                            Sample api
-                                portaria eletronica
-                            branch
-                                spring-core
-                                spring-versions
-                            spring core versions
-                                2
-                                    contextConfiguration
-                                        desde da 2
-                                3.2.18.RELEASE
-                                    goiania usando
-                                    contextConfiguration
-                                        desde da 2
-                                    ActiveProfiles
-                                4
-                                    tem algumas anotations de testes
-                                        Dirties
-                                        bootstrap with
-                                        TestPropertySource
-                                5
-                                    entrou junit5
-                                    Dynamic Property source
-                                    hibernate aceito
-                                        antes de migra para novo repo
-                                            spring-data precisa de javax entity factory
-                                                nao aceita jakarta
-                                6
-                                    entrou MockBean
-                                    Import
-                            spring boot diff
-                                Controller anotation
-                                    requestMapping -> PostMapping
-                                    Controller -> RestController
-                                    RestControllerAdvice -> ControllerAdvice
-                                configuration
-                                    database properties is just from boot
-                                    criation of datasource is just from boot
-                                    entitymanager for jpa need to be created manually
-                                    index creation is a property that need to be configured just for tests
-                                properties
-                                    @PropertySource("classpath:application.properties")
-                                    need to read from properties
-                                    use @Value to inject the properties to fields
-                                repository
-                                    @RepositoryDefinition
-                                        to create repository from interfaces
-                                tests
-                                    ContextConfiguration -> DataTests
-                                    TestPropertyValues can be created to mantain the tests codes in old versions
-                                        mabe create a separate library
-                            kafka properties
-                                version x do spring boot
-                            TestPropertyValues
-                                version 2 do spring boot
-                            ConfigurationProperties
-                                usar objeto com campos anotados com @Value e caminho
-                        plan change
-                            what changed from spring boot ?
-                                what is the diference ?
-                                    libs diff
-                                        spring core
-                                        spring web
-                                        spring webmvc
-                                        spring orm
-                                        spring aop
-                                        spring jdbc
-                                        spring test
-                                    mapear cada servlet manualmente em web.xml
-                                    configurar component scan por xml + anotation
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
-                                    libs
-                                        javax-persistence-api
-                                        controller advice
-                                            import
-                                                mudou de pacote
-                                        configurationProperties
-                                            nao existe no 3
-                                            Enable configuration properties
-                                                nao tem no core
-                                        mockBean
-                                            somente boot
-                                what do I need to do to work with same project ?
-                                    create web.xml
-                                    change the libs
-                                    change java version
-                            do I need to remove some feature because of limitation of spring core ?
-                            what is the lasted version ?
-                            what is the version from old job ?
-                        tasks
-                            done
-                                create branch
-                                answer the questions
-                                    doc oficial
-                                        <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
-                                configure libs
-                                    erro de version
-                                    java version
-                                        run in terminal
-                                list all codes not compilling
-                                    comment all
-                                    controller
-                                    rest
-                                        response status
-                                        mappings
-                                        advice
-                                    mongo repo
-                                    repository
-                                    spring data
+            change to
+                old spring project
+                    just spring core
+                        version 6
+                            projeto
+                                Sample api
+                                    portaria eletronica
+                                branch
+                                    spring-core
+                                    spring-versions
+                                spring core versions
+                                    2
+                                        contextConfiguration
+                                            desde da 2
+                                    3.2.18.RELEASE
+                                        goiania usando
+                                        contextConfiguration
+                                            desde da 2
+                                        ActiveProfiles
+                                    4
+                                        tem algumas anotations de testes
+                                            Dirties
+                                            bootstrap with
+                                            TestPropertySource
+                                    5
+                                        entrou junit5
+                                        Dynamic Property source
+                                        hibernate aceito
+                                            antes de migra para novo repo
+                                                spring-data precisa de javax entity factory
+                                                    nao aceita jakarta
+                                    6
+                                        entrou MockBean
+                                        Import
+                                spring boot diff
+                                    Controller anotation
+                                        requestMapping -> PostMapping
+                                        Controller -> RestController
+                                        RestControllerAdvice -> ControllerAdvice
                                     configuration
-                                        configuration properties
-                                    boot
-                                        application
-                                change code to compile
-                                    done
+                                        database properties is just from boot
+                                        criation of datasource is just from boot
+                                        entitymanager for jpa need to be created manually
+                                        index creation is a property that need to be configured just for tests
+                                    properties
+                                        @PropertySource("classpath:application.properties")
+                                        need to read from properties
+                                        use @Value to inject the properties to fields
+                                    repository
+                                        @RepositoryDefinition
+                                            to create repository from interfaces
+                                    tests
+                                        ContextConfiguration -> DataTests
+                                        TestPropertyValues can be created to mantain the tests codes in old versions
+                                            mabe create a separate library
+                                kafka properties
+                                    version x do spring boot
+                                TestPropertyValues
+                                    version 2 do spring boot
+                                ConfigurationProperties
+                                    usar objeto com campos anotados com @Value e caminho
+                            plan change
+                                what changed from spring boot ?
+                                    what is the diference ?
+                                        libs diff
+                                            spring core
+                                            spring web
+                                            spring webmvc
+                                            spring orm
+                                            spring aop
+                                            spring jdbc
+                                            spring test
+                                        mapear cada servlet manualmente em web.xml
+                                        configurar component scan por xml + anotation
+                                            <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/#beans-java-instantiating-container-web>>
+                                        libs
+                                            javax-persistence-api
+                                            controller advice
+                                                import
+                                                    mudou de pacote
+                                            configurationProperties
+                                                nao existe no 3
+                                                Enable configuration properties
+                                                    nao tem no core
+                                            mockBean
+                                                somente boot
+                                    what do I need to do to work with same project ?
+                                        create web.xml
+                                        change the libs
+                                        change java version
+                                do I need to remove some feature because of limitation of spring core ?
+                                what is the lasted version ?
+                                what is the version from old job ?
+                            tasks
+                                done
+                                    create branch
+                                    answer the questions
+                                        doc oficial
+                                            <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/htmlsingle/>>
+                                    configure libs
+                                        erro de version
+                                        java version
+                                            run in terminal
+                                    list all codes not compilling
+                                        comment all
                                         controller
                                         rest
                                             response status
                                             mappings
-                                                request mappping with method
                                             advice
                                         mongo repo
-                                            done
-                                                add lib spring-data-mongo
-                                                resolver problema de dependencias
-                                                    orm
-                                                        faltou anotations JPA
-                                                            achar qual lib tem elas
-                                                            ou trocar para nao usar spring core tao antigo
                                         repository
-                                            done
-                                                add lib de spring-jpa
-                                        tests
-                                            done
-                                                mockito
-                                                    add lib
-                                                mudar para versao 5
-                                                    tem quase tudo de testes
-                                                        java 11
-                                                        junit 5
-                                                        jpa 2
-                                                    ai alteramos para 3 aos poucos
-                                                        migracao para junit4
-                                                        migracao para java 8
-                                                            talvez, testar com 11
-                                                replace testProperty
-                                run tests
-                                    done
-                                        unit
-                                        component
-                                            done
-                                                storage
-                                                    done
-                                                        tentiva de rodar
-                                                        error
-                                                            property nao sendo lida
-                                                                colocar env ?
-                                                                como ativar property source nos testes
-                                                                    ativei com holder
-                                                                como ativar para criar objeto com properties anotado
-                                                repository
-                                                    done
-                                                        baseIT usava autoconfigure de database
-                                                            recriar BaseRepository sem anotations spring boot
-                                                                anotacoes
-                                                                    DataMongoTest
-                                                                    AutoConfigureDataJpa
-                                                                    AutoConfigureTestDatabase
-                                                        error
-                                                            config de data source
-                                                                configurar JPA manualmente
-                                                                    configurar dataSource manualmente como bean
-                                                                        em RepositoryConfiguration
-                                                                        add hibernate como deps
-                                                                    configurar entiyManagerFactory
-                                                                    criar persistence unit em xml
-                                                                    nao precisou, da para usar java code no configuration
-                                                                configuracao de container para testes
-                                                                    variavel de env
-                                                                        resolveu
-                                                                configuracao de hibernate com jpa
-                                                                    erro
-                                                                        dialeto nao configurado
-                                                                            talvez usar uma config de banco, ou verificar dados do banco
-                                                            repository nao criado
-                                                                Anotation RepositoryDefinition necessario
-                                                                    seta o domain e o idClass
-                                                commit repository changes
-                                                    separated all files in changelist
-                                                    need to commit each one now
-                                                document all changes that i need
-                                                Web
-                                                    controllers
-                                                        Inquilino
-                                                            errors
-                                                                set up mockMvc
-                                                                    refs
-                                                                        <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>>
-                                                                    version show
-                                                                        class not found ServletException
-                                                                            javax/servlet/ServletException
-                                                                        erro de versao do java
-                                                                            compativel com java 7 mas 8 nao
-                                                                                httpServlet
-                                                                        tentativa de add lib com api servlet + implementacao
-                                                                            funcionou com a versao 6
-                                                                        erro de resource response
-                                                                            tive que mudar para retornar um response entity
-                                                                    set the message converter
-                                                            reverter
-                                                                alteracao de repos devido versao java 8
-                                                                anotations de controller
-                                                        Authorization
-                                                            migrar anotations
-                                                storage
-                                                    azure
-                                arrumar espaco em disco
-                                    esta cheio o /home
-                                    analisar dentro de zoom e cache
-                                rodar local e testar todas funcoes
-                                    como rodar local ?
-                                        tomcat com war ?
-                                            done
-                                                <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>>
-                                                5.x
-                                                    <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>>
-                                                precisei aumentar o tamanho de war aceito
-                                                    manager/server limit
-                                                subiu, mas nao disponibilizou a rota
-                                                    tentei bater por http client mas nao achou a rota
-                                                    possbilidade de servlet nao encontrado ou precisa de setar o context
-                                                        renomear o war file com o context conifgurado no xml
-                                                não encontrou lib de jdbc
-                                                    nao subiu a aplicação sem
-                                                        ja coloquei o jar no /lib do tomcat
-                                                            tive que remover do lib da app e colocar somente no /lib do tomcat
-                                                404 na rota
-                                                    validar config de servlet para spring mvc
-                                                        pesq na doc oficiial do spring
-                                                            <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>>
-                                                    funcionou depois de add servlet 3.0
-                                                        pode usar java configuration
-                                                        tentar configurar a mesma coisa pelo web.xml
-                                                            mudar para 2.5
-                                                erro de banco
-                                                    hibernate name strategy errado
-                                                        createdat deveria ser com snakecase
-                                                    fizemos a criacao de novo bean
-                                                        CamelCaseToUnderscoresNamingStrategy
-                                                        mas nao funfou pelo teste de integracao
-                                                            debug de colunas criadas na base
-                                                        debug disso na prox
-                                                            nao esta chamando a strategy
-                                                    criar bean para strategy nao funfou para nome de campos no teste
-                                                        ver no hibernate doc ou spring qual a real config para alterar a strategia
-                                                        funcionou setando direto a config do hibernate
-                                                validar com novo banco se funfa
-                                                    erro de kafka
-                                                        topicos nao criados
-                                                            mas existe no kafka-ui
-                                                            topic not exists
-                                                        docker estava com listener configurado errado
-                                                validar mongo
-                                                    mongo funciona, salva authorization
-                                                validar consumer kafka
-                                                    erro de consumer nao iniciando
-                                                        msg foi postada, mas nao lida
-                                                        doc oficial
-                                                            <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>>
-                                                        topico criado
-                                                            vemos na UI
-                                                            docker conectando
-                                                        logs nao mostrados
-                                                            logs de info nem debug estao sendo mostrados
-                                                                ver config de log spring core
-                                                                    do ofcial ?
-                                                                        <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>>
-                                                            done
-                                                                configurado logback
-                                                                    add lib
-                                                                    add config
-                                                                permissao de escrita em var/logs
-                                                                    precisa ccriar user para tomcat e add na pasta
-                                                                    alterar para criar arquino na raiz do projeto
-                                                                        nao tem forma de pegar relativo / dinamico
-                                                        acho que listener ou config de kafka não esta sendo chamada
-                                                            nao estava com o kafka security map correto
-                                                                plantext
-                                                            timeout de kafka server leva desconexao pelo servidor
-                                                                pesq na net
-                                                                alteracao de versao de kafka client funfa
-                                                                    ele muda a forma de deixar idle a conexao
-                                                            default configs from kafka
-                                                                <https://kafka.apache.org/090/documentation/#configuration> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>>
-                                                            docs ofciais
-                                                                <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>>
-                                                                docs confluent
-                                                                    <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>>
-                                                                kafka
-                                                                    <https://kafka.apache.org/32/documentation.html#consumerapi> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>>
-                                                            validar se consumer esta inicializando 2x
-                                                                sim
-                                                                    com o id deu para validar isso
-                                                            teste de integracao esta configurado para testar versao ambiente
-                                                                se ambiente docker esta compativel com app e clients
-                                                                testar configs de consumer e producer
-                                                            pelo debug descobrimos o erro no kafka admin
-                                                                ele nao seta sasl.mechanism
-                                                                    como PLAIN
-                                                                outra coisa foi inverter o plain no kafka_listener para localhost antes
-                                corrigir conversao para json
-                                    rest esta convertendo response para xml
-                                    soh mandar accept no header
-                                rodar local no tomcat, sem plugin
-                                    gerar war e colocar em servidor tomcat local
-                                configuration
-                                    create appConfig
-                                        create with componentScan
-                                        replace spring application
-                                        configurar web xml
-                                    ver como fazer package
-                                        rodar plugin maven/gradle war
-                                comitar tudo
-                    version 3
-                        done
-                            create branch spring 2
-                            change java to 8
-                                oq quebrou
-                                    Map of nao existe
-                                    standarts charset
-                                correcoes
-                                    aumentar erros do compilador
-                                        -Xmaxerrs 100
-                                        java compiler -> additional parameters
-                        validar ambiente sistemaOly
-                            done
-                                ver se sobe como estou subindo
-                                    nao faz package
-                                        falta lib de jta
-                                        era inversao de groupId e artifact para exclusao
-                                    run no tomcat
-                                        precisa configurar infra
-                                            banco
-                                                configurado com docker
-                                            keycloak
-                                                removido
-                                                    context.xml
-                                            mail
-                                                removido
-                                                    GerenteEmail
-                                        run com plugin do tomcat
-                                            atualiza os arquivos xml normal
-                                            ou roda somente o war jah buildado
-                                                war-only
-                                        configurar infra adicional no docker
-                                            smtp server
-                                                achamos este
-                                                    bytemark/smtp:latest
-                                            keycloak server
-                                                rapidfort/keycloak-official:24.0.5-1
-                                                    testando ainda
-                                                    ver se tem interface
-                                        rebuild e test
-                                            not easy
-                                                java mail need ejb configuration and a library inside the tomcat
-                                                    so, for local run we need to ignore this configuration
-                                                    for tests, the service need to be flexible to mock this infra
-                                                        using jni is not possible easyly
-                                                jni
-                                                    doc help
-                                                        home.pacifier.com > Mmead > Jni > Cs510ajp > Index <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>>
-                            criar testes de integracao
-                                done
-                                    banco
-                                        configure to spring 3 the infra with test containers
-                                            doc oficial v3
-                                                <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>>
-                                            not starting spring
-                                                xml was incorrect
-                                            repository
-                                                entity manager not created
-                                                    validate the beans, if properties was read
-                                                    validate if the hibernate was loaded
-                                                    create configuration class to tests
-                                                        create bean of entity manager with containers
-                                                            test containers foi incompativel com jackson 1.18.9
-                                                            1.9.x
-                                                                versao nao tem ryuk image no doker hub
-                                                            1.17.6
-                                                                docker nao encontrado
-                                                                    sudo ln -s $HOME/.docker/run/docker.sock /var/run/docker.sock
-                                                            1.16.3
-                                                                depois de habilitar logs
-                                                                    log4j
-                                                                    /home/alexferreira/.docker/run
-                                                                        precisa deste arquivo
-                                                                    /run/user/1000/docker.sock
-                                                                incompativel com jackson 2.5.4
-                                                                    funcionou subindo para 2.12.7
-                                                        create bean with error
-                                                            error
-                                                                mapeamento de SF_DIREITO_PK errado
-                                                                    esta usando embeed pk
-                                                                    parece nao funcionar do jeito que esta
-                                                                fazer poc de embeded
-                                                                    criar projeto somente com algumas entities e ver oq faz funcionar e oq gera o erro
-                                                                        criado copia
-                                                                        falta rodar teste de repository e ver oq tem validado
-                                                                        nao funfou usar dao cliUsuarios
-                                                                            muito grande a quantidade de deps
-                                                                            vou tentar um simples repo embeded de operadorUnidade
-                                                                        colocando somente operadorDireitoPk
-                                                                            gera np
-                                                                            tentar identificar erro de mapeamento de ManyToOne
-                                                                            precisa informar
-                                                                                , nullable = false, insertable = false, updatable = false
-                                                                                estava mapeado errado
-                                                                banco compartilhado e cliente
-                                                                    precisa ser criado manualmente
-                                                            solucoes
-                                                                mapeamento
-                                                                    , nullable = false, insertable = false, updatable = false
-                                                                    estava mapeado errado OperadorDireito.acesso e operador
-                                                                sub bancos
-                                                                    criar manualemnte
-                                                                    configurar script no container para criar subbancos
-                                                                    nao precisou, o jpa criou para nos
-                                                                    mas teria como colocar um create statement tbm
-                                                                        simpleDriverDataSource.getConnection().createStatement().execute("create database Cliente;");
-                                            email
-                                                EnviaEmailOly
-                                                    basico com container de email smtp
+                                        spring data
+                                        configuration
+                                            configuration properties
+                                        boot
+                                            application
+                                    change code to compile
+                                        done
+                                            controller
                                             rest
-                                                AtualizacaoDadosAlunoService
-                                                    basico com wiremock
-                                        create one test for repository or dao
-                                            first layer to access data
-                                    mail
-                                        container
-                                            <https://hub.docker.com/r/gessnerfl/fake-smtp-server/> <https://hub.docker.com/r/gessnerfl/fake-smtp-server/>> <https://hub.docker.com/r/gessnerfl/fake-smtp-server/>>
-                                            funccionou
-                                                precisa de api rest para validar emails enviados
-                                            error
-                                                constructor not found sender
-                                                    investigar porq esta cobrando o construtor vazio
-                                                    era a falta de autowired no construtor
-                                            add remove all
-                                                nao precisou, o container nasce zerado
-                                    remote end
-                                        criar teste de endpoint remoto
-                                            pesq
-                                                doc oficial
-                                                    <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html> <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html>> <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html>>
-                                                    resumo
-                                                        integracao atraves de messageBroker
-                                                        web envia http req para message broker que retorna com chamada para java service e retorna objetos para web
-                                                test
-                                                    <https://www.cnblogs.com/ellie-test/articles/3181998.html> <https://www.cnblogs.com/ellie-test/articles/3181998.html>> <https://www.cnblogs.com/ellie-test/articles/3181998.html>>
-                                            testar com webmvc
-                                                é um controller normal
-                                                depois testar se tem alguma biblioteca do blaseDS para validar endpoints
-                                                ou ver se tem lib de testes de message broker do spring
-                                                erro
-                                                    mvc nao suportado, pois nao chama os metodos auto
-                                                        nao tem os mapeamento de api rest
-                                            Funcionou com broker
-                                                broker
-                                                    o messageTemplate é somente para channel
-                                                        public / subscribe
-                                                    route message
-                                                        o broker enviamos por endpoint e remoteMessage
-                                                message tem que ser
-                                                    RemotingMessage object
-                                                    precisa setar
-                                                        o operation
-                                                            nome do metodo no controller
-                                                        destination
-                                                            nome do RemotingDestination
-                                                        id
-                                                            id aleatorio de msg
-                                                                nao pode ser null
-                                                        parameters
-                                                            lista vazia
-                                                                nao pode ser null
-                                                podemos usar mockito para ignorar sub camadas
-                                testes com security
-                                    oauth2
-                                        assistir videos
-                                        ver doc oficial
-                                        keycloak
-                                            auth test
-                                                testar subindo keycloak container
-                                                gerar client
-                                                configurar spring com client
-                                                gerar token para req
-                                                fazer req
-                                                validar resultado da req
-                                                cenarios
-                                                    retorna 401 quando token invalido
-                                                    401 quando sem token
-                                                    200 quando com token
-                                            nao usa com flex
-                                                somente com spring sec de rest api
-                                        tasks
-                                            done
-                                                criar realm
-                                                criar teste para api
-                                                criar api tests no sistema de poc v3
-                                                chamar api por testes mvc
-                                            testar auth com http cli local
-                                                gerar secret e url de token
-                                            add teste de auth da api
-                                                add spring sec lib
-                                                add config spring para auth
-                                                add anotations no controller
-                                                gerar client secret
-                                            automatizar test
-                                                add container keycloak
-                                                add client para gerar token para test
-                                            plan nexts tasks
-                            plan migracao
-                                solucoes
-                                    spring flex é projeto ?
-                                        sim
-                                        arquivado no github
-                                    openRewrite
-                                        recipes
-                                            filtra classes
-                                            gera codigos
-                                            altera classes
-                                        já tem lista de recipes padroes
-                                            migracao de versoes
-                                                java
-                                                spring boot
-                                                spring
-                                                    <https://docs.openrewrite.org/recipes/java/spring/framework> <https://docs.openrewrite.org/recipes/java/spring/framework>> <https://docs.openrewrite.org/recipes/java/spring/framework>>
-                                        roda pelo plugin do maven
-                                            <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build> <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build>> <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build>>
-                                        solucao com recipes novos
-                                            criar recipe para migrar
-                                                remotingDestination para rest apis
-                                            criar recipe para gerar classes de testes
-                                                gerar todos testes para cada controller, dao, service
-                                                gerar teste para cada dependencia como throw + mockito
-                                                gerar teste de sucesso
-                                            criar recipe para usar DI
-                                                alterar para usar inversao de dependencia em todos controllers e services
-                                                remover new em métodos e adicoinar campo do tipo da var e add no construtor
-                                            criar recipe para gerar compose
-                                                de acordo com tipos de plataformas usadas
-                                                    interfaces
-                                                        repository
-                                                        Email javax
-                                                        Controller
-                                                        Rest
-                                                        Amqp
-                                                        Topic
-                                    nova lib
-                                        test-enabler
-                                            lib para spring
-                                                classes bases de cada tipo de teste
-                                                em conjunto com openRewrite
-                                                    ccriar todos testes extends das classes bases
-                                    AI
-                                        llama3
-                                            projeto da Meta AI
-                                        lamma3 java
-                                            projeto no github
-                                                roda usando java com VectorApi
-                                                    super rapido
-                                            podemos usar API para requisitar geração de codigos
-                                problemas
-                                    flex é compativel com spring core novos ?
-                                        subindo a versão a lib do flex mantem compatibiliadde ?
-                                plan para reuniao
-                                    beneficios
-                                        deploy em cloud
-                                            forma nativa
-                                            kubernates
-                                            balanceamento de carga
-                                            escala horizontal
-                                        novas features nao quebra antigas
-                                        deploy automatizado
-                                        menor custo de deploy
-                                        tecnologias atualizadas
-                                            aumenta segurança
-                                                reduz vunerabilidades
-                                            melhor desempenho
-                                            contratação de devs novos
-                                                onborading de devs facil
-                                                devs mais animados
-                                                    tec nova e falada em congressos
-                                            menor curva de aprendizado
-                                            melhor suporte
-                                            documentações atualizadas
-                                            mais exemplos de pocs na net
-                                        maior tempo de dev para novas features
-                                            menor gasto com bugs
-                                            maior manutenabilidade
-                                        maior tempo de vida de sistemas
-                                            menor custo
-                                    etapas
-                                        cobrir tudo com testes
-                                            add test-enabler
-                                                <https://github.com/alexferreiradev/test-enabler> <https://github.com/alexferreiradev/test-enabler>>
-                                                add todos testes de services
-                                                add todos testes de plataformas
-                                                    controllers
-                                                    dao
-                                                    email
+                                                response status
+                                                mappings
+                                                    request mappping with method
+                                                advice
+                                            mongo repo
+                                                done
+                                                    add lib spring-data-mongo
+                                                    resolver problema de dependencias
+                                                        orm
+                                                            faltou anotations JPA
+                                                                achar qual lib tem elas
+                                                                ou trocar para nao usar spring core tao antigo
+                                            repository
+                                                done
+                                                    add lib de spring-jpa
+                                            tests
+                                                done
+                                                    mockito
+                                                        add lib
+                                                    mudar para versao 5
+                                                        tem quase tudo de testes
+                                                            java 11
+                                                            junit 5
+                                                            jpa 2
+                                                        ai alteramos para 3 aos poucos
+                                                            migracao para junit4
+                                                            migracao para java 8
+                                                                talvez, testar com 11
+                                                    replace testProperty
+                                    run tests
+                                        done
+                                            unit
+                                            component
+                                                done
                                                     storage
-                                            levantar quantos testes a serem criados
-                                                podemos fasear
-                                                    colocar funcionalidades maiores por fim
-                                            criar pipeline
-                                            add sonar coverage
-                                                manter novos codigos com testes
-                                        atualizar versoes
-                                            migrar versao do java
-                                                para 11
-                                            migrar spring
-                                                para 4, 5,6
-                                            migrar java
-                                                para 17
-                                            rodar pipe
-                                        migrar para spring boot
-                                            testar se roda flex com arquivos static
-                                            subir versao em docker
-                                            add deploy em pipe
-                                        criar servidor homologacao
-                                            criar service html
-                                            subir docker image
-                                        migrar flex para react
-                                            migrar controllers para rest api
-                                            migrar xml para ReactComponent
-                                    investimentos
-                                        rodar ferramentas de migracao
-                                        criar servidor de homologação
-                                        criar servidor de rollout
-                                            migracao faseada
-                                                uma unidade acessando
-                                                    poucos usuarios
-                                                    feedback constante
-                                                    avaliaçao de desempenho
-                                                    avaliação de funcionalidades
-                                                    ajustes se necessario
-                            plan refatoracoes
-                                quais classes precisam ser isoladas
-                                quais classes precisam de unit tests e remover dps de integracao
-                                quais configs estao erradas de banco
-                            refatorar
-                            fazer upgrade para spring 6
-                            fazer upgrade para java 11
-                            fazer upgrade para java 17
-                        change spring to 3
-                            oq quebrou
-                                rest anotations
-                                response entity
-                                jackson mapper
-                                testes
-                                    nao tem o spring-core para testes
-                                apos dowgrade
-                                    kafka nao tem um monte de anotation
-                                    banco
-                                        nosql
-                                            anotations
-                                        sql
-                                            anotations
-                            correcoes
-                                nao estava quebrando, tive que remover algumas versoes, ai quebrou geral
-                                    alterei tudo que tinha spring
-                        commit
-                        run integration tests
-                            repository
-                                postgres
+                                                        done
+                                                            tentiva de rodar
+                                                            error
+                                                                property nao sendo lida
+                                                                    colocar env ?
+                                                                    como ativar property source nos testes
+                                                                        ativei com holder
+                                                                    como ativar para criar objeto com properties anotado
+                                                    repository
+                                                        done
+                                                            baseIT usava autoconfigure de database
+                                                                recriar BaseRepository sem anotations spring boot
+                                                                    anotacoes
+                                                                        DataMongoTest
+                                                                        AutoConfigureDataJpa
+                                                                        AutoConfigureTestDatabase
+                                                            error
+                                                                config de data source
+                                                                    configurar JPA manualmente
+                                                                        configurar dataSource manualmente como bean
+                                                                            em RepositoryConfiguration
+                                                                            add hibernate como deps
+                                                                        configurar entiyManagerFactory
+                                                                        criar persistence unit em xml
+                                                                        nao precisou, da para usar java code no configuration
+                                                                    configuracao de container para testes
+                                                                        variavel de env
+                                                                            resolveu
+                                                                    configuracao de hibernate com jpa
+                                                                        erro
+                                                                            dialeto nao configurado
+                                                                                talvez usar uma config de banco, ou verificar dados do banco
+                                                                repository nao criado
+                                                                    Anotation RepositoryDefinition necessario
+                                                                        seta o domain e o idClass
+                                                    commit repository changes
+                                                        separated all files in changelist
+                                                        need to commit each one now
+                                                    document all changes that i need
+                                                    Web
+                                                        controllers
+                                                            Inquilino
+                                                                errors
+                                                                    set up mockMvc
+                                                                        refs
+                                                                            <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/testing.html#spring-mvc-test-framework>>
+                                                                        version show
+                                                                            class not found ServletException
+                                                                                javax/servlet/ServletException
+                                                                            erro de versao do java
+                                                                                compativel com java 7 mas 8 nao
+                                                                                    httpServlet
+                                                                            tentativa de add lib com api servlet + implementacao
+                                                                                funcionou com a versao 6
+                                                                            erro de resource response
+                                                                                tive que mudar para retornar um response entity
+                                                                        set the message converter
+                                                                reverter
+                                                                    alteracao de repos devido versao java 8
+                                                                    anotations de controller
+                                                            Authorization
+                                                                migrar anotations
+                                                    storage
+                                                        azure
+                                    arrumar espaco em disco
+                                        esta cheio o /home
+                                        analisar dentro de zoom e cache
+                                    rodar local e testar todas funcoes
+                                        como rodar local ?
+                                            tomcat com war ?
+                                                done
+                                                    <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-deploy-rar>>
+                                                    5.x
+                                                        <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/core.html#context-deploy-rar>>
+                                                    precisei aumentar o tamanho de war aceito
+                                                        manager/server limit
+                                                    subiu, mas nao disponibilizou a rota
+                                                        tentei bater por http client mas nao achou a rota
+                                                        possbilidade de servlet nao encontrado ou precisa de setar o context
+                                                            renomear o war file com o context conifgurado no xml
+                                                    não encontrou lib de jdbc
+                                                        nao subiu a aplicação sem
+                                                            ja coloquei o jar no /lib do tomcat
+                                                                tive que remover do lib da app e colocar somente no /lib do tomcat
+                                                    404 na rota
+                                                        validar config de servlet para spring mvc
+                                                            pesq na doc oficiial do spring
+                                                                <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>> <https://docs.spring.io/spring-framework/docs/5.3.39/reference/html/web.html#mvc-ann-requestmapping>>
+                                                        funcionou depois de add servlet 3.0
+                                                            pode usar java configuration
+                                                            tentar configurar a mesma coisa pelo web.xml
+                                                                mudar para 2.5
+                                                    erro de banco
+                                                        hibernate name strategy errado
+                                                            createdat deveria ser com snakecase
+                                                        fizemos a criacao de novo bean
+                                                            CamelCaseToUnderscoresNamingStrategy
+                                                            mas nao funfou pelo teste de integracao
+                                                                debug de colunas criadas na base
+                                                            debug disso na prox
+                                                                nao esta chamando a strategy
+                                                        criar bean para strategy nao funfou para nome de campos no teste
+                                                            ver no hibernate doc ou spring qual a real config para alterar a strategia
+                                                            funcionou setando direto a config do hibernate
+                                                    validar com novo banco se funfa
+                                                        erro de kafka
+                                                            topicos nao criados
+                                                                mas existe no kafka-ui
+                                                                topic not exists
+                                                            docker estava com listener configurado errado
+                                                    validar mongo
+                                                        mongo funciona, salva authorization
+                                                    validar consumer kafka
+                                                        erro de consumer nao iniciando
+                                                            msg foi postada, mas nao lida
+                                                            doc oficial
+                                                                <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#receiving-messages>>
+                                                            topico criado
+                                                                vemos na UI
+                                                                docker conectando
+                                                            logs nao mostrados
+                                                                logs de info nem debug estao sendo mostrados
+                                                                    ver config de log spring core
+                                                                        do ofcial ?
+                                                                            <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>> <https://docs.spring.io/spring-framework/reference/core/spring-jcl.html>>
+                                                                done
+                                                                    configurado logback
+                                                                        add lib
+                                                                        add config
+                                                                    permissao de escrita em var/logs
+                                                                        precisa ccriar user para tomcat e add na pasta
+                                                                        alterar para criar arquino na raiz do projeto
+                                                                            nao tem forma de pegar relativo / dinamico
+                                                            acho que listener ou config de kafka não esta sendo chamada
+                                                                nao estava com o kafka security map correto
+                                                                    plantext
+                                                                timeout de kafka server leva desconexao pelo servidor
+                                                                    pesq na net
+                                                                    alteracao de versao de kafka client funfa
+                                                                        ele muda a forma de deixar idle a conexao
+                                                                default configs from kafka
+                                                                    <https://kafka.apache.org/090/documentation/#configuration> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>> <https://kafka.apache.org/090/documentation/#configuration>>
+                                                                docs ofciais
+                                                                    <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>> <https://docs.spring.io/spring-kafka/docs/2.9.0/reference/html/#kafkalistener-lifecycle>>
+                                                                    docs confluent
+                                                                        <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>> <https://docs.confluent.io/platform/7.2/installation/versions-interoperability.html#zk>>
+                                                                    kafka
+                                                                        <https://kafka.apache.org/32/documentation.html#consumerapi> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>> <https://kafka.apache.org/32/documentation.html#consumerapi>>
+                                                                validar se consumer esta inicializando 2x
+                                                                    sim
+                                                                        com o id deu para validar isso
+                                                                teste de integracao esta configurado para testar versao ambiente
+                                                                    se ambiente docker esta compativel com app e clients
+                                                                    testar configs de consumer e producer
+                                                                pelo debug descobrimos o erro no kafka admin
+                                                                    ele nao seta sasl.mechanism
+                                                                        como PLAIN
+                                                                    outra coisa foi inverter o plain no kafka_listener para localhost antes
+                                    corrigir conversao para json
+                                        rest esta convertendo response para xml
+                                        soh mandar accept no header
+                                    rodar local no tomcat, sem plugin
+                                        gerar war e colocar em servidor tomcat local
+                                    configuration
+                                        create appConfig
+                                            create with componentScan
+                                            replace spring application
+                                            configurar web xml
+                                        ver como fazer package
+                                            rodar plugin maven/gradle war
+                                    comitar tudo
+                        version 3
+                            done
+                                create branch spring 2
+                                change java to 8
                                     oq quebrou
+                                        Map of nao existe
+                                        standarts charset
                                     correcoes
-                                mongo
-                                    oq quebrou
-                                    correcoes
-                            kafka
-                                oq quebrou
-                                correcoes
-                            storage
-                                oq quebrou
-                                correcoes
-                        deploy tomcat
-                            validate api and auth
-                        add Message
-                            kafka
-                                error
-                                    kafkaTemplate not found
-                                        need to create a configuration
-                                        solution
-                                            create kafka configuration
-                                                ref
-                                                    <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>>
-                                            set the properties from env
-                                            missing required configuration "key.deserializer" which has no de
-                                            solucionado com injecao de factory nos testes
-                                error
-                                    listener not called
-                                        analys
-                                            listener nao configurado
-                                            properties falantando
-                                        solution
-                                            import is not working
-                                            trocar para ver como fazer import funcionar em sub classes
-                                            import nao é como na versão 6, funciona somente para importar arquivos de configuracao que geram o bean
+                                        aumentar erros do compilador
+                                            -Xmaxerrs 100
+                                            java compiler -> additional parameters
+                                validar ambiente sistemaOly
+                                    done
+                                        ver se sobe como estou subindo
+                                            nao faz package
+                                                falta lib de jta
+                                                era inversao de groupId e artifact para exclusao
+                                            run no tomcat
+                                                precisa configurar infra
+                                                    banco
+                                                        configurado com docker
+                                                    keycloak
+                                                        removido
+                                                            context.xml
+                                                    mail
+                                                        removido
+                                                            GerenteEmail
+                                                run com plugin do tomcat
+                                                    atualiza os arquivos xml normal
+                                                    ou roda somente o war jah buildado
+                                                        war-only
+                                                configurar infra adicional no docker
+                                                    smtp server
+                                                        achamos este
+                                                            bytemark/smtp:latest
+                                                    keycloak server
+                                                        rapidfort/keycloak-official:24.0.5-1
+                                                            testando ainda
+                                                            ver se tem interface
+                                                rebuild e test
+                                                    not easy
+                                                        java mail need ejb configuration and a library inside the tomcat
+                                                            so, for local run we need to ignore this configuration
+                                                            for tests, the service need to be flexible to mock this infra
+                                                                using jni is not possible easyly
+                                                        jni
+                                                            doc help
+                                                                home.pacifier.com > Mmead > Jni > Cs510ajp > Index <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>> <http://home.pacifier.com/~mmead/jni/cs510ajp/index.html>>
+                                        criar testes de integracao
+                                            done
+                                                banco
+                                                    configure to spring 3 the infra with test containers
+                                                        doc oficial v3
+                                                            <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>> <https://docs.spring.io/spring-framework/docs/3.2.18.RELEASE/spring-framework-reference/html/testing.html#integration-testing-annotations-spring>>
+                                                        not starting spring
+                                                            xml was incorrect
+                                                        repository
+                                                            entity manager not created
+                                                                validate the beans, if properties was read
+                                                                validate if the hibernate was loaded
+                                                                create configuration class to tests
+                                                                    create bean of entity manager with containers
+                                                                        test containers foi incompativel com jackson 1.18.9
+                                                                        1.9.x
+                                                                            versao nao tem ryuk image no doker hub
+                                                                        1.17.6
+                                                                            docker nao encontrado
+                                                                                sudo ln -s $HOME/.docker/run/docker.sock /var/run/docker.sock
+                                                                        1.16.3
+                                                                            depois de habilitar logs
+                                                                                log4j
+                                                                                /home/alexferreira/.docker/run
+                                                                                    precisa deste arquivo
+                                                                                /run/user/1000/docker.sock
+                                                                            incompativel com jackson 2.5.4
+                                                                                funcionou subindo para 2.12.7
+                                                                    create bean with error
+                                                                        error
+                                                                            mapeamento de SF_DIREITO_PK errado
+                                                                                esta usando embeed pk
+                                                                                parece nao funcionar do jeito que esta
+                                                                            fazer poc de embeded
+                                                                                criar projeto somente com algumas entities e ver oq faz funcionar e oq gera o erro
+                                                                                    criado copia
+                                                                                    falta rodar teste de repository e ver oq tem validado
+                                                                                    nao funfou usar dao cliUsuarios
+                                                                                        muito grande a quantidade de deps
+                                                                                        vou tentar um simples repo embeded de operadorUnidade
+                                                                                    colocando somente operadorDireitoPk
+                                                                                        gera np
+                                                                                        tentar identificar erro de mapeamento de ManyToOne
+                                                                                        precisa informar
+                                                                                            , nullable = false, insertable = false, updatable = false
+                                                                                            estava mapeado errado
+                                                                            banco compartilhado e cliente
+                                                                                precisa ser criado manualmente
+                                                                        solucoes
+                                                                            mapeamento
+                                                                                , nullable = false, insertable = false, updatable = false
+                                                                                estava mapeado errado OperadorDireito.acesso e operador
+                                                                            sub bancos
+                                                                                criar manualemnte
+                                                                                configurar script no container para criar subbancos
+                                                                                nao precisou, o jpa criou para nos
+                                                                                mas teria como colocar um create statement tbm
+                                                                                    simpleDriverDataSource.getConnection().createStatement().execute("create database Cliente;");
+                                                        email
+                                                            EnviaEmailOly
+                                                                basico com container de email smtp
+                                                        rest
+                                                            AtualizacaoDadosAlunoService
+                                                                basico com wiremock
+                                                    create one test for repository or dao
+                                                        first layer to access data
+                                                mail
+                                                    container
+                                                        <https://hub.docker.com/r/gessnerfl/fake-smtp-server/> <https://hub.docker.com/r/gessnerfl/fake-smtp-server/>> <https://hub.docker.com/r/gessnerfl/fake-smtp-server/>> <https://hub.docker.com/r/gessnerfl/fake-smtp-server/>>
+                                                        funccionou
+                                                            precisa de api rest para validar emails enviados
+                                                        error
+                                                            constructor not found sender
+                                                                investigar porq esta cobrando o construtor vazio
+                                                                era a falta de autowired no construtor
+                                                        add remove all
+                                                            nao precisou, o container nasce zerado
+                                                remote end
+                                                    criar teste de endpoint remoto
+                                                        pesq
+                                                            doc oficial
+                                                                <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html> <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html>> <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html>> <https://docs.spring.io/spring-flex/docs/1.0.x/reference/html/ch06.html>>
+                                                                resumo
+                                                                    integracao atraves de messageBroker
+                                                                    web envia http req para message broker que retorna com chamada para java service e retorna objetos para web
+                                                            test
+                                                                <https://www.cnblogs.com/ellie-test/articles/3181998.html> <https://www.cnblogs.com/ellie-test/articles/3181998.html>> <https://www.cnblogs.com/ellie-test/articles/3181998.html>> <https://www.cnblogs.com/ellie-test/articles/3181998.html>>
+                                                        testar com webmvc
+                                                            é um controller normal
+                                                            depois testar se tem alguma biblioteca do blaseDS para validar endpoints
+                                                            ou ver se tem lib de testes de message broker do spring
+                                                            erro
+                                                                mvc nao suportado, pois nao chama os metodos auto
+                                                                    nao tem os mapeamento de api rest
+                                                        Funcionou com broker
+                                                            broker
+                                                                o messageTemplate é somente para channel
+                                                                    public / subscribe
+                                                                route message
+                                                                    o broker enviamos por endpoint e remoteMessage
+                                                            message tem que ser
+                                                                RemotingMessage object
+                                                                precisa setar
+                                                                    o operation
+                                                                        nome do metodo no controller
+                                                                    destination
+                                                                        nome do RemotingDestination
+                                                                    id
+                                                                        id aleatorio de msg
+                                                                            nao pode ser null
+                                                                    parameters
+                                                                        lista vazia
+                                                                            nao pode ser null
+                                                            podemos usar mockito para ignorar sub camadas
+                                            testes com security
+                                                oauth2
+                                                    assistir videos
+                                                    ver doc oficial
+                                                    keycloak
+                                                        auth test
+                                                            testar subindo keycloak container
+                                                            gerar client
+                                                            configurar spring com client
+                                                            gerar token para req
+                                                            fazer req
+                                                            validar resultado da req
+                                                            cenarios
+                                                                retorna 401 quando token invalido
+                                                                401 quando sem token
+                                                                200 quando com token
+                                                        token
+                                                            keycloak tem api padrao
+                                                                authorization flow
+                                                                    http://localhost:8083/realms/{realm}/protocol/openid-connect/token
+                                                                    url encoded params
+                                                                        grant type
+                                                                            credentials
+                                                                        clientId
+                                                                        clientSecret
+                                                                authentication flow
+                                                                    user + senha
+                                                                    base de dados
+                                                        spring sec
+                                                            versao 3 nao tem oauth2
+                                                                somente base para filters
+                                                                deve criar seu proprio filter
+                                                        nao usa com flex
+                                                            somente com spring sec de rest api
+                                                    spring security
+                                                        tipos
+                                                            userDetails
+                                                                wrapper de user no provider
+                                                            userDetailsService
+                                                                Serviço que gerencia user no provider
+                                                            authentication
+                                                                Dados de autenticacao
+                                                                    autenticado
+                                                                    qual user
+                                                                    qual credencial
+                                                                    qual authority
+                                                            authManager
+                                                                bean que autentica um authentication
+                                                            filters
+                                                                container filter
+                                                                    recurso web static
+                                                                    Global method filter
+                                                                        entry point
+                                                                            algum recurso para login ou logout
+                                                                            identificador para redirecionar em casos de autenticacao
+                                                                                erro
+                                                                                sucesso
+                                                                request filter
+                                                                    http request
+                                                                remote filter
+                                                                    request de remoting destination flex
+                                                    tasks
+                                                        done
+                                                            criar realm
+                                                            criar teste para api
+                                                            criar api tests no sistema de poc v3
+                                                            chamar api por testes mvc
+                                                            testar auth com http cli local
+                                                                gerar secret e url de token
+                                                        automatizar test
+                                                            add container keycloak
+                                                            add client para gerar token para test
+                                                        plan nexts tasks
+                                                            add teste de auth da api
+                                                                add spring sec lib
+                                                                    <https://docs.spring.io/spring-security/site/docs/3.0.x/reference/ns-config.html#ns-openid>
+                                                                create base test to user details
+                                                                    create database schema
+                                                                        <https://docs.spring.io/spring-security/site/docs/3.0.x/reference/appendix-schema.html>
+                                                                    create test to repository
+                                                                    need to create bean jdbc template
+                                                                    need to create bean for spring sec
+                                                                        quais beans ?
+                                                                            userDetailsService
+                                                                                gerencia usuario no banco
+                                                                            authManager
+                                                                                somente via xml
+                                                                            qual é para anotations ?
+                                                                                global method security ?
+                                                                    create one test using xml for learn the flow
+                                                                    deu errado
+                                                                        replan
+                                                                            tentar via xml
+                                                                                configurar xml
+                                                                                    hello world
+                                                                                        funcionou
+                                                                                        add plugin tomcat
+                                                                                            rodar run
+                                                                                                modo simples de war
+                                                                                        entender funcionamento
+                                                                                            sec add filter no servlet context
+                                                                                            filter chama auth manager para autenticar
+                                                                                            auth manager chama userDetails manager para obter dados de user
+                                                                                            autentica e retorna request
+                                                                                                valida
+                                                                                                redirect nao valida
+                                                                                                    401
+                                                                                        hipoteses
+                                                                                            com xml o teste funfa ?
+                                                                                            com xml o filter tem o auth manager injetado ?
+                                                                                                qual o tipo ?
+                                                                                extrair ideia
+                                                                add config spring para auth
+                                                                add anotations no controller
+                                                                gerar client secret
+            Apresentacao para primeiro parceiro
+                feito em mm privado - nao subir no git
+                    Pasta **/maps/negocios/empresa/*
+        criacao de tdd-enabler
+            done
+            tasks
+                done
+                    definir prox tasks
+                    criar projeto
+                        <https://maven.apache.org/archetypes/maven-archetype-quickstart/>
+                    desenhar casos de usos
+                        criar testes
                             rabbit
-                                inicio de config
-                                    nao tem nada, nem lib
-                                    tem doc boa para seguir
-                                        <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>>
-                                    versao tem que ser 2.4
-                                        a 3 usa spring core 6
-                                criar config para criar factory
-                                criar base rabbit it
-                                criar base sender
-                                criar inquilino-created queue
-                    version 2
-        create table to versions
-        next article
-            sem spring boot. spring context
-                3.2.18.RELEASE -- pessoal de goiania
-                5.2
-                5.3
-                6
-                6.1
+                            nosql
+                            sql
+                            kafka
+                            storage
+                            customContainer
+                    criar readme do projeto
+                    configurar TDD libs junit, mockito, testcontainer
+                    configs de pom corretamente
+                        estava faltando spring bom
+                        estava no example e nao na lib
+                criar base classes
+                    controler
+                    remote destination
+                    email
+                    jpa
+                    jdbc
+                criar containers basicos
+                trocar libs spring para ser provider
+                    testar no example
+                criar interfaces
+                escolher base test
+        migracao exemplo
+            plan migracao
+                hipotese
+                    objetivo
+                        atualizar
+                            spring
+                                3 para 6
+                                    3 versoes
+                            java
+                                7 para 21
+                                    5 versoes LTS
+                            flex
+                                nao tem versao nova
+                                manter até trocar para front
+                                    trocar remote controller para Rest
+                                        com mesmos services
+                    atualizar java
+                        necessita atualizar spring
+                            spring 6 tem compatibilidade com java 21
+                            testar se spring 5 tem compatibilidade com java 21
+                    atualizar spring
+                        wiki
+                            <https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions>
+                            validar qual tem compatibilidade com flex
+                            qual anotation mudou para 6 ?
+                            6 cobra novo java ?
+                            5
+                                cobra jdk 8
+                            4
+                                roda 8
+                                base 6
+                        validar se roda
+                            add testes camadas entrada / saida
+                                refatorar todas saidas e entradas
+                            add mocks para todas entidades
+                                usar IA para gerar por java class
+                            add input e output em camadas
+                                usar IA para gerar input e outputs
+                            remover acoplamentos
+                            add teste unit
+                solucoes
+                    spring flex é projeto ?
+                        sim
+                        arquivado no github
+                    openRewrite
+                        recipes
+                            filtra classes
+                            gera codigos
+                            altera classes
+                        já tem lista de recipes padroes
+                            migracao de versoes
+                                java
+                                spring boot
+                                spring
+                                    <https://docs.openrewrite.org/recipes/java/spring/framework> <https://docs.openrewrite.org/recipes/java/spring/framework>> <https://docs.openrewrite.org/recipes/java/spring/framework>> <https://docs.openrewrite.org/recipes/java/spring/framework>>
+                        roda pelo plugin do maven
+                            <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build> <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build>> <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build>> <https://docs.openrewrite.org/running-recipes/running-rewrite-on-a-maven-project-without-modifying-the-build>>
+                        solucao com recipes novos
+                            criar recipe para migrar
+                                remotingDestination para rest apis
+                            criar recipe para gerar classes de testes
+                                gerar todos testes para cada controller, dao, service
+                                gerar teste para cada dependencia como throw + mockito
+                                gerar teste de sucesso
+                            criar recipe para usar DI
+                                alterar para usar inversao de dependencia em todos controllers e services
+                                remover new em métodos e adicoinar campo do tipo da var e add no construtor
+                            criar recipe para gerar compose
+                                de acordo com tipos de plataformas usadas
+                                    interfaces
+                                        repository
+                                        Email javax
+                                        Controller
+                                        Rest
+                                        Amqp
+                                        Topic
+                    nova lib
+                        clean-arch-enabler
+                            lib com AI
+                                gerar códigos de input e output
+                                refatorar usos
+                                gerar paralelismo de refatoração
+                                gerar UX para selecionar oq refatorar, quais camadas, quais infras
+                        tdd-enabler
+                            lib para spring
+                                classes bases de cada tipo de teste
+                                em conjunto com openRewrite
+                                    criar todos testes extends das classes bases
+                    AI
+                        llama3
+                            projeto da Meta AI
+                        lamma3 java
+                            projeto no github
+                                roda usando java com VectorApi
+                                    super rapido
+                            podemos usar API para requisitar geração de codigos
+                    usar spring boot
+                        versao 1.x
+                            2018
+                                <https://github.com/spring-projects/spring-boot/releases/tag/v1.5.22.RELEASE>
+                            usa spring core 4.x
+                problemas
+                    flex é compativel com spring core novos ?
+                        subindo a versão a lib do flex mantem compatibiliadde ?
+            plan refatoracoes
+                quais classes precisam ser isoladas
+                quais classes precisam de unit tests e remover dps de integracao
+                quais configs estao erradas de banco
+            refatorar
+            fazer upgrade para spring 6
+            fazer upgrade para java 11
+            fazer upgrade para java 17
+        change sample api spring to 3
+            oq quebrou
+                rest anotations
+                response entity
+                jackson mapper
+                testes
+                    nao tem o spring-core para testes
+                apos dowgrade
+                    kafka nao tem um monte de anotation
+                    banco
+                        nosql
+                            anotations
+                        sql
+                            anotations
+            correcoes
+                nao estava quebrando, tive que remover algumas versoes, ai quebrou geral
+                    alterei tudo que tinha spring
+            futuro
+                commit
+                run integration tests
+                    repository
+                        postgres
+                            oq quebrou
+                            correcoes
+                        mongo
+                            oq quebrou
+                            correcoes
+                    kafka
+                        oq quebrou
+                        correcoes
+                    storage
+                        oq quebrou
+                        correcoes
+                deploy tomcat
+                    validate api and auth
+                add Message
+                    kafka
+                        error
+                            kafkaTemplate not found
+                                need to create a configuration
+                                solution
+                                    create kafka configuration
+                                        ref
+                                            <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>> <https://docs.spring.io/spring-kafka/docs/2.9.13/reference/html/#with-java-configuration-no-spring-boot>>
+                                    set the properties from env
+                                    missing required configuration "key.deserializer" which has no de
+                                    solucionado com injecao de factory nos testes
+                        error
+                            listener not called
+                                analys
+                                    listener nao configurado
+                                    properties falantando
+                                solution
+                                    import is not working
+                                    trocar para ver como fazer import funcionar em sub classes
+                                    import nao é como na versão 6, funciona somente para importar arquivos de configuracao que geram o bean
+                    rabbit
+                        inicio de config
+                            nao tem nada, nem lib
+                            tem doc boa para seguir
+                                <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>> <https://docs.spring.io/spring-amqp/docs/2.4.17/reference/html/#whats-new>>
+                            versao tem que ser 2.4
+                                a 3 usa spring core 6
+                        criar config para criar factory
+                        criar base rabbit it
+                        criar base sender
+                        criar inquilino-created queue
