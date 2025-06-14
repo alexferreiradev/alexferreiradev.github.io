@@ -903,13 +903,17 @@ temp tcdb - use atalho alt + home
                     configs de pom corretamente
                         estava faltando spring bom
                         estava no example e nao na lib
+                    criar container postgres
+                criar container mongo
+                    copiar de sample
+                criar container stmp
+                    copiar de poc
                 criar base classes
                     controler
                     remote destination
                     email
                     jpa
                     jdbc
-                criar containers basicos
                 trocar libs spring para ser provider
                     testar no example
                 criar interfaces
