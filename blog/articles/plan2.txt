@@ -134,13 +134,12 @@ temp tcdb - use atalho alt + home
                     <https://github.com/spring-projects/spring-framework>
             search about first version that are slice tests
             write first topic
-        write the causes that slice was created
-        write the spring boot library
-        the version that started
-        each version add more slice tests
-        finish the slice paragraph
-        plan framework paragraph
-        write intro framework paragraph
+            write the causes that slice was created
+            write the spring boot library
+            the version that started
+            each version add more slice tests
+            finish the slice paragraph
+        plan slice types pragraph
         plan next tasks
         next article
             sem spring boot. spring context
@@ -904,16 +903,16 @@ temp tcdb - use atalho alt + home
                         estava faltando spring bom
                         estava no example e nao na lib
                     criar container postgres
-                criar container mongo
-                    copiar de sample
-                criar container stmp
-                    copiar de poc
-                criar base classes
-                    controler
-                    remote destination
-                    email
-                    jpa
-                    jdbc
+                    criar container mongo
+                        copiar de sample
+                    criar container stmp
+                        copiar de poc
+                criar base class controller
+                criar example for controller
+                criar base class remote destination
+                criar base class email
+                criar base class JPA
+                criar base class JDBC
                 trocar libs spring para ser provider
                     testar no example
                 criar interfaces
