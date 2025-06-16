@@ -12,6 +12,29 @@ The first Spring-Boot versions only help to create tests that setup all the conf
 
 ## Slice tests Types
 
+There are a lot of slice tests on Spring-boot-test library. The list of types can be accessed by official document. The main types are: 
+* MockMVC tests for Web applications
+* JPATest for repository
+* AMQPTest for listeners / senders
+
+### MOckMVC Tests
+
+The MockMcvTest is a test that will start the Spring just for web application layer, dont need database or others beans to tests this layer. One example is: 
+```java
+```
+
+### JPA Tests
+
+The MockMcvTest is a test that will start the Spring just for web application layer, dont need database or others beans to tests this layer. One example is:
+```java
+```
+
+### AMQP Tests
+
+The MockMcvTest is a test that will start the Spring just for web application layer, dont need database or others beans to tests this layer. One example is:
+```java
+```
+
 ## Test Enabler
 
 ## Conclusion
