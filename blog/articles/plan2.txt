@@ -85,6 +85,10 @@ temp tcdb - use atalho alt + home
             topics
                 intro
                     problems
+                        criar testes
+                        testes demoram
+                        ambientes diferentes de prd
+                        testes caros
                 history
                     ofcial docs
                         <https://docs.spring.io/spring-boot/docs/1.4.x/reference/htmlsingle/#boot-features-testing-spring-boot-applications-testing-autoconfigured-tests>
@@ -139,8 +143,16 @@ temp tcdb - use atalho alt + home
             the version that started
             each version add more slice tests
             finish the slice paragraph
-        plan slice types pragraph
+            plan slice types pragraph
+            write mockMvc example
+            write JPA example
+            plan test enabler topic
+            plan intro
+        write intro end
         plan next tasks
+        review by app
+        review intro
+        review next section
         next article
             sem spring boot. spring context
                 3.2.18.RELEASE -- pessoal de goiania
@@ -883,7 +895,9 @@ temp tcdb - use atalho alt + home
                 feito em mm privado - nao subir no git
                     Pasta **/maps/negocios/empresa/*
         criacao de tdd-enabler
-            done
+            topicos
+                anotation
+                    dont work for fields
             tasks
                 done
                     definir prox tasks
@@ -907,7 +921,15 @@ temp tcdb - use atalho alt + home
                         copiar de sample
                     criar container stmp
                         copiar de poc
-                criar base class controller
+                    criar base class controller
+                    criar test for JPA Base
+                spike for annotation prameters for custom versions
+                replan lib
+                    how to configure infra
+                    how to configure versions ?
+                    need testcontainers
+                    how to customize ?
+                        what ?
                 criar example for controller
                 criar base class remote destination
                 criar base class email

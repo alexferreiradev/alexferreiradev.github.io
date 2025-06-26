@@ -1,6 +1,6 @@
 # Create fast pipelines for tests
 
-Intro
+The developers create in addition to code for production the code for test for better quality. There are some challenges to create tests, the developer need to know the libraries and frameworks for testing, the company need to create some environment similar to production increasing the cost to delivery new things, and others. 
 
 ## Spring Tests
 
@@ -19,27 +19,104 @@ There are a lot of slice tests on Spring-boot-test library. The list of types ca
 
 ### MOckMVC Tests
 
-The MockMcvTest is a test that will start the Spring just for web application layer, dont need database or others beans to tests this layer. One example is: 
+The MockMcvTest is a test that will start the Spring just for web application layer, don't need database or others beans to tests this layer. One example is: 
 ```java
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = {
+		JsonConverterConfiguration.class,
+		LoggerBeanFactory.class,
+		ResourceExceptionHandler.class,
+		ConfigurationMockBean.class,
+}) 
+public abstract class BaseRest {
+
+	@Autowired
+	protected ResourceExceptionHandler resourceHandler;
+
+	@Autowired
+	protected ObjectMapper objectMapper;
+
+}
 ```
+This is a base class to create controller tests. The below is a example of controller test:
+```java
+public class AuthorizationResourceIT extends BaseRest {
+	private final CreateAuthorizationRequest request = RequestFixtures.createAuthorizationRequest();
+
+	MockMvc mockMvc;
+
+	@Autowired
+	CreateAuthorization useCase;
+	private final String baseUrl = "/authorizations";
+
+	@BeforeEach
+	void setUp() {
+		this.mockMvc = MockMvcBuilders.standaloneSetup(new AuthorizationResource(useCase))
+				.setControllerAdvice(resourceHandler)
+				.setMessageConverters(new MappingJackson2HttpMessageConverter())
+				.build();
+	}
+
+	@Test
+	void shouldReturn200_whenRequestIsValid() throws Exception {
+		String authorizationId = "authorizationId";
+		ArgumentCaptor<CreateAuthorizationInput> captor = ArgumentCaptor.forClass(CreateAuthorizationInput.class);
+		Mockito.when(useCase.execute(captor.capture())).thenReturn(authorizationId);
+
+		mockMvc.perform(post(baseUrl).contentType(MediaType.APPLICATION_JSON)
+						.content(objectMapper.writeValueAsString(request))).andDo(MockMvcResultHandlers.print())
+				.andExpect(status().is2xxSuccessful())
+				.andExpect(jsonPath("$.authorizationId").value(authorizationId))
+		;
+	}
+}
+```
+This code use mockMvc to create a server with the controller and simulate a http request to that server and the response. On the test we use the library from mockMvc to make assert on the response, the status, the body content and others.
 
 ### JPA Tests
 
-The MockMcvTest is a test that will start the Spring just for web application layer, dont need database or others beans to tests this layer. One example is:
+One example is:
 ```java
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(
+		classes = {
+				EntityManagerConfiguration.class,
+		}
+)
+public class BaseRepositoryIT { }
 ```
-
-### AMQP Tests
-
-The MockMcvTest is a test that will start the Spring just for web application layer, dont need database or others beans to tests this layer. One example is:
+This is a JPA base class. An example of tests of one repository can be: 
 ```java
+public class ClientRepositoryIT extends BaseRepositoryIT {
+
+    @Autowired
+    EntityManager entityManager;
+
+    UsuarioDaoImp usuarioDaoImp;
+
+    @Test
+    public void shouldSaveUsuarioWhenEntityIsValid() {
+        usuarioDaoImp = new UsuarioDaoImp();
+        usuarioDaoImp.setEntityManager(entityManager);
+        Usuario entity = UsuarioMock.create();
+
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+
+        usuarioDaoImp.save(entity);
+
+        transaction.commit();
+    }
+}
 ```
+This test use the entity manager create by configuration and this configuration use TestContainers to create the database container. But the configuration don't create any other bean as Controllers, Http Clients, and others types.
 
 ## Test Enabler
 
-## Conclusion
-In this article, we showed how to create integration tests with the Spring framework. We use the TestContainers library to create all platforms required by the application. The community created a lot of repositories to share binds to other languages. See more in the [TestContainers's Github account]. If you like this content and want to talk more about a problem, call me. You have a special chance to book on [my calendly] this week. It will be a pleasure to help you solve your problem.
+All the slices tests create tests using default infrastructure in memory for tests. This can generate tests diferent from real scenarios on production. Due to this, Test Enabler library was created. The library provide a lot of base classes to create any type of component test as Repository test. You just put the library for your Spring version, and you can use BaseClasses to create your tests. This library can be accessed by [test-enabler's git-hub](https://github.com/alexferreiradev/test-enabler). The library is using Spring framework and not the Spring Boot, so you can use for all Spring projects because is spring pure library. In the future we can have for others frameworks like Quarkus and Micronaults, you can contribute to this, just follow the [how to contribute](https://github.com/alexferreiradev/test-enabler) instructions.  
 
+## Conclusion
+In this article, we showed how to create integration tests with the Spring framework. We use the TestContainers library to create all platforms required by the application. If you like this content and want to talk more about a problem, call me. You have a special chance to book on [my calendly] this week. It will be a pleasure to help you solve your problem.
 
 [article for Quarkus]: https://dev.to/alexferreiradev/stop-suffering-with-tests-use-testcontainers-4m3k
 [Docker Official]: https://docs.docker.com/
