@@ -4,7 +4,7 @@ The developers need to create tests to achieve better quality for systems. There
 
 ## Spring Tests
 
-Tests are one part of development that is difficult for a lot of developers. The developers need to know the library and frameworks to run the tests. The libraries help to integrate the language and the framework. The framework web mocks the dependencies for each infrastructure. So the developers tend to skip the test phase due to these challenges. Spring-Boot came to help with libraries for that, as the spring-boot-tests library. The library helps developers create simple tests faster.
+Tests are one part of development that is difficult for a lot of developers. The developers need to know the library and frameworks to run the tests. The libraries help to integrate the language and the framework. The framework web mocks the dependencies for each infrastructure. So the developers tend to skip the test phase due to these challenges. Spring-Boot came to help with libraries, such as the spring-boot-tests library. The library helps developers create simple tests faster.
 
 ## Slices tests on Spring Boot
 
@@ -12,7 +12,7 @@ The first Spring-Boot versions only help to create integration tests. These test
 
 ## Slice tests Types
 
-There are a lot of slice tests on Spring-boot-test library. The list of types is in the official document. The main types are:
+There are a lot of slice tests on the Spring Boot Test library. The list of types is in the official document. The main types are:
 
 * MockMVC tests for Web applications
 
